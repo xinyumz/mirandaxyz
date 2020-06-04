@@ -1,8 +1,55 @@
 body {
     background-color:rgb(228, 233, 235);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9rem;
 }
+.header {
+    background-color: rgb(197, 214, 214);
+    height: 5rem;
+}
+
+/*Styles for front page*/
+.frontblock {
+    background-color: rgb(56, 101, 109);
+    height: 50rem;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.welcome {
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+.name-en {
+    margin: 1.5rem 20rem 0rem 20rem;
+    font-size: 5rem;
+    color: rgb(223, 169, 169);
+    border-style: solid solid none solid;
+    border-color: grey;
+    border-width: 1rem;
+}
+.name-cn {
+    margin: 0rem 20rem 1.5rem 20rem;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    color: rgb(223, 169, 169);
+    font-family: Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
+    border-style: none solid solid solid;
+    border-color: grey;
+    border-width: 1rem;
+}
+.name-en2 {
+    padding-top: 0.5rem;
+    font-size: 4rem;
+    color: rgb(223, 169, 169);
+}
+.selfintro {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+
+/*Styles for CV page*/
 .CV {
     width: 62.5%;
     margin: 0 auto;
@@ -14,6 +61,7 @@ body {
     padding-top: 4.5%;
     padding-bottom: 4.5%;
     box-shadow: 5px 5px 20px #acacac;
+    font-size: 0.9rem;
 }
 .sec {
     margin-bottom: 5%;
