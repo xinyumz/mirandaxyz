@@ -1,51 +1,73 @@
 body {
     background-color:rgb(228, 233, 235);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 .header {
-    background-color: rgb(197, 214, 214);
-    height: 5rem;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    color: rgb(107, 117, 117);
 }
-
+.header-name {
+    /*background-color: rgb(87, 99, 99);*/
+    flex-direction: row;
+    display: flex;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+}
+.header-nav {
+    justify-content: space-around;
+    flex-grow: 0.5;
+    
+    font-size: 0.9rem;
+    display: flex;
+    width: 20%;
+    font-size: 0.825rem;
+}
 /*Styles for front page*/
 .frontblock {
-    background-color: rgb(56, 101, 109);
+    /*background-color: rgb(56, 101, 109);*/
+    background-image: url("images/UnderTheTree.png");
+    background-size: cover; 
     height: 50rem;
     text-align: center;
-    color: white;
+    color: rgb(177, 216, 216);
     font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 0.2rem;
+    font-size: 1.2rem;
 }
 .welcome {
     padding-top: 8rem;
     padding-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
 }
-.name-en {
-    margin: 1.5rem 20rem 0rem 20rem;
+.name-back {
+    margin: 1.5rem 18rem 1.5rem 18rem;
+    background-color: rgba(161, 160, 160, 0.4);
+}
+.name {
+    padding: 2.5rem 0rem 2.5rem 0rem;
     font-size: 5rem;
-    color: rgb(223, 169, 169);
-    border-style: solid solid none solid;
-    border-color: grey;
-    border-width: 1rem;
+    color: rgb(255, 255, 255);
+    border-style: solid solid solid solid;
+    border-color: rgb(103, 114, 114);
+    border-width: 0.5rem;
 }
-.name-cn {
-    margin: 0rem 20rem 1.5rem 20rem;
-    padding-bottom: 1rem;
-    font-size: 4rem;
-    color: rgb(223, 169, 169);
-    font-family: Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
-    border-style: none solid solid solid;
-    border-color: grey;
-    border-width: 1rem;
-}
-.name-en2 {
+.name2 {
     padding-top: 0.5rem;
-    font-size: 4rem;
-    color: rgb(223, 169, 169);
+    font-size: 2.75rem;
+    color: rgb(255, 255, 255);
+    /*color: rgb(172, 101, 101);*/
 }
 .selfintro {
     margin-top: 3rem;
-    font-size: 1.2rem;
+    line-height: 1.7rem;
+    /*color: white;*/
 }
 
 
