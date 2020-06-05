@@ -42,6 +42,21 @@ a {
 .header-nav a {
     text-decoration-line: none;
 }
+@media (max-width: 1200px) {
+    .header-nav {
+        width: 30%;
+    }
+}
+@media (max-width: 1100px) {
+    .header-nav {
+        width: 35%;
+    }
+}
+@media (max-width: 1050px) {
+    .header-nav {
+        width: 40%;
+    }
+}
 
 /*Styles for front page*/
 .frontblock {
@@ -60,7 +75,7 @@ a {
     font-size: 4rem;
 }
 .name-back {
-    margin: 1.5rem 18rem 1.5rem 18rem;
+    margin: 1.5rem 17rem 1.5rem 17rem;
     background-color: rgba(161, 160, 160, 0.4);
 }
 .name {
@@ -79,6 +94,78 @@ a {
 .selfintro {
     margin-top: 3rem;
     line-height: 1.7rem;
+}
+@media (max-width: 1410px) {
+    .name {
+        font-size: 4.5rem;
+    }
+}
+@media (max-width: 1310px) {
+    .name-back {
+        margin: 1.5rem 15rem 1.5rem 15rem;
+    }
+}
+@media (max-width: 1260px) {
+    .welcome {
+        font-size: 3.5rem;
+    }
+    .name {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 1200px) {
+    .name-back {
+        margin: 1.5rem 13rem 1.5rem 13rem;
+    }
+}
+@media (max-width: 1120px) {
+    .welcome {
+        font-size: 3rem;
+    }
+    .name {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 1045px) {
+    .welcome {
+        font-size: 2.5rem;
+    }
+    .name {
+        font-size: 3rem;
+    }
+    .name2 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 970px) {
+    .frontblock {
+        font-size: 1rem;
+    }
+    .name-back {
+        margin: 1.5rem 12rem 1.5rem 12rem;
+    }
+    .name {
+        padding: 2rem 0rem 2rem 0rem;
+    }
+}
+@media (max-width: 920px) {
+    .welcome {
+        font-size: 2rem;
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    .name2 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 850px) {
+    .name-back {
+        margin: 1.5rem 10rem 1.5rem 10rem;
+    }
+    .name {
+        padding: 1.5rem 0rem 1.5rem 0rem;
+    }
 }
 
 /*Styles for CV page*/
