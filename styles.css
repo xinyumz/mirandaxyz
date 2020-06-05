@@ -142,6 +142,24 @@ a {
         width: 90%;
     }
 }
+@media (max-width: 500px) {
+    .header-name {
+        font-size: 0.55rem;
+    }
+    .header-nav {
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 465px) {
+    .header-name {
+        padding-left: 0.7rem;
+        font-size: 0.5rem;
+    }
+    .header-nav {
+        width: 97%;
+        font-size: 0.45rem;
+    }
+}
 
 /*Styles for front page*/
 .frontblock {
