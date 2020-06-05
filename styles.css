@@ -5,6 +5,9 @@ body {
     margin-left: .5rem;
     margin-right: .5rem;
 }
+a {
+    text-decoration-line: none;
+}
 .header {
     flex-direction: row;
     display: flex;
@@ -12,6 +15,12 @@ body {
     align-items: center;
     height: 3rem;
     color: rgb(107, 117, 117);
+}
+.header a:visited {
+    color: rgb(107, 117, 117);
+}
+.header a:hover {
+    color: rgb(64, 150, 150);
 }
 .header-name {
     /*background-color: rgb(87, 99, 99);*/
@@ -23,12 +32,15 @@ body {
 .header-nav {
     justify-content: space-around;
     flex-grow: 0.5;
-    
     font-size: 0.9rem;
     display: flex;
     width: 20%;
     font-size: 0.825rem;
 }
+.header-nav a {
+    text-decoration-line: none;
+}
+
 /*Styles for front page*/
 .frontblock {
     /*background-color: rgb(56, 101, 109);*/
@@ -121,6 +133,12 @@ body {
 }
 .nonbold {
     font-weight: normal;
+}
+.pub a:visited {
+    color: black;
+}
+.pub a:hover {
+    color: rgb(48, 96, 151);
 }
 @media (max-width: 1400px) {
     .CV { width: 65%;
