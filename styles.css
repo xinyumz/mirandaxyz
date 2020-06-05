@@ -19,7 +19,7 @@ a {
     box-shadow: 0 2px 10px 0 #acacac;
     margin-bottom: 1rem;
 }
-.header a:visited {
+.header a:link, .header a:visited {
     color: rgb(107, 117, 117);
 }
 .header a:hover {
@@ -132,7 +132,7 @@ a {
 .nonbold {
     font-weight: normal;
 }
-.pub a:visited {
+.pub a:link, .pub a:visited {
     color: black;
 }
 .pub a:hover {
