@@ -184,6 +184,15 @@ a {
         font-size: 0.45rem;
     }
 }
+@media (max-width: 420px) {
+    .header-name {
+        padding-left: 0.6rem;
+        font-size: 0.45rem;
+    }
+    .header-nav {
+        font-size: 0.4rem;
+    }
+}
 
 /*Styles for front page*/
 .frontblock {
@@ -415,7 +424,8 @@ a {
     color: rgb(48, 96, 151);
 }
 @media (max-width: 1400px) {
-    .CV { width: 65%;
+    .CV { 
+        width: 65%;
     }
 }
 @media (max-width: 1250px) {
@@ -423,57 +433,38 @@ a {
     }
 }
 @media (max-width: 1000px) {
-    .CV { width: 75%;
-    }
-    .CV-title {
-        font-size: 1.5em;
-    }
-    .sec-title {
-        font-size: 1.2em;
-    }
-    .li-title {
-        font-size: 1em;
-    }
-    .li-title2 {
-        font-size: 1em;
+    .CV { 
+        width: 75%;
+        font-size: 0.85rem;
     }
 }
 @media (max-width: 750px) {
-    .CV { width: 80%;
+    .CV { 
+        width: 80%;
     }
 }
 @media (max-width: 700px) {
-    .CV { width: 90%;
+    .CV { 
+        width: 90%;
         margin-top: 1.5%;
         margin-bottom: 1.5%;
     }
 }
-@media (max-width: 600px) {
-    .CV { width: 95%;
+@media (max-width: 620px) {
+    .CV { 
+        width: 95%;
         margin-top: 1%;
         margin-bottom: 1%;
-        font-size: 1em;
+        font-size: 0.8rem;
     }
 }
 @media (max-width: 550px) {
     .CV {
-        font-size: 0.9em;
-    }
-    .CV-title {
-        font-size: 1.4em;
-    }
-    .sec-title {
-        font-size: 1.1em;
-    }
-    .li-title {
-        font-size: 0.95em;
-    }
-    .li-title2 {
-        font-size: 0.95em;
+        font-size: 0.7rem;
     }
 }
 @media (max-width: 500px) {
     .CV {
-        font-size: 0.85em;
+        font-size: 0.6rem;
     }
 }
