@@ -209,6 +209,7 @@ a {
     padding-top: 8rem;
     padding-bottom: 1rem;
     font-size: 4rem;
+    text-shadow: 2px 2px rgb(41, 61, 61);
 }
 .name-back {
     margin: 1.5rem 16rem 1.5rem 16rem;
