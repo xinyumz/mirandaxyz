@@ -1,13 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import Earth from './images/TheEarth.jpg';
+import Aco from './images/Aco.png';
+import UnderTree from './images/UnderTheTree.png';
+import SnowMountain from './images/SnowyMountains.png';
+import CanolaField from './images/CanolaFlowerField.png';
+import Starlight from './images/StarlightNight.png';
+import Lake from './images/TheLake.png';
+import Sea from './images/TheSea.png';
+import Valley from './images/TheValley.png';
+import Village from './images/TheVillage.png';
 
 function App() {
 	return (
 		<div>
 			<Switch>
 				<Route path="/" component={FrontPage} exact />
+				<Route path="/paintings" component={Paint} />
 				<Route path="/resume" component={CV} />
 			</Switch>
 		</div>
@@ -22,9 +32,8 @@ function Header() {
 			<span class="header-nav">
 				<span><strong> RESEARCH PROJECTS </strong></span>
 				<span><strong> COMPOSITIONS </strong></span>
-				<span><strong> PAINTINGS </strong></span>
-				<span><Link to="/resume"><strong>
-					RESUME </strong></Link></span>
+				<span><Link to="/paintings"><strong> PAINTINGS </strong></Link></span>
+				<span><Link to="/resume"><strong> RESUME </strong></Link></span>
 				<span><strong> CONTACT </strong></span>
 			</span>
 		</div>
@@ -47,7 +56,37 @@ function FrontPage() {
 					<div class="selfintro">
 						PhD student in Materials Sci & Eng, University of Michigan |
 						Amateur musician, composer, and painter
-    </div>
+						</div>
+				</div>
+			</div>
+		</div>
+	)
+}
+
+function Paint() {
+	return (
+		<div>
+			<Header />
+			<div class="page">
+				<div class="paint-page">
+					<div class="paint-row">
+						<img class="paint-long" src={Village} />
+						<img class="paint-long" src={Valley} />
+						<img class="paint-long" src={Sea} />
+					</div>
+					<div class="paint-row">
+						<img class="paint-wide" src={Lake} />
+						<img class="paint-wide" src={Earth} />
+					</div>
+					<div class="paint-row">
+						<img class="paint-wide" src={Aco} />
+						<img class="paint-wide" src={SnowMountain} />
+					</div>
+					<div class="paint-row">
+						<img class="paint-long" src={Starlight} />
+						<img class="paint-long" src={CanolaField} />
+						<img class="paint-wide" src={UnderTree} />
+					</div>
 				</div>
 			</div>
 		</div>
