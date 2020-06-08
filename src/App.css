@@ -386,18 +386,18 @@ a {
   align-items: center;
 }
 .paint-long {
-  max-width: 27%;
+  max-width: 28%;
   height: auto;  
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  box-shadow: 2px 2px 10px dimgray;
+  box-shadow: 3px 3px 10px dimgray;
 }
 .paint-wide {
-  max-width: 40%;
+  max-width: 39%;
   height: auto;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  box-shadow: 2px 2px 10px dimgray;
+  box-shadow: 3px 3px 10px dimgray;
 }
 
 

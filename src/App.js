@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Earth from './images/TheEarth.jpg';
 import Aco from './images/Aco.png';
 import UnderTree from './images/UnderTheTree.png';
@@ -11,6 +12,7 @@ import Lake from './images/TheLake.png';
 import Sea from './images/TheSea.png';
 import Valley from './images/TheValley.png';
 import Village from './images/TheVillage.png';
+
 
 function App() {
 	return (
@@ -43,6 +45,9 @@ function Header() {
 function FrontPage() {
 	return (
 		<div>
+			<Helmet>
+				<title>Welcome | Xinyu (Miranda) Zhang</title>
+			</Helmet>
 			<Header />
 			<div class="page">
 				<div class="frontblock">
@@ -66,6 +71,9 @@ function FrontPage() {
 function Paint() {
 	return (
 		<div>
+			<Helmet>
+				<title>Paintings | Xinyu (Miranda) Zhang</title>
+			</Helmet>
 			<Header />
 			<div class="page">
 				<div class="paint-page">
@@ -96,6 +104,9 @@ function Paint() {
 function CV() {
 	return (
 		<div>
+			<Helmet>
+				<title>CV | Xinyu (Miranda) Zhang</title>
+			</Helmet>
 			<Header />
 			<div class="page">
 				<div class="CV">
