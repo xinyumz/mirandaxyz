@@ -12,6 +12,9 @@ import Lake from './images/TheLake.png';
 import Sea from './images/TheSea.png';
 import Valley from './images/TheValley.png';
 import Village from './images/TheVillage.png';
+import Kiwi from './images/Kiwi.jpg';
+import CarTower from './images/CameroonTower.jpg';
+import Meow from './images/Meow.jpg';
 
 
 function App() {
@@ -104,6 +107,11 @@ function Paint() {
 						<img class="paint-long" src={Starlight} />
 						<img class="paint-long" src={CanolaField} />
 						<img class="paint-wide" src={UnderTree} />
+					</div>
+					<div class="paint-row">
+						<img class="paint-long" src={Kiwi} />
+						<img class="paint-long" src={CarTower} />
+						<img class="paint-long" src={Meow} />
 					</div>
 				</div>
 			</div>
