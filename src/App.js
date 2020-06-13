@@ -61,9 +61,19 @@ function FrontPage() {
 					<div class="selfintro">
 						PhD student in Materials Sci & Eng, University of Michigan |
 						Amateur musician, composer, and painter
-						</div>
+					</div>
 				</div>
+				<Projectblock />
 			</div>
+		</div>
+	)
+}
+
+function Projectblock() {
+	return (
+		<div class="Pro-block">
+
+
 		</div>
 	)
 }
