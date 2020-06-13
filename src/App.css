@@ -1,7 +1,7 @@
 body {
-  /*background-color:rgb(231, 236, 240);*/
-  background-image: url(images/Concrete.png);
-  background-repeat:repeat;
+  background-color:rgb(234, 238, 241);
+  /*background-image: url(images/Concrete.png);
+  background-repeat:repeat;*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
 }
@@ -368,6 +368,7 @@ a {
 @media (max-width: 500px) {
   .welcome {
       font-size: 1.5rem;
+      padding-top: 3.5rem;
   }
   .name-back {
       margin: 1.3rem 6rem 1.3rem 6rem;
@@ -472,7 +473,8 @@ a {
   width: 62.5%;
   margin: 0 auto;
   margin-bottom: 3%;
-  background-color: rgb(255, 255, 255);
+  background-image: url(images/CanvasWhite.png);
+  background-repeat:repeat;
   padding-right: 4.5%;
   padding-left: 4.5%;
   padding-top: 4.5%;
