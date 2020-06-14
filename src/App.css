@@ -70,9 +70,6 @@ a {
   width: 20%;
   font-size: 0.825rem;
 }
-.header-nav a {
-  text-decoration-line: none;
-}
 @media (max-width: 1200px) {
   .header-nav {
       width: 30%;
@@ -153,10 +150,10 @@ a {
       font-size: 0.65rem;
   }.header-nav {
       width: 70%;
-      color: rgb(158, 163, 163);
+      color: rgb(146, 150, 150);
   }
   .header-nav a:link, .header-nav a:visited {
-      color: rgb(158, 163, 163);
+      color: rgb(146, 150, 150);
   }
 }
 @media (max-width: 530px) {
@@ -214,7 +211,7 @@ a {
 }
 
 .welcome {
-  padding-top: 8rem;
+  padding-top: 7.75rem;
   padding-bottom: 1rem;
   font-size: 4rem;
   text-shadow: 2px 2px rgb(41, 61, 61);
@@ -270,7 +267,7 @@ a {
 }
 @media (max-width: 1140px) {
   .welcome {
-      padding-top: 9rem;
+      padding-top: 8.75rem;
       padding-bottom: 1.5rem;
       font-size: 3rem;
   }
@@ -280,7 +277,7 @@ a {
 }
 @media (max-width: 1045px) {
   .welcome {
-      padding-top: 10rem;
+      padding-top: 9.5rem;
       font-size: 2.5rem;
   }
   .name {
@@ -296,7 +293,7 @@ a {
       height: 40rem;
   }
   .welcome {
-      padding-top: 6rem;
+      padding-top: 5.75rem;
   }
   .name-back {
       margin: 1.5rem 12rem 1.5rem 12rem;
@@ -308,6 +305,7 @@ a {
 @media (max-width: 920px) {
   .welcome {
       font-size: 2rem;
+      padding-top: 6rem;
   }
   .name {
       font-size: 2.5rem;
@@ -325,6 +323,9 @@ a {
   }
 }
 @media (max-width: 800px) {
+  .welcome {
+    padding-top: 4.75rem;
+}
   .name-cn {
       display: block;
   }
@@ -340,7 +341,6 @@ a {
 @media (max-width: 560px) {
   .welcome {
       font-size: 1.8rem;
-      padding-top: 5rem;
   }
   .name {
       font-size: 2.2rem;
@@ -355,7 +355,7 @@ a {
 }
   .welcome {
       font-size: 1.6rem;
-      padding-top: 4rem;
+      padding-top: 3.75rem;
   }
   .name {
       font-size: 2rem;
@@ -381,15 +381,71 @@ a {
       font-size: 1.5rem;
   }
 }
+@media (max-width: 400px) {
+  .frontblock {
+    font-size: 0.9rem;
+}
+  .selfintro {
+    margin-top: 2rem;
+  }
+}
 
 /*Styles for Project block*/
-.Pro-block {
-  background-image: url(images/DarkPattern.png);
+.pro-block {
+  background-image: url(images/Darklines.jpg);
   background-repeat:repeat;
   height: 50rem;
   margin: 2rem 0rem 5rem 0rem;
+  text-align: center;
+  color: rgb(188, 215, 226);
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 0.2rem;
+  font-size: 1.2rem;
 }
-
+.pro-title {
+  padding-top: 7.5rem;
+  padding-bottom: 5.5rem;
+  font-size: 4.5rem;
+  /*text-shadow: 3px 3px rgb(84, 117, 129);*/
+  color: white;
+}
+.pro-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.pro-item{
+  font-size: 2.75rem;
+  line-height: 4rem;
+  color: white;
+  text-shadow: 2px 2px rgb(73, 96, 104);
+  border-style: solid solid solid solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 0.3rem;
+  width: 20rem;
+  height: 17.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pro-item a:link, .pro-item a:visited {
+  color: white;
+}
+.pro-item a:hover {
+  color: rgb(212, 241, 250);
+}
+.pro-res {
+  background-image: url(images/SciDrawing.jpg);
+  background-size: cover;
+}
+.pro-comp {
+  background-image: url(images/PianoDrawing.png);
+  background-size: cover;
+}
+.pro-paint {
+  background-image: url(images/PaintCover.png);
+  background-size: cover;
+}
 
 /*Styles for Paintings*/
 .paint-page {

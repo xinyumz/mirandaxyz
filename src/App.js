@@ -74,9 +74,15 @@ function FrontPage() {
 
 function Projectblock() {
 	return (
-		<div class="Pro-block">
-
-
+		<div class="pro-block">
+			<div class="pro-title"><strong>PROJECTS</strong></div>
+			<div class="pro-box">
+				<div class="pro-res"><div class="pro-item"><strong>Research<br />Projects</strong></div></div>
+				<div class="pro-comp"><div class="pro-item"><strong>Compositions</strong></div></div>
+				<div class="pro-paint"><div class="pro-item">
+					<strong><Link to="/paintings">Paintings</Link></strong>
+				</div></div>
+			</div>
 		</div>
 	)
 }
