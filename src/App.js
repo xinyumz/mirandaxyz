@@ -22,6 +22,8 @@ function App() {
 		<div>
 			<Switch>
 				<Route path="/" component={FrontPage} exact />
+				<Route path="/research" component={Research} />
+				<Route path="/compositions" component={Composition} />
 				<Route path="/paintings" component={Paint} />
 				<Route path="/resume" component={CV} />
 			</Switch>
@@ -35,8 +37,8 @@ function Header() {
 			<span class="header-name"><Link to="/">
 				<strong>Xinyu (Miranda) Zhang</strong></Link></span>
 			<span class="header-nav">
-				<span><strong> RESEARCH PROJECTS </strong></span>
-				<span><strong> COMPOSITIONS </strong></span>
+				<span><Link to="/research"><strong> RESEARCH PROJECTS </strong></Link></span>
+				<span><Link to="/compositions"><strong> COMPOSITIONS </strong></Link></span>
 				<span><Link to="/paintings"><strong> PAINTINGS </strong></Link></span>
 				<span><Link to="/resume"><strong> RESUME </strong></Link></span>
 				<span><strong> CONTACT </strong></span>
@@ -77,8 +79,12 @@ function Projectblock() {
 		<div class="pro-block">
 			<div class="pro-title"><strong>PROJECTS</strong></div>
 			<div class="pro-box">
-				<div class="pro-res"><div class="pro-item"><strong>Research<br />Projects</strong></div></div>
-				<div class="pro-comp"><div class="pro-item"><strong>Compositions</strong></div></div>
+				<div class="pro-res"><div class="pro-item">
+					<strong><Link to="/research">Research<br />Projects</Link></strong>
+					</div></div>
+				<div class="pro-comp"><div class="pro-item">
+					<strong><Link to="/compositions">Compositions</Link></strong>
+					</div></div>
 				<div class="pro-paint"><div class="pro-item">
 					<strong><Link to="/paintings">Paintings</Link></strong>
 				</div></div>
@@ -86,6 +92,55 @@ function Projectblock() {
 		</div>
 	)
 }
+
+function Research() {
+	return (
+		<div>
+			<Helmet>
+				<title>Research Projects | Xinyu (Miranda) Zhang</title>
+			</Helmet>
+			<Header />
+			<div class="page">
+				<div class="res-front">
+					<div class="res-box">
+						<div class="LiSiON"><div class="res-item">
+							Li<sub>x</sub>SiON
+						</div></div>
+						<div class="LiPON"><div class="res-item">
+							Li<sub>x</sub>PON
+						</div></div>
+					</div>
+					<div class="res-box">
+						<div class="Oxysil"><div class="res-item">
+							Oxysilylation
+						</div></div>
+						<div class="ZTA"><div class="res-item">
+							ZTA ceramics
+						</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	)
+}
+
+
+function Composition() {
+	return (
+		<div>
+			<Helmet>
+				<title>Compositions | Xinyu (Miranda) Zhang</title>
+			</Helmet>
+			<Header />
+			<div class="page">
+				<div class="comp-page">
+
+				</div>
+			</div>
+		</div>
+	)
+}
+
 
 function Paint() {
 	return (

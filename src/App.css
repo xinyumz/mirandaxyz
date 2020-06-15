@@ -395,16 +395,13 @@ a {
   background-image: url(images/Darklines.jpg);
   background-repeat:repeat;
   height: 53rem;
-  margin-bottom: 2rem;
   text-align: center;
   color: rgb(188, 215, 226);
   font-family: Arial, Helvetica, sans-serif;
-  word-spacing: 0.2rem;
-  font-size: 1.2rem;
 }
 .pro-title {
   padding-top: 7.5rem;
-  padding-bottom: 5.5rem;
+  padding-bottom: 5rem;
   font-size: 4.5rem;
   /*text-shadow: 3px 3px rgb(84, 117, 129);*/
   color: white;
@@ -415,15 +412,15 @@ a {
   flex-wrap: wrap;
 }
 .pro-item{
-  font-size: 2.75rem;
+  font-size: 3rem;
   line-height: 4rem;
-  color: #ffffff;
+  color: white;
   text-shadow: 2.5px 2.5px rgb(74, 114, 128);
   border-style: solid solid solid solid;
   border-color: rgb(255, 255, 255);
   border-width: 0.3rem;
-  width: 20rem;
-  height: 17.5rem;
+  width: 23.5rem;
+  height: 21rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -448,6 +445,13 @@ a {
   background-image: url(images/PaintCover.png);
   background-size: cover;
   margin-bottom: 2rem;
+}
+@media (max-width: 1300px) {
+  .pro-item{
+    width: 20rem;
+    height: 17.5rem;
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 1200px) {
   .pro-item{
@@ -520,6 +524,58 @@ a {
     width: 16rem;
     height: 14rem;
   }
+}
+
+/*Styles for Research Projects*/
+.res-front {
+  background-color: dimgrey;
+  color: rgb(188, 215, 226);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.res-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.res-item{
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 2.5px 2.5px rgb(74, 114, 128);
+  border-style: solid solid solid solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 0.3rem;
+  width: 25rem;
+  height: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LiSiON {
+  background-image: url(images/ResProCover.png);
+  background-size: cover;
+  margin: 0rem 2rem 4rem 2rem;
+}
+.LiPON {
+  background-image: url(images/ResProCover.png);
+  background-size: cover;
+  margin: 0rem 2rem 4rem 2rem;
+}
+.Oxysil {
+  background-image: url(images/ResProCover.png);
+  background-size: cover;
+  margin: 0rem 2rem 4rem 2rem;
+}
+.ZTA {
+  background-image: url(images/ResProCover.png);
+  background-size: cover;
+  margin: 0rem 2rem 4rem 2rem;
+}
+
+/*Styles for Compositions*/
+.comp-page {
+
 }
 
 
