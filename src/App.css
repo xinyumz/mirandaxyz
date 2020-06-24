@@ -411,6 +411,21 @@ a {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.pro-res {
+  background: url(images/ResProCover.png);
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+.pro-comp {
+  background: url(images/CompCover.png);
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+.pro-paint {
+  background: url(images/PaintCover.png);
+  background-size: cover;
+  margin-bottom: 2rem;
+}
 .pro-item{
   font-size: 3rem;
   line-height: 4rem;
@@ -425,27 +440,21 @@ a {
   align-items: center;
   justify-content: center;
 }
-.pro-item a:link, .pro-item a:visited {
+.pro-item a:link, a:visited {
   color: rgb(255, 255, 255);
 }
 .pro-item a:hover {
   color: rgb(143, 202, 236);
+  background-color: rgba(139, 139, 139, 0.5);
 }
-.pro-res {
-  background-image: url(images/ResProCover.png);
+/*
+.pro-res a:hover, .pro-comp a:hover, .pro-paint a:hover{
+  color: rgb(143, 202, 236);
+  background: rgba(161, 160, 160, 0.4);
   background-size: cover;
-  margin-bottom: 2rem;
-}
-.pro-comp {
-  background-image: url(images/CompCover.png);
-  background-size: cover;
-  margin-bottom: 2rem;
-}
-.pro-paint {
-  background-image: url(images/PaintCover.png);
-  background-size: cover;
-  margin-bottom: 2rem;
-}
+}*/
+
+
 @media (max-width: 1300px) {
   .pro-item{
     width: 20rem;

@@ -79,15 +79,17 @@ function Projectblock() {
 		<div class="pro-block">
 			<div class="pro-title"><strong>PROJECTS</strong></div>
 			<div class="pro-box">
-				<div class="pro-res"><div class="pro-item">
-					<strong><Link to="/research">Research<br />Projects</Link></strong>
-					</div></div>
-				<div class="pro-comp"><div class="pro-item">
+				<div class="pro-res pro-item">
+				<Link to="/research">
+					<strong>Research<br />Projects</strong>
+				</Link>
+				</div>
+				<div class="pro-item pro-comp">
 					<strong><Link to="/compositions">Compositions</Link></strong>
-					</div></div>
-				<div class="pro-paint"><div class="pro-item">
+				</div>
+				<div class="pro-item pro-paint">
 					<strong><Link to="/paintings">Paintings</Link></strong>
-				</div></div>
+				</div>
 			</div>
 		</div>
 	)
@@ -376,8 +378,10 @@ function CV() {
 							<li>Zhang, X.; Cheng, X.; Jansohn, M.; Niedermaier, M.; Lenk, T.; Schmidt, K.; Laine, R. M.
 				ZrO<sub>2</sub> Toughened Al<sub>2</sub>O<sub>3</sub> Self-Standing Films and Coatings for
 				Power Electronic Substrates via Colloidal Processing of Flame Made Nanopowders, 2020.</li>
-							<li>Temeche, E.; Zhang, X.; Richard, M. L. Solid Electrolytes for Li-S Batteries.
-				Solid Solutions of Polyethylene Oxide with Li<sub>x</sub>PON and Li<sub>x</sub>SiPON Based Polymers, 2020.</li>
+							<li><a href="https://pubs.acs.org/doi/10.1021/acsami.0c06196" target="_blank">
+								Temeche, E.; Zhang, X.; Richard, M. L. Solid Electrolytes for Li-S Batteries. 
+								Solid Solutions of Polyethylene Oxide with Li<sub>x</sub>PON and Li<sub>x</sub>SiPON Based Polymers. 
+								ACS Appl. Mater. Interfaces <strong>2020</strong>, <em>xx</em> (xx), xxxx.</a></li>
 							<li><a href="https://doi.org/10.1021/acsami.0c03341" target="_blank">Temeche, E.; Zhang, X.; Laine, R. M.
 				Polymer Precursor Derived Li<sub>x</sub>PON Electrolytes: Toward Li-S Batteries.
 				ACS Appl. Mater. Interfaces <strong>2020</strong>, <em>12</em> (18), 20548-20562.</a> </li>
