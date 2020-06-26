@@ -79,17 +79,17 @@ function Projectblock() {
 		<div class="pro-block">
 			<div class="pro-title"><strong>PROJECTS</strong></div>
 			<div class="pro-box">
-				<div class="pro-res pro-item">
-				<Link to="/research">
+				<div class="pro-res"><div class="pro-item">
+					<Link to="/research">
 					<strong>Research<br />Projects</strong>
-				</Link>
-				</div>
-				<div class="pro-item pro-comp">
-					<strong><Link to="/compositions">Compositions</Link></strong>
-				</div>
-				<div class="pro-item pro-paint">
-					<strong><Link to="/paintings">Paintings</Link></strong>
-				</div>
+					</Link>
+				</div></div> 
+				<div class="pro-comp"><div class="pro-item">
+				<Link to="/compositions"><strong>Compositions</strong></Link>
+				</div></div>
+				<div class="pro-paint"><div class="pro-item">
+				<Link to="/paintings"><strong>Paintings</strong></Link>
+				</div></div>
 			</div>
 		</div>
 	)

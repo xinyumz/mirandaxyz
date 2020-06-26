@@ -443,17 +443,25 @@ a {
 .pro-item a:link, a:visited {
   color: rgb(255, 255, 255);
 }
-.pro-item a:hover {
-  color: rgb(143, 202, 236);
-  background-color: rgba(139, 139, 139, 0.5);
+.pro-item:hover {
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all .1s;
 }
-/*
-.pro-res a:hover, .pro-comp a:hover, .pro-paint a:hover{
-  color: rgb(143, 202, 236);
-  background: rgba(161, 160, 160, 0.4);
-  background-size: cover;
-}*/
-
+.pro-res:hover, .pro-comp:hover, .pro-paint:hover {
+  transform: scale(1.05);
+  transition: all .1s;
+}
+.pro-item:hover a{
+  color: rgb(168, 207, 230);
+  text-shadow: 2.5px 2.5px rgb(7, 8, 10);
+}
+.pro-item a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media (max-width: 1300px) {
   .pro-item{
