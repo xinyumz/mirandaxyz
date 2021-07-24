@@ -1,5 +1,5 @@
 body {
-  background-color:rgb(234, 238, 241);
+  background-color: rgb(234, 238, 241);
   /*background-image: url(images/Concrete.png);
   background-repeat:repeat;*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -13,27 +13,27 @@ a {
 }
 @media (max-width: 1200px) {
   .page {
-      margin-top: 4rem;
+    margin-top: 4rem;
   }
 }
 @media (max-width: 1050px) {
   .page {
-      margin-top: 3.75rem;
+    margin-top: 3.75rem;
   }
 }
 @media (max-width: 900px) {
   .page {
-      margin-top: 3.5rem;
+    margin-top: 3.5rem;
   }
 }
 @media (max-width: 750px) {
   .page {
-      margin-top: 3.25rem;
+    margin-top: 3.25rem;
   }
 }
 @media (max-width: 500px) {
   .page {
-      margin-top: 3rem;
+    margin-top: 3rem;
   }
 }
 /*header styles*/
@@ -50,7 +50,8 @@ a {
   top: 0;
   width: 100%;
 }
-.header a:link, .header a:visited {
+.header a:link,
+.header a:visited {
   color: rgb(107, 117, 117);
 }
 .header a:hover {
@@ -72,136 +73,139 @@ a {
 }
 @media (max-width: 1200px) {
   .header-nav {
-      width: 30%;
+    width: 30%;
   }
 }
 @media (max-width: 1100px) {
   .header-nav {
-      width: 35%;
+    width: 35%;
   }
 }
 @media (max-width: 1050px) {
   .header-nav {
-      width: 40%;
+    width: 40%;
   }
 }
 @media (max-width: 1010px) {
   .header-nav {
-      width: 45%;
+    width: 45%;
   }
 }
 @media (max-width: 980px) {
   .header-nav {
-      width: 50%;
+    width: 50%;
   }
 }
 @media (max-width: 920px) {
   .header-nav {
-      width: 55%;
-      font-size: 0.8rem;
+    width: 55%;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 860px) {
   .header-nav {
-      font-size: 0.75rem;
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 830px) {
   .header-name {
-      font-size: 1rem;
+    font-size: 1rem;
   }
   .header-nav {
-      font-size: 0.7rem;
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 750px) {
   .header-name {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
   .header-nav {
-      font-size: 0.65rem;
+    font-size: 0.65rem;
   }
 }
 @media (max-width: 710px) {
   .header-name {
-      font-size: 0.85rem;
+    font-size: 0.85rem;
   }
   .header-nav {
-      font-size: 0.6rem;
+    font-size: 0.6rem;
   }
 }
 @media (max-width: 660px) {
   .header-name {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
   }
   .header-nav {
-      font-size: 0.55rem;
+    font-size: 0.55rem;
   }
 }
 @media (max-width: 610px) {
   .header-name {
-      font-size: 0.75rem;
-  }.header-nav {
-      width: 60%;
+    font-size: 0.75rem;
+  }
+  .header-nav {
+    width: 60%;
   }
 }
 @media (max-width: 570px) {
   .header-name {
-      font-size: 0.65rem;
-  }.header-nav {
-      width: 70%;
-      color: rgb(146, 150, 150);
+    font-size: 0.65rem;
   }
-  .header-nav a:link, .header-nav a:visited {
-      color: rgb(146, 150, 150);
+  .header-nav {
+    width: 70%;
+    color: rgb(146, 150, 150);
+  }
+  .header-nav a:link,
+  .header-nav a:visited {
+    color: rgb(146, 150, 150);
   }
 }
 @media (max-width: 530px) {
   .header-nav {
-      width: 80%;
+    width: 80%;
   }
 }
 @media (max-width: 530px) {
   .header-name {
-      font-size: 0.6rem;
-      padding-left: 0.8rem;
+    font-size: 0.6rem;
+    padding-left: 0.8rem;
   }
   .header-nav {
-      width: 90%;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
   .header-name {
-      font-size: 0.55rem;
+    font-size: 0.55rem;
   }
   .header-nav {
-      font-size: 0.5rem;
+    font-size: 0.5rem;
   }
 }
 @media (max-width: 465px) {
   .header-name {
-      padding-left: 0.7rem;
-      font-size: 0.5rem;
+    padding-left: 0.7rem;
+    font-size: 0.5rem;
   }
   .header-nav {
-      width: 97%;
-      font-size: 0.45rem;
+    width: 97%;
+    font-size: 0.45rem;
   }
 }
 @media (max-width: 420px) {
   .header-name {
-      padding-left: 0.6rem;
-      font-size: 0.45rem;
+    padding-left: 0.6rem;
+    font-size: 0.45rem;
   }
   .header-nav {
-      font-size: 0.4rem;
+    font-size: 0.4rem;
   }
 }
 
 /*Styles for front page*/
 .frontblock {
   background-image: url("images/UnderTheTree.png");
-  background-size: cover; 
+  background-size: cover;
   height: 52rem;
   text-align: center;
   color: rgb(188, 215, 226);
@@ -229,7 +233,8 @@ a {
   border-width: 0.5rem;
 }
 .name-cn {
-  font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+  font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei,
+    "华文细黑", sans-serif;
 }
 .name2 {
   padding-top: 0.5rem;
@@ -244,147 +249,147 @@ a {
 }
 @media (max-width: 1420px) {
   .name {
-      font-size: 4.5rem;
+    font-size: 4.5rem;
   }
 }
 @media (max-width: 1340px) {
   .name-back {
-      margin: 1.5rem 15rem 1.5rem 15rem;
+    margin: 1.5rem 15rem 1.5rem 15rem;
   }
 }
 @media (max-width: 1280px) {
   .welcome {
-      font-size: 3.5rem;
+    font-size: 3.5rem;
   }
   .name {
-      font-size: 4rem;
+    font-size: 4rem;
   }
 }
 @media (max-width: 1200px) {
   .name-back {
-      margin: 1.5rem 13rem 1.5rem 13rem;
+    margin: 1.5rem 13rem 1.5rem 13rem;
   }
 }
 @media (max-width: 1140px) {
   .welcome {
-      padding-top: 8.75rem;
-      padding-bottom: 1.5rem;
-      font-size: 3rem;
+    padding-top: 8.75rem;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
   }
   .name {
-      font-size: 3.5rem;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 1045px) {
   .welcome {
-      padding-top: 9.5rem;
-      font-size: 2.5rem;
+    padding-top: 9.5rem;
+    font-size: 2.5rem;
   }
   .name {
-      font-size: 3rem;
+    font-size: 3rem;
   }
   .name2 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 980px) {
   .frontblock {
-      font-size: 1rem;
-      height: 40rem;
+    font-size: 1rem;
+    height: 40rem;
   }
   .welcome {
-      padding-top: 5.75rem;
+    padding-top: 5.75rem;
   }
   .name-back {
-      margin: 1.5rem 12rem 1.5rem 12rem;
+    margin: 1.5rem 12rem 1.5rem 12rem;
   }
   .name {
-      padding: 2rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 2rem 0rem;
   }
 }
 @media (max-width: 920px) {
   .welcome {
-      font-size: 2rem;
-      padding-top: 6rem;
+    font-size: 2rem;
+    padding-top: 6rem;
   }
   .name {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
   .name2 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 850px) {
   .name-back {
-      margin: 1.5rem 10rem 1.5rem 10rem;
+    margin: 1.5rem 10rem 1.5rem 10rem;
   }
   .name {
-      padding: 1.7rem 0rem 1.7rem 0rem;
+    padding: 1.7rem 0rem 1.7rem 0rem;
   }
 }
 @media (max-width: 800px) {
   .welcome {
     padding-top: 4.75rem;
-}
+  }
   .name-cn {
-      display: block;
+    display: block;
   }
 }
 @media (max-width: 640px) {
   .name-back {
-      margin: 1.5rem 8rem 1.5rem 8rem;
+    margin: 1.5rem 8rem 1.5rem 8rem;
   }
   .name {
-      padding: 1.5rem 0rem 1.5rem 0rem;
+    padding: 1.5rem 0rem 1.5rem 0rem;
   }
 }
 @media (max-width: 560px) {
   .welcome {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
   .name {
-      font-size: 2.2rem;
+    font-size: 2.2rem;
   }
   .name2 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 520px) {
   .frontblock {
     height: 35rem;
-}
+  }
   .welcome {
-      font-size: 1.6rem;
-      padding-top: 3.75rem;
+    font-size: 1.6rem;
+    padding-top: 3.75rem;
   }
   .name {
-      font-size: 2rem;
-      padding: 1.2rem 0rem 1.2rem 0rem;
+    font-size: 2rem;
+    padding: 1.2rem 0rem 1.2rem 0rem;
   }
   .name2 {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 500px) {
   .welcome {
-      font-size: 1.5rem;
-      padding-top: 3.5rem;
+    font-size: 1.5rem;
+    padding-top: 3.5rem;
   }
   .name-back {
-      margin: 1.3rem 6rem 1.3rem 6rem;
+    margin: 1.3rem 6rem 1.3rem 6rem;
   }
   .name {
-      font-size: 1.8rem;
-      padding: 1rem 0rem 1rem 0rem;
+    font-size: 1.8rem;
+    padding: 1rem 0rem 1rem 0rem;
   }
   .name2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 400px) {
   .frontblock {
     font-size: 0.9rem;
-}
+  }
   .selfintro {
     margin-top: 2rem;
   }
@@ -393,7 +398,7 @@ a {
 /*Styles for Project block*/
 .pro-block {
   background-image: url(images/Darklines.jpg);
-  background-repeat:repeat;
+  background-repeat: repeat;
   height: 53rem;
   text-align: center;
   color: rgb(188, 215, 226);
@@ -426,7 +431,7 @@ a {
   background-size: cover;
   margin-bottom: 2rem;
 }
-.pro-item{
+.pro-item {
   font-size: 3rem;
   line-height: 4rem;
   color: white;
@@ -440,18 +445,21 @@ a {
   align-items: center;
   justify-content: center;
 }
-.pro-item a:link, a:visited {
+.pro-item a:link,
+a:visited {
   color: rgb(255, 255, 255);
 }
 .pro-item:hover {
   background-color: rgba(196, 196, 196, 0.5);
-  transition: all .1s;
+  transition: all 0.1s;
 }
-.pro-res:hover, .pro-comp:hover, .pro-paint:hover {
+.pro-res:hover,
+.pro-comp:hover,
+.pro-paint:hover {
   transform: scale(1.05);
-  transition: all .1s;
+  transition: all 0.1s;
 }
-.pro-item:hover a{
+.pro-item:hover a {
   color: rgb(168, 207, 230);
   text-shadow: 2.5px 2.5px rgb(7, 8, 10);
 }
@@ -464,14 +472,14 @@ a {
 }
 
 @media (max-width: 1300px) {
-  .pro-item{
+  .pro-item {
     width: 20rem;
     height: 17.5rem;
     font-size: 2.5rem;
   }
 }
 @media (max-width: 1200px) {
-  .pro-item{
+  .pro-item {
     width: 18rem;
     height: 15.5rem;
     font-size: 2.25rem;
@@ -487,7 +495,7 @@ a {
     padding-bottom: 6rem;
     font-size: 4rem;
   }
-  .pro-item{
+  .pro-item {
     width: 16rem;
     height: 14rem;
     font-size: 2rem;
@@ -503,7 +511,7 @@ a {
     padding-bottom: 4.5rem;
     font-size: 3.5rem;
   }
-  .pro-item{
+  .pro-item {
     font-size: 2.25rem;
     line-height: 3.5rem;
     width: 18rem;
@@ -519,7 +527,7 @@ a {
     padding-bottom: 4rem;
     font-size: 3.25rem;
   }
-  .pro-item{
+  .pro-item {
     font-size: 2.5rem;
     line-height: 3.75rem;
     width: 19.5rem;
@@ -535,7 +543,7 @@ a {
     padding-bottom: 3rem;
     font-size: 2.5rem;
   }
-  .pro-item{
+  .pro-item {
     font-size: 2rem;
     line-height: 3rem;
     width: 16rem;
@@ -556,7 +564,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
 }
-.res-item{
+.res-item {
   font-size: 3.5rem;
   color: white;
   text-shadow: 2.5px 2.5px rgb(74, 114, 128);
@@ -592,14 +600,12 @@ a {
 
 /*Styles for Compositions*/
 .comp-page {
-
 }
-
 
 /*Styles for Paintings*/
 .paint-page {
   background-image: url(images/LightWool.png);
-  background-repeat:repeat;
+  background-repeat: repeat;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   margin-bottom: 2rem;
@@ -612,7 +618,7 @@ a {
 }
 .paint-long {
   max-width: 28%;
-  height: auto;  
+  height: auto;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   box-shadow: 5px 5px 10px dimgray;
@@ -678,7 +684,7 @@ a {
   margin: 0 auto;
   margin-bottom: 3%;
   background-image: url(images/CanvasWhite.png);
-  background-repeat:repeat;
+  background-repeat: repeat;
   padding-right: 4.5%;
   padding-left: 4.5%;
   padding-top: 4.5%;
@@ -692,21 +698,21 @@ a {
 .list {
   padding-bottom: 0.25%;
 }
-.email-pad{
+.email-pad {
   padding-bottom: 2.5%;
 }
 .CV-title {
-  color:rgb(33, 67, 105);
+  color: rgb(48, 96, 151);
 }
 .sec-title {
-  color:rgb(33, 67, 105);
+  color: rgb(48, 96, 151);
 }
 .li-title {
-  color:rgb(48, 96, 151);
+  color: rgb(33, 67, 105);
   margin-bottom: 1%;
 }
 .li-title2 {
-  color:rgb(48, 96, 151);
+  color: rgb(33, 67, 105);
   margin-bottom: 0rem;
 }
 .container {
@@ -720,58 +726,71 @@ a {
   display: flex;
   margin-top: 0rem;
 }
+.date {
+  align-items: flex-end;
+  flex-direction: column;
+  display: flex;
+}
+.each-date {
+  color: rgb(48, 96, 151);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
 .nonbold {
   font-weight: normal;
 }
-.pub a:link, .pub a:visited {
+.pub a:link,
+.pub a:visited {
   color: black;
 }
 .pub a:hover {
   color: rgb(48, 96, 151);
 }
 @media (max-width: 1400px) {
-  .CV { 
-      width: 65%;
+  .CV {
+    width: 65%;
   }
 }
 @media (max-width: 1250px) {
-  .CV { width: 70%;
+  .CV {
+    width: 70%;
   }
 }
 @media (max-width: 1000px) {
-  .CV { 
-      width: 75%;
-      font-size: 0.85rem;
+  .CV {
+    width: 75%;
+    font-size: 0.85rem;
   }
 }
 @media (max-width: 750px) {
-  .CV { 
-      width: 80%;
+  .CV {
+    width: 80%;
   }
 }
 @media (max-width: 700px) {
-  .CV { 
-      width: 85%;
-      margin-top: 1.5%;
-      margin-bottom: 1.5%;
+  .CV {
+    width: 85%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
   }
 }
 @media (max-width: 620px) {
-  .CV { 
-      width: 88%;
-      margin-top: 1%;
-      margin-bottom: 1%;
-      font-size: 0.8rem;
+  .CV {
+    width: 88%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 550px) {
   .CV {
-      font-size: 0.7rem;
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 500px) {
   .CV {
-      font-size: 0.6rem;
-      width: 90%;
+    font-size: 0.6rem;
+    width: 90%;
   }
 }
