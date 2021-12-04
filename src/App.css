@@ -730,8 +730,6 @@ a:visited {
   align-items: flex-end;
   flex-direction: column;
   display: flex;
-}
-.each-date {
   color: rgb(48, 96, 151);
   font-size: 0.9rem;
   font-weight: bold;
