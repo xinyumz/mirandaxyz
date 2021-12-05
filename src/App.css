@@ -693,7 +693,7 @@ a:visited {
   font-size: 0.9rem;
 }
 .sec {
-  margin-bottom: 5%;
+  margin-bottom: 3.5%;
 }
 .list {
   padding-bottom: 0.25%;
@@ -715,6 +715,19 @@ a:visited {
   color: rgb(33, 67, 105);
   margin-bottom: 0rem;
 }
+.li-subtitle {
+  color: rgb(105, 105, 105);
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 0.75%;
+  font-weight: bold;
+}
+.li-item {
+  color: black;
+  font-size: 0.9rem;
+  margin-top: 0.75%;
+  font-weight: bold;
+}
 .container {
   justify-content: space-between;
   flex-direction: row;
@@ -726,17 +739,12 @@ a:visited {
   display: flex;
   margin-top: 0rem;
 }
-.date {
-  align-items: flex-end;
-  flex-direction: column;
-  display: flex;
-  color: rgb(48, 96, 151);
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
 .nonbold {
   font-weight: normal;
+}
+.pub {
+  margin-left: 0.5rem;
+  padding-left: 0.7rem;
 }
 .pub a:link,
 .pub a:visited {

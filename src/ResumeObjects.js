@@ -1,11 +1,11 @@
-export let defaultResumeObj = [
+export let exampleExperienceObj = [
   {
     institution: "",
     location: "",
     departments: [
       {
         title: "",
-        dates: [],
+        date: "",
         positions: [{ title: "", date: "" }],
         supervisor: "",
         resumeItems: [],
@@ -15,6 +15,19 @@ export let defaultResumeObj = [
 ];
 
 export let experienceItems = [
+  {
+    institution: "XYZ SciTech, LLC. ",
+    location: "Ann Arbor, MI",
+    departments: [
+      {
+        title: "Owner",
+        date: "Oct. 2021 - Present",
+        positions: [{ title: "", date: "" }],
+        supervisor: "",
+        resumeItems: [],
+      },
+    ],
+  },
   {
     institution: "University of Michigan, ",
     location: "Ann Arbor, MI",
@@ -40,7 +53,7 @@ export let experienceItems = [
             title: "Metal Chlorides with Hexamethyldisilazane (HMDS)",
             date: "Dec. 2020 - Jun. 2021",
             descs:
-              "Investigation of reactions of various metal chlorides with HMDS and their potentials as novel precursors to metal nitrides. ",
+              "Investigation of reactions of various metal chlorides with HMDS and their potential applications as novel precursors to metal nitrides. ",
           },
           {
             title: "<span>Li(Na)<sub>x</sub>SiON Polymer Precursors</span>",
@@ -70,7 +83,7 @@ export let experienceItems = [
       },
       {
         title: "Graduate student instructor (GSI)",
-        date: "Sep. 2020 - Apr. 2021, Sep. 2018 - Dec. 2018",
+        date: "Sep. 2020 - Apr. 2021;  Sep. 2018 - Dec. 2018",
         positions: [{ title: "", date: "" }],
         supervisor: "",
         resumeItems: [],
@@ -83,22 +96,23 @@ export let experienceItems = [
     departments: [
       {
         title: "Undergraduate research assistant",
-        dates: ["Jul. 2015 - Jun. 2016"],
+        date: "Jul. 2015 - Jun. 2016",
         positions: [],
         supervisor: "Supervisor: Prof. Yujin Wang",
         resumeItems: [
           {
-            title: "<span>Eutectic MeB2-44MeC (Me = Ti, Zr) Composites</span>",
+            title:
+              "<span>Eutectic MeB<sub>2</sub>-44MeC (Me = Ti, Zr) Composites</span>",
             date: "Sep. 2015 - Jun. 2016",
             descs: [
-              "Sintering (hot-pressing) of ceramics from ball milled mi-cron/submicron-size powders",
+              "Sintering (hot-pressing) of ceramics from ball milled micron/submicron-size powders.",
             ],
           },
           {
-            title: "<span>B4C Multiphase Materials</span>",
+            title: "<span>B<sub>4</sub>C Multiphase Materials</span>",
             date: "Jul. 2015 - Aug. 2015",
             descs: [
-              "Precursor syntheses, sintering and characterization of B4C ceramics.",
+              "Precursor syntheses, sintering and characterization of B<sub>4</sub>C ceramics.",
             ],
           },
         ],
