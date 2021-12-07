@@ -25,7 +25,7 @@ class ResearchPosition extends React.Component {
   render() {
     return (
       <div className="list">
-        <div className="li-subtitle container">
+        <div className="experience-subtitle container">
           <span> {this.props.item.title} </span>
           <span>{this.props.item.date}</span>
         </div>
@@ -38,19 +38,11 @@ class Department extends React.Component {
   render() {
     return (
       <div>
-        <div
-          className="li-title container"
-          style={{
-            fontSize: "1rem",
-            fontWeight: "bolder",
-            color: "#707070",
-            marginTop: "1.3%",
-          }}
-        >
+        <div className="li-title container experience-title">
           <span>{this.props.department.title} </span>
           <span>{this.props.department.date} </span>
         </div>
-        <div style={{ color: "#707070", marginTop: "-0.5%" }}>
+        <div style={{ marginTop: "-1.5%" }}>
           <em>{this.props.department.supervisor}</em>
         </div>
         {this.props.department.positions.map((item, index) => (
@@ -113,7 +105,7 @@ export default class CV extends React.Component {
               <div className="list">
                 <h3 className="li-title container">
                   <span>
-                    University of Michigan,{" "}
+                    University of Michigan{" "}
                     <span className="nonbold">Ann Arbor, MI</span>
                   </span>
                   <span>Sep. 2018 - Jun. 2021</span>
@@ -128,7 +120,7 @@ export default class CV extends React.Component {
               <div className="list">
                 <h3 className="li-title container">
                   <span>
-                    University of Michigan,{" "}
+                    University of Michigan{" "}
                     <span className="nonbold">Ann Arbor, MI</span>
                   </span>
                   <span>Sep. 2016 - Apr. 2018</span>{" "}
@@ -143,7 +135,7 @@ export default class CV extends React.Component {
               <div className="list">
                 <h3 className="li-title container">
                   <span>
-                    Harbin Institute of Technology,{" "}
+                    Harbin Institute of Technology{" "}
                     <span className="nonbold">Harbin, China</span>
                   </span>
                   <span>Sep. 2012 - July. 2016</span>
@@ -170,32 +162,11 @@ export default class CV extends React.Component {
             </div>
 
             <div className="sec">
-              <h2 className="sec-title">Intership</h2>
-              <div className="list">
-                <h3 className="li-title2">
-                  Harbin Measuring & Cutting Tool Group, FAW Group Corp., Harbin
-                  Turbine Co. Ltd.
-                </h3>
-                <h3 className="li-title container-r">Sep. 2015</h3>
-                <div style={{ marginBottom: "0.5%" }}>
-                  Learned heat treatment technology and vacuum heat treatment
-                  equipment for alloy and high-speed steels.
-                </div>
-                <div style={{ marginBottom: "0.5%" }}>
-                  Visited workshop assembly lines, familiarized working
-                  environment and procedures of manufacture work-shop, assembly
-                  shop, shaft gear center, gearbox center, welding workshop,
-                  etc.
-                </div>
-              </div>
-            </div>
-
-            <div className="sec">
               <h2 className="sec-title">Extracurricular Activities</h2>
               <div className="list">
                 <h3 className="li-title container">
                   <span>
-                    Rackham Student Government,{" "}
+                    Rackham Student Government{" "}
                     <span className="nonbold">University of Michigan</span>
                   </span>
                   <span>May. 2017 - Sep. 2017</span>
@@ -211,7 +182,7 @@ export default class CV extends React.Component {
               <div className="list">
                 <h3 className="li-title container">
                   <span>
-                    Stamp Nation: United by Music,{" "}
+                    Stamp Nation: United by Music{" "}
                     <span className="nonbold">University of Michigan</span>
                   </span>
                   <span>Sep. 2016 - Sep. 2017</span>
@@ -231,7 +202,7 @@ export default class CV extends React.Component {
               <div className="list">
                 <h3 className="li-title container">
                   <span>
-                    Society of Women Engineers, Graduate Division,{" "}
+                    Society of Women Engineers, Graduate Division{" "}
                     <span className="nonbold">University of Michigan</span>
                   </span>
                   <span>Sep. 2016 - Apr. 2017</span>
@@ -248,7 +219,7 @@ export default class CV extends React.Component {
               <div className="list">
                 <h3 className="li-title container">
                   <span>
-                    MADIBA CAMEROON 2014,{" "}
+                    MADIBA CAMEROON 2014{" "}
                     <span className="nonbold">Bangoua, Cameroon</span>
                   </span>
                   <span>Jul. 2014 - Aug. 2014</span>
@@ -291,7 +262,10 @@ export default class CV extends React.Component {
               <h2 className="sec-title">Publications</h2>
               <ol className="pub">
                 <li style={{ marginBottom: "0.5%" }} id="pub-1">
-                  <a href="null" target="_blank">
+                  <a
+                    href="https://ceramics.onlinelibrary.wiley.com/doi/10.1111/jace.18271"
+                    target="_blank"
+                  >
                     Zhang, X.; Yu, M.; Indris, S.; Laine, R. M. Reactions of
                     Metal Chlorides with Hexamethyldisilazane. Novel Precursors
                     to Aluminum Nitride and Beyond. <em>J. Am. Ceram. Soc.</em>{" "}

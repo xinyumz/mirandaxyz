@@ -1,4 +1,4 @@
-export let exampleExperienceObj = [
+let exampleExperienceObj = [
   {
     institution: "",
     location: "",
@@ -29,7 +29,7 @@ export let experienceItems = [
     ],
   },
   {
-    institution: "University of Michigan, ",
+    institution: "University of Michigan ",
     location: "Ann Arbor, MI",
     departments: [
       {
@@ -91,7 +91,7 @@ export let experienceItems = [
     ],
   },
   {
-    institution: "Harbin Institute of Technology, ",
+    institution: "Harbin Institute of Technology ",
     location: "Harbin, China",
     departments: [
       {
@@ -114,6 +114,27 @@ export let experienceItems = [
             descs: [
               "Precursor syntheses, sintering and characterization of B<sub>4</sub>C ceramics.",
             ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    institution:
+      "Harbin Measuring & Cutting Tool Group, FAW Group Corp., Harbin Turbine Co. Ltd. ",
+    location: "China",
+    departments: [
+      {
+        title: "Intership",
+        date: "Sep. 2015",
+        positions: [{ title: "", date: "" }],
+        supervisor: "",
+        resumeItems: [
+          {
+            title: "",
+            date: "",
+            descs:
+              "Learned heat treatment technology and vacuum heat treatment equipment for alloy and high-speed steels. Visited workshop assembly lines, familiarized working environment and procedures of manufacture work-shop, assembly shop, shaft gear center, gearbox center, welding workshop, and etc.",
           },
         ],
       },
