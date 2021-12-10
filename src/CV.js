@@ -1,4 +1,5 @@
 import React from "react";
+import CVStyles from "./CV.module.css";
 import { Helmet } from "react-helmet";
 import { Header } from "./App";
 import { experienceItems } from "./ResumeObjects";
@@ -6,8 +7,8 @@ import { experienceItems } from "./ResumeObjects";
 class ResumeItem extends React.Component {
   render() {
     return (
-      <div className="list">
-        <div className="li-item container">
+      <div className={CVStyles.list}>
+        <div className={`${CVStyles.liItem} ${CVStyles.container}`}>
           <span
             dangerouslySetInnerHTML={{ __html: this.props.item.title }}
           ></span>
@@ -24,8 +25,8 @@ class ResumeItem extends React.Component {
 class ResearchPosition extends React.Component {
   render() {
     return (
-      <div className="list">
-        <div className="experience-subtitle container">
+      <div className={CVStyles.list}>
+        <div className={`${CVStyles.experienceSubtitle} ${CVStyles.container}`}>
           <span> {this.props.item.title} </span>
           <span>{this.props.item.date}</span>
         </div>
@@ -38,7 +39,9 @@ class Department extends React.Component {
   render() {
     return (
       <div>
-        <div className="li-title container experience-title">
+        <div
+          className={`${CVStyles.liTitle} ${CVStyles.container} ${CVStyles.experienceTitle}`}
+        >
           <span>{this.props.department.title} </span>
           <span>{this.props.department.date} </span>
         </div>
@@ -59,11 +62,13 @@ class Department extends React.Component {
 class Experience extends React.Component {
   render() {
     return (
-      <div className="list">
-        <h3 className="li-title container">
+      <div className={CVStyles.list}>
+        <h3 className={`${CVStyles.liTitle} ${CVStyles.container}`}>
           <span>
             {this.props.experience.institution}
-            <span className="nonbold">{this.props.experience.location}</span>
+            <span style={{ fontWeight: "normal" }}>
+              {this.props.experience.location}
+            </span>
           </span>
         </h3>
         {this.props.experience.departments.map((department, index) => (
@@ -92,21 +97,21 @@ export default class CV extends React.Component {
         </Helmet>
         <Header />
         <div className="page">
-          <div className="CV">
+          <div className={CVStyles.CV}>
             <div>
-              <h1 className="CV-title">Xinyu (Miranda) Zhang</h1>
+              <h1 className={CVStyles.CVTitle}>Xinyu (Miranda) Zhang</h1>
             </div>
             <hr />
-            <div className="email-pad">
+            <div className={CVStyles.emailPad}>
               xinyumz@umich.edu; mirandazxy@outlook.com
             </div>
-            <div className="sec">
-              <h2 className="sec-title">Education</h2>
-              <div className="list">
-                <h3 className="li-title container">
+            <div className={CVStyles.sec}>
+              <h2 className={CVStyles.secTitle}>Education</h2>
+              <div className={CVStyles.list}>
+                <h3 className={`${CVStyles.liTitle} ${CVStyles.container}`}>
                   <span>
                     University of Michigan{" "}
-                    <span className="nonbold">Ann Arbor, MI</span>
+                    <span style={{ fontWeight: "normal" }}>Ann Arbor, MI</span>
                   </span>
                   <span>Sep. 2018 - Jun. 2021</span>
                 </h3>
@@ -117,11 +122,11 @@ export default class CV extends React.Component {
                   <em>GPA:</em> 4.0/4.0
                 </div>
               </div>
-              <div className="list">
-                <h3 className="li-title container">
+              <div className={CVStyles.list}>
+                <h3 className={`${CVStyles.liTitle} ${CVStyles.container}`}>
                   <span>
                     University of Michigan{" "}
-                    <span className="nonbold">Ann Arbor, MI</span>
+                    <span style={{ fontWeight: "normal" }}>Ann Arbor, MI</span>
                   </span>
                   <span>Sep. 2016 - Apr. 2018</span>{" "}
                 </h3>
@@ -132,11 +137,11 @@ export default class CV extends React.Component {
                   <em>GPA:</em> 3.95/4.0
                 </div>
               </div>
-              <div className="list">
-                <h3 className="li-title container">
+              <div className={CVStyles.list}>
+                <h3 className={`${CVStyles.liTitle} ${CVStyles.container}`}>
                   <span>
                     Harbin Institute of Technology{" "}
-                    <span className="nonbold">Harbin, China</span>
+                    <span style={{ fontWeight: "normal" }}>Harbin, China</span>
                   </span>
                   <span>Sep. 2012 - July. 2016</span>
                 </h3>
@@ -149,20 +154,22 @@ export default class CV extends React.Component {
               </div>
             </div>
 
-            <div className="sec">
-              <h2 className="sec-title">Experience</h2>
+            <div className={CVStyles.sec}>
+              <h2 className={CVStyles.secTitle}>Experience</h2>
               {this.state.experienceItems.map((experience, index) => (
                 <Experience key={index} experience={experience} />
               ))}
             </div>
 
-            <div className="sec">
-              <h2 className="sec-title">Extracurricular Activities</h2>
-              <div className="list">
-                <h3 className="li-title container">
+            <div className={CVStyles.sec}>
+              <h2 className={CVStyles.secTitle}>Extracurricular Activities</h2>
+              <div className={CVStyles.list}>
+                <h3 className={`${CVStyles.liTitle} ${CVStyles.container}`}>
                   <span>
                     Rackham Student Government{" "}
-                    <span className="nonbold">University of Michigan</span>
+                    <span style={{ fontWeight: "normal" }}>
+                      University of Michigan
+                    </span>
                   </span>
                   <span>May. 2017 - Sep. 2017</span>
                 </h3>
@@ -174,11 +181,13 @@ export default class CV extends React.Component {
                 </div>
                 <div>Participated in organizing student events.</div>
               </div>
-              <div className="list">
-                <h3 className="li-title container">
+              <div className={CVStyles.list}>
+                <h3 className={`${CVStyles.liTitle} ${CVStyles.container}`}>
                   <span>
                     Stamp Nation: United by Music{" "}
-                    <span className="nonbold">University of Michigan</span>
+                    <span style={{ fontWeight: "normal" }}>
+                      University of Michigan
+                    </span>
                   </span>
                   <span>Sep. 2016 - Sep. 2017</span>
                 </h3>
@@ -194,11 +203,13 @@ export default class CV extends React.Component {
                   <em>Concert on the Diag.</em>
                 </div>
               </div>
-              <div className="list">
-                <h3 className="li-title container">
+              <div className={CVStyles.list}>
+                <h3 className={`${CVStyles.liTitle} ${CVStyles.container}`}>
                   <span>
                     Graduate Society of Women Engineers{" "}
-                    <span className="nonbold">University of Michigan</span>
+                    <span style={{ fontWeight: "normal" }}>
+                      University of Michigan
+                    </span>
                   </span>
                   <span>Sep. 2016 - Apr. 2017</span>
                 </h3>
@@ -214,11 +225,13 @@ export default class CV extends React.Component {
                   academic matters.
                 </div>
               </div>
-              <div className="list">
-                <h3 className="li-title container">
+              <div className={CVStyles.list}>
+                <h3 className={`${CVStyles.liTitle} ${CVStyles.container}`}>
                   <span>
                     MADIBA CAMEROON 2014{" "}
-                    <span className="nonbold">Bangoua, Cameroon</span>
+                    <span style={{ fontWeight: "normal" }}>
+                      Bangoua, Cameroon
+                    </span>
                   </span>
                   <span>Jul. 2014 - Aug. 2014</span>
                 </h3>
@@ -239,8 +252,8 @@ export default class CV extends React.Component {
               </div>
             </div>
 
-            <div className="sec list">
-              <h2 className="sec-title">Skills & Interests</h2>
+            <div className={`${CVStyles.sec} ${CVStyles.list}`}>
+              <h2 className={CVStyles.secTitle}>Skills & Interests</h2>
               <div>
                 <div style={{ marginBottom: "0.5%" }}>
                   Native speaker of Chinese (Mandarin), fluent in English.
@@ -256,9 +269,9 @@ export default class CV extends React.Component {
               </div>
             </div>
 
-            <div className="sec list">
-              <h2 className="sec-title">Publications</h2>
-              <ol className="pub">
+            <div className={`${CVStyles.sec} ${CVStyles.list}`}>
+              <h2 className={CVStyles.secTitle}>Publications</h2>
+              <ol className={CVStyles.pub}>
                 <li style={{ marginBottom: "0.5%" }} id="pub-1">
                   <a
                     href="https://ceramics.onlinelibrary.wiley.com/doi/10.1111/jace.18271"

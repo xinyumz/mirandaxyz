@@ -1,0 +1,45 @@
+.resFront {
+  background-color: dimgrey;
+  color: rgb(188, 215, 226);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.resBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.resItem {
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 2.5px 2.5px rgb(74, 114, 128);
+  border-style: solid solid solid solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 0.3rem;
+  width: 25rem;
+  height: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LiSiON {
+  background-image: url(images/ResProCover.png);
+  background-size: cover;
+  margin: 0rem 2rem 4rem 2rem;
+}
+.LiPON {
+  background-image: url(images/ResProCover.png);
+  background-size: cover;
+  margin: 0rem 2rem 4rem 2rem;
+}
+.Oxysil {
+  background-image: url(images/ResProCover.png);
+  background-size: cover;
+  margin: 0rem 2rem 4rem 2rem;
+}
+.ZTA {
+  background-image: url(images/ResProCover.png);
+  background-size: cover;
+  margin: 0rem 2rem 4rem 2rem;
+}

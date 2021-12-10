@@ -1,0 +1,65 @@
+.paintPage {
+  background-image: url(images/LightWool.png);
+  background-repeat: repeat;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+.paintRow {
+  justify-content: space-evenly;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+.paintLong {
+  max-width: 28%;
+  height: auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 5px 5px 10px dimgray;
+}
+.paintWide {
+  max-width: 39%;
+  height: auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 5px 5px 10px dimgray;
+}
+@media (max-width: 1200px) {
+  .paintPage {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .paintPage {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .paintLong {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .paintWide {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .painPage {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .paintLong {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .paintWide {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}

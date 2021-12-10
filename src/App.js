@@ -1,21 +1,10 @@
 import React from "react";
 import "./App.css";
+import Research from "./Research";
+import Paintings from "./Paintings";
 import CV from "./CV";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Earth from "./images/TheEarth.jpg";
-import Aco from "./images/Aco.png";
-import UnderTree from "./images/UnderTheTree.png";
-import SnowMountain from "./images/SnowyMountains.png";
-import CanolaField from "./images/CanolaFlowerField.png";
-import Starlight from "./images/StarlightNight.png";
-import Lake from "./images/TheLake.png";
-import Sea from "./images/TheSea.png";
-import Valley from "./images/TheValley.png";
-import Village from "./images/TheVillage.png";
-import Kiwi from "./images/Kiwi.jpg";
-import CarTower from "./images/CameroonTower.jpg";
-import Meow from "./images/Meow.jpg";
 
 function App() {
   return (
@@ -24,7 +13,7 @@ function App() {
         <Route path="/" component={FrontPage} exact />
         <Route path="/research" component={Research} />
         <Route path="/compositions" component={Composition} />
-        <Route path="/paintings" component={Paint} />
+        <Route path="/paintings" component={Paintings} />
         <Route path="/resume" component={CV} />
       </Switch>
     </div>
@@ -33,13 +22,13 @@ function App() {
 
 export function Header() {
   return (
-    <div class="header">
-      <span class="header-name">
+    <div className="header">
+      <span className="header-name">
         <Link to="/">
           <strong>Xinyu (Miranda) Zhang</strong>
         </Link>
       </span>
-      <span class="header-nav">
+      <span className="header-nav">
         <span>
           <Link to="/research">
             <strong> RESEARCH PROJECTS </strong>
@@ -75,27 +64,27 @@ function FrontPage() {
         <title>Welcome | Xinyu (Miranda) Zhang</title>
       </Helmet>
       <Header />
-      <div class="page">
-        <div class="frontblock">
-          <div class="welcome">
+      <div className="page">
+        <div className="frontblock">
+          <div className="welcome">
             <strong>WELCOME!</strong>
           </div>
           <div>I am</div>
-          <div class="name-back">
-            <div class="name">
+          <div className="name-back">
+            <div className="name">
               <strong>Xinyu Zhang</strong>
-              <span class="name-cn">
+              <span className="name-cn">
                 <strong> | 张馨予</strong>
               </span>
             </div>
           </div>
           <div>or you can call me</div>
-          <div class="name2">
+          <div className="name2">
             <em>
               <strong> Miranda</strong>
             </em>
           </div>
-          <div class="selfintro">
+          <div className="selfintro">
             PhD in Materials Sci & Eng, University of Michigan | Amateur
             musician, composer, and painter
           </div>
@@ -108,13 +97,13 @@ function FrontPage() {
 
 function Projectblock() {
   return (
-    <div class="pro-block">
-      <div class="pro-title">
+    <div className="pro-block">
+      <div className="pro-title">
         <strong>PROJECTS</strong>
       </div>
-      <div class="pro-box">
-        <div class="pro-res">
-          <div class="pro-item">
+      <div className="pro-box">
+        <div className="pro-res">
+          <div className="pro-item">
             <Link to="/research">
               <strong>
                 Research
@@ -124,53 +113,18 @@ function Projectblock() {
             </Link>
           </div>
         </div>
-        <div class="pro-comp">
-          <div class="pro-item">
+        <div className="pro-comp">
+          <div className="pro-item">
             <Link to="/compositions">
               <strong>Compositions</strong>
             </Link>
           </div>
         </div>
-        <div class="pro-paint">
-          <div class="pro-item">
+        <div className="pro-paint">
+          <div className="pro-item">
             <Link to="/paintings">
               <strong>Paintings</strong>
             </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Research() {
-  return (
-    <div>
-      <Helmet>
-        <title>Research Projects | Xinyu (Miranda) Zhang</title>
-      </Helmet>
-      <Header />
-      <div class="page">
-        <div class="res-front">
-          <div class="res-box">
-            <div class="LiSiON">
-              <div class="res-item">
-                Li<sub>x</sub>SiON
-              </div>
-            </div>
-            <div class="LiPON">
-              <div class="res-item">
-                Li<sub>x</sub>PON
-              </div>
-            </div>
-          </div>
-          <div class="res-box">
-            <div class="Oxysil">
-              <div class="res-item">Oxysilylation</div>
-            </div>
-            <div class="ZTA">
-              <div class="res-item">ZTA ceramics</div>
-            </div>
           </div>
         </div>
       </div>
@@ -185,46 +139,8 @@ function Composition() {
         <title>Compositions | Xinyu (Miranda) Zhang</title>
       </Helmet>
       <Header />
-      <div class="page">
-        <div class="comp-page"></div>
-      </div>
-    </div>
-  );
-}
-
-function Paint() {
-  return (
-    <div>
-      <Helmet>
-        <title>Paintings | Xinyu (Miranda) Zhang</title>
-      </Helmet>
-      <Header />
-      <div class="page">
-        <div class="paint-page">
-          <div class="paint-row">
-            <img class="paint-long" src={Village} />
-            <img class="paint-long" src={Valley} />
-            <img class="paint-long" src={Sea} />
-          </div>
-          <div class="paint-row">
-            <img class="paint-wide" src={Lake} />
-            <img class="paint-wide" src={Earth} />
-          </div>
-          <div class="paint-row">
-            <img class="paint-wide" src={Aco} />
-            <img class="paint-wide" src={SnowMountain} />
-          </div>
-          <div class="paint-row">
-            <img class="paint-long" src={Starlight} />
-            <img class="paint-long" src={CanolaField} />
-            <img class="paint-wide" src={UnderTree} />
-          </div>
-          <div class="paint-row">
-            <img class="paint-long" src={Kiwi} />
-            <img class="paint-long" src={CarTower} />
-            <img class="paint-long" src={Meow} />
-          </div>
-        </div>
+      <div className="page">
+        <div className="comp-page"></div>
       </div>
     </div>
   );

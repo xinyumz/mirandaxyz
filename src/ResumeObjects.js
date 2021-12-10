@@ -1,4 +1,4 @@
-let exampleExperienceObj = [
+const exampleExperienceObj = [
   {
     institution: "",
     location: "",
@@ -14,7 +14,7 @@ let exampleExperienceObj = [
   },
 ];
 
-export let experienceItems = [
+export const experienceItems = [
   {
     institution: "XYZ SciTech, LLC. ",
     location: "Ann Arbor, MI",
