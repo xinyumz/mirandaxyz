@@ -543,9 +543,9 @@ a:visited {
   font-weight: bold;
 }
 .li-item {
-  color: grey;
+  color: slategrey;
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 0.925rem;
   margin-top: 0.75%;
   font-weight: bold;
 }
@@ -581,13 +581,13 @@ a:visited {
     font-size: 0.8rem;
   }
   .experience-title {
-    font-size: 0.95rem;
-  }
-  .experience-subtitle {
     font-size: 0.9rem;
   }
-  .li-item {
+  .experience-subtitle {
     font-size: 0.85rem;
+  }
+  .li-item {
+    font-size: 0.825rem;
   }
 }
 
@@ -599,13 +599,13 @@ a:visited {
     font-size: 0.7rem;
   }
   .experience-title {
-    font-size: 0.85rem;
-  }
-  .experience-subtitle {
     font-size: 0.8rem;
   }
-  .li-item {
+  .experience-subtitle {
     font-size: 0.75rem;
+  }
+  .li-item {
+    font-size: 0.725rem;
   }
 }
 
@@ -623,7 +623,7 @@ a:visited {
     font-size: 0.7rem;
   }
   .li-item {
-    font-size: 0.65rem;
+    font-size: 0.675rem;
   }
 }
 
@@ -639,19 +639,19 @@ a:visited {
     font-size: 0.5rem;
   }
   .li-item {
-    font-size: 0.45rem;
+    font-size: 0.475rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   .CV {
-    font-size: 0.45rem;
+    font-size: 0.425rem;
   }
   .experience-title {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
   }
   .experience-subtitle {
-    font-size: 0.45rem;
+    font-size: 0.425rem;
   }
   .li-item {
     font-size: 0.4rem;
