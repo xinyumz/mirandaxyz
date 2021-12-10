@@ -146,11 +146,6 @@ export default class CV extends React.Component {
                 <div>
                   <em>GPA:</em> 3.72/4.0; People's Scholarship 2012-2014
                 </div>
-                <div>
-                  <em>Standardized Tests: </em>{" "}
-                  <span>GRE: 322 (V155 + Q170) +AW3.5; </span>
-                  <span>TOEFL: 101 (27 + 25 + 22 + 27)</span>
-                </div>
               </div>
             </div>
 
@@ -171,8 +166,8 @@ export default class CV extends React.Component {
                   </span>
                   <span>May. 2017 - Sep. 2017</span>
                 </h3>
-                <div style={{ marginBottom: "0.5%" }}>
-                  <strong>Position: Board Member</strong>
+                <div style={{ marginBottom: "0.5%", fontWeight: 700 }}>
+                  Position: Board Member
                 </div>
                 <div>
                   Board member on student life and communication committees.
@@ -187,8 +182,8 @@ export default class CV extends React.Component {
                   </span>
                   <span>Sep. 2016 - Sep. 2017</span>
                 </h3>
-                <div style={{ marginBottom: "0.5%" }}>
-                  <strong>Position: Executive Member</strong>
+                <div style={{ marginBottom: "0.5%", fontWeight: 700 }}>
+                  Position: Executive Member
                 </div>
                 <div>
                   Organized music career & entrepreneurship workshop:{" "}
@@ -202,15 +197,18 @@ export default class CV extends React.Component {
               <div className="list">
                 <h3 className="li-title container">
                   <span>
-                    Society of Women Engineers, Graduate Division{" "}
+                    Graduate Society of Women Engineers{" "}
                     <span className="nonbold">University of Michigan</span>
                   </span>
                   <span>Sep. 2016 - Apr. 2017</span>
                 </h3>
-                <div style={{ marginBottom: "0.5%" }}>
-                  <strong>Position: Active Member</strong>
+                <div style={{ marginBottom: "0.5%", fontWeight: 700 }}>
+                  Position: Active Member
                 </div>
-                <div>Volunteered in organization of career fair events.</div>
+                <div>
+                  Volunteered in organization of career fair events for graduate
+                  female engineering students.
+                </div>
                 <div>
                   Contributed efforts in promoting communication of students on
                   academic matters.
@@ -224,8 +222,8 @@ export default class CV extends React.Component {
                   </span>
                   <span>Jul. 2014 - Aug. 2014</span>
                 </h3>
-                <div style={{ marginBottom: "0.5%" }}>
-                  <strong>Position: Volunteer</strong>
+                <div style={{ marginBottom: "0.5%", fontWeight: 700 }}>
+                  Position: Volunteer
                 </div>
                 <div>
                   Taught young students from rural areas in Cameroon basic

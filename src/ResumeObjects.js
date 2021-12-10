@@ -83,7 +83,7 @@ export let experienceItems = [
       },
       {
         title: "Graduate student instructor (GSI)",
-        date: "Sep. 2020 - Apr. 2021;  Sep. 2018 - Dec. 2018",
+        date: `Sep. 2020 - Apr. 2021; ${"\n"} Sep. 2018 - Dec. 2018`,
         positions: [{ title: "", date: "" }],
         supervisor: "",
         resumeItems: [],
