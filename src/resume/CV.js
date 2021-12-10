@@ -1,8 +1,8 @@
 import React from "react";
 import CVStyles from "./CV.module.css";
 import { Helmet } from "react-helmet";
-import { Header } from "./App";
-import { experienceItems } from "./ResumeObjects";
+import { Header } from "../App";
+import { experienceItems } from "./CVObjects";
 
 class ResumeItem extends React.Component {
   render() {

@@ -2,7 +2,7 @@
   width: 62.5%;
   margin: 0 auto;
   margin-bottom: 3%;
-  background-image: url(images/CanvasWhite.png);
+  background-image: url(../images/CanvasWhite.png);
   background-repeat: repeat;
   padding-right: 4.5%;
   padding-left: 4.5%;
@@ -136,9 +136,9 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   .CV {
-    font-size: 0.4rem;
+    font-size: 0.35rem;
   }
   .experienceTitle {
     font-size: 0.45rem;

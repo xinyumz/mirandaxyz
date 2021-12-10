@@ -1,7 +1,7 @@
 import React from "react";
 import researchStyles from "./Research.module.css";
 import { Helmet } from "react-helmet";
-import { Header } from "./App";
+import { Header } from "../App";
 
 export default function Research() {
   return (

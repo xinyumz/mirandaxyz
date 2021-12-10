@@ -24,22 +24,22 @@
   justify-content: center;
 }
 .LiSiON {
-  background-image: url(images/ResProCover.png);
+  background-image: url(../images/ResProCover.png);
   background-size: cover;
   margin: 0rem 2rem 4rem 2rem;
 }
 .LiPON {
-  background-image: url(images/ResProCover.png);
+  background-image: url(../images/ResProCover.png);
   background-size: cover;
   margin: 0rem 2rem 4rem 2rem;
 }
 .Oxysil {
-  background-image: url(images/ResProCover.png);
+  background-image: url(../images/ResProCover.png);
   background-size: cover;
   margin: 0rem 2rem 4rem 2rem;
 }
 .ZTA {
-  background-image: url(images/ResProCover.png);
+  background-image: url(../images/ResProCover.png);
   background-size: cover;
   margin: 0rem 2rem 4rem 2rem;
 }

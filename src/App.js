@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Research from "./Research";
+import Research from "./research/Research";
 import Paintings from "./Paintings";
-import CV from "./CV";
+import CV from "./resume/CV";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
