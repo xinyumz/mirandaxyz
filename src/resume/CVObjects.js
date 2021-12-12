@@ -56,10 +56,10 @@ export const experienceItems = [
               "Investigation of reactions of various metal chlorides with HMDS and their potential applications as novel precursors to metal nitrides. ",
           },
           {
-            title: "<span>Li(Na)<sub>x</sub>SiON Polymer Precursors</span>",
+            title: "<span>Li<sub>x</sub>SiON Polymer Precursors</span>",
             date: "Jan. 2020 - Jun. 2021",
             descs:
-              "Syntheses and characterization of Li<sub>x</sub>SiON and Na<sub>x</sub>SiON polymer precursors as solid electrolytes derived from agricultural waste, rice hull ash, towards all solid-state batteries (ASSBs).",
+              "Syntheses and characterization of Li<sub>x</sub>SiON polymer precursors as solid electrolytes derived from agricultural waste, rice hull ash, towards all solid-state batteries (ASSBs).",
           },
           {
             title: "<span>Li<sub>x</sub>PON-like Polymer Precursors</span>",

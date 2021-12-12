@@ -9,26 +9,14 @@ a {
   text-decoration-line: none;
 }
 .page {
-  margin-top: 4rem;
+  margin-top: 3.1rem;
 }
-
-@media (max-width: 1200px) {
-  .page {
-    margin-top: 3.5rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .page {
-    margin-top: 3.25rem;
-  }
-}
-
 @media (max-width: 500px) {
   .page {
     margin-top: 3rem;
   }
 }
+
 /*header styles*/
 .header {
   flex-direction: row;

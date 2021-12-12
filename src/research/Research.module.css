@@ -1,45 +1,28 @@
-.resFront {
-  background-color: dimgrey;
-  color: rgb(188, 215, 226);
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-.resBox {
+/*Main styles*/
+.researchPG {
+  background-color: #d5dbdb;
+  color: #1c2833;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
-.resItem {
-  font-size: 3.5rem;
-  color: white;
-  text-shadow: 2.5px 2.5px rgb(74, 114, 128);
-  border-style: solid solid solid solid;
-  border-color: rgb(255, 255, 255);
-  border-width: 0.3rem;
-  width: 25rem;
-  height: 22rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/*Contents styles*/
+.contentPG {
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
 }
-.LiSiON {
-  background-image: url(../images/ResProCover.png);
-  background-size: cover;
-  margin: 0rem 2rem 4rem 2rem;
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2%;
 }
-.LiPON {
-  background-image: url(../images/ResProCover.png);
-  background-size: cover;
-  margin: 0rem 2rem 4rem 2rem;
-}
-.Oxysil {
-  background-image: url(../images/ResProCover.png);
-  background-size: cover;
-  margin: 0rem 2rem 4rem 2rem;
-}
-.ZTA {
-  background-image: url(../images/ResProCover.png);
-  background-size: cover;
-  margin: 0rem 2rem 4rem 2rem;
+.mainText {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  text-align: justify;
 }
