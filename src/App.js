@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.css";
-import Research from "./research/Research";
 import Paintings from "./Paintings";
 import CV from "./resume/CV";
+import Overview from "./research/Overview";
+import PolymerSyntheses from "./research/PolymerSyntheses";
+import PublicationLS from "./research/PublicationLS";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -11,7 +13,13 @@ function App() {
     <div>
       <Switch>
         <Route path="/" component={FrontPage} exact />
-        <Route path="/research" component={Research} />
+        <Route exact path="/research" component={Overview} />
+        <Route
+          exact
+          path="/research/polymer_syntheses"
+          component={PolymerSyntheses}
+        />
+        <Route exact path="/research/publications" component={PublicationLS} />
         <Route path="/compositions" component={Composition} />
         <Route path="/paintings" component={Paintings} />
         <Route path="/resume" component={CV} />

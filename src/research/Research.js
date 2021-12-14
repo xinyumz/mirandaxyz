@@ -1,11 +1,10 @@
 import React from "react";
 import researchStyles from "./Research.module.css";
 import Sidebar from "./Sidebar";
-import Overview from "./Overview";
 import { Helmet } from "react-helmet";
 import { Header } from "../App";
 
-export default function Research() {
+export default function Research({ ...props }) {
   return (
     <div>
       <Helmet>
@@ -14,8 +13,10 @@ export default function Research() {
       <Header />
       <div className="page">
         <div className={researchStyles.researchPG}>
-          <Sidebar />
-          <Overview />
+          <div className={researchStyles.sidebarContainer}>
+            <Sidebar />
+          </div>
+          {props.children}
         </div>
       </div>
     </div>

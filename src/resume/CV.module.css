@@ -58,8 +58,7 @@
   display: flex;
 }
 .pub {
-  margin-left: 0.5rem;
-  padding-left: 0.7rem;
+  margin-left: -1.2rem;
 }
 .pub a:link,
 .pub a:visited {
@@ -101,6 +100,9 @@
   .liItem {
     font-size: 0.725rem;
   }
+  .pub {
+    margin-left: -1.4rem;
+  }
 }
 
 @media (max-width: 850px) {
@@ -135,6 +137,9 @@
   }
   .liItem {
     font-size: 0.475rem;
+  }
+  .pub {
+    margin-left: -1.6rem;
   }
 }
 

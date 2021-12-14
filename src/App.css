@@ -30,6 +30,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1500;
 }
 .header a:link,
 .header a:visited {

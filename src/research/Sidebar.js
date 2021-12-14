@@ -10,15 +10,9 @@ import {
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
 
-export default function Sidebar({ collapsed, toggled, handleToggleSidebar }) {
+export default function Sidebar({ collapsed }) {
   return (
-    <ProSidebar
-      style={{ height: "100vh" }}
-      collapsed={collapsed}
-      toggled={toggled}
-      breakPoint="md"
-      onToggle={handleToggleSidebar}
-    >
+    <ProSidebar collapsed={collapsed} breakPoint="md">
       <SidebarHeader>
         <div
           style={{
@@ -57,10 +51,11 @@ export default function Sidebar({ collapsed, toggled, handleToggleSidebar }) {
             }}
           >
             Overview
-            <Link to="/research/overview" />
+            <Link to="/research" />
           </MenuItem>
           <MenuItem style={{ fontSize: 16, fontWeight: "bold" }}>
             Polymer Syntheses
+            <Link to="/research/polymer_syntheses" />
           </MenuItem>
           <MenuItem style={{ lineHeight: 2 }}>1. Oxysilylation</MenuItem>
           <SubMenu style={{ lineHeight: 2 }} title="2. Novel SSEs">
@@ -80,6 +75,7 @@ export default function Sidebar({ collapsed, toggled, handleToggleSidebar }) {
           </MenuItem>
           <MenuItem style={{ fontSize: 16, fontWeight: "bold" }}>
             List of Publications
+            <Link to="/research/publications" />
           </MenuItem>
         </Menu>
       </SidebarContent>

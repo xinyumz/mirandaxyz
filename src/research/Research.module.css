@@ -4,7 +4,12 @@
   color: #1c2833;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: row;
+  height: calc(100vh - 3.1rem);
+}
+
+/*Sidebar styles
+.sidebarContainer {
+  overflow-y: auto;
 }
 
 /*Contents styles*/
@@ -13,6 +18,7 @@
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 3%;
+  overflow: auto;
 }
 .title {
   font-size: 3rem;
@@ -22,7 +28,25 @@
   margin-bottom: 2%;
 }
 .mainText {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.75rem;
   text-align: justify;
+}
+.image {
+  max-width: 80%;
+  height: auto;
+}
+
+/*Publication styles*/
+.publication {
+  margin-left: -1.2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.publication a:link,
+.publication a:visited {
+  color: #1c2833;
+}
+.publication a:hover {
+  color: #21618c;
 }

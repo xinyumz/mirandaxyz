@@ -1,7 +1,9 @@
 import React from "react";
+import Research from "./Research";
+import OverviewImg from "../images/ResearchOverviewImage.png";
 import researchStyles from "./Research.module.css";
 
-export default function Overview() {
+function Overview() {
   return (
     <div className={researchStyles.contentPG}>
       <div className={researchStyles.title}>Overview</div>
@@ -16,7 +18,16 @@ export default function Overview() {
         applying solid-state electrolytes (SSEs). Therefore, we explore novel
         polymeric SSE materials and develop new synthesis methods with low-cost,
         scalable and environmentally friendly features.{" "}
+        <img className={researchStyles.image} src={OverviewImg} />
       </div>
     </div>
   );
 }
+
+export default () => {
+  return (
+    <Research>
+      <Overview />
+    </Research>
+  );
+};
