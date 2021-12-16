@@ -77,7 +77,7 @@ export const experienceItems = [
             title: "<span>Toughened Alumina (ZTA) Films and Coatings</span>",
             date: "Aug. 2018 - Feb. 2019",
             descs:
-              "Sintering of ZTA thin (~40  &#x3BCm) and thick (~200  &#x3BCm) films from nanopow-erders by liquid-feed flame spray pyrolysis; coating of ZTA thin films (< 5  &#x3BCm) on Si3N4 (~300  &#x3BCm) and AlN (~600  &#x3BCm) substrates as a protective reinforce-ment layer for power electronic applications.",
+              "Sintering of ZTA thin (~40  &#x3BCm) and thick (~200  &#x3BCm) films from nanopow-erders by liquid-feed flame spray pyrolysis; coating of ZTA thin films (< 5  &#x3BCm) on Si<sub>3</sub>N<sub>4</sub> (~300  &#x3BCm) and AlN (~600  &#x3BCm) substrates as a protective reinforce-ment layer for power electronic applications.",
           },
         ],
       },

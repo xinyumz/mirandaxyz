@@ -1,14 +1,11 @@
 .CV {
-  width: 62.5%;
+  width: 65%;
   margin: 0 auto;
   margin-top: 3.4rem;
   margin-bottom: 3%;
   background-image: url(../images/CanvasWhite.png);
   background-repeat: repeat;
-  padding-right: 4.5%;
-  padding-left: 4.5%;
-  padding-top: 4.5%;
-  padding-bottom: 4.5%;
+  padding: 4.5%;
   box-shadow: 5px 5px 20px #acacac;
   font-size: 0.9rem;
 }
@@ -58,7 +55,7 @@
   display: flex;
 }
 .pub {
-  margin-left: -1.2rem;
+  margin-left: -0.8rem;
 }
 .pub a:link,
 .pub a:visited {
@@ -101,7 +98,7 @@
     font-size: 0.725rem;
   }
   .pub {
-    margin-left: -1.4rem;
+    margin-left: -1.2rem;
   }
 }
 
@@ -126,7 +123,6 @@
   .CV {
     margin-top: 3rem;
     font-size: 0.5rem;
-
     width: 90%;
   }
   .experienceTitle {
@@ -139,25 +135,21 @@
     font-size: 0.475rem;
   }
   .pub {
-    margin-left: -1.6rem;
+    margin-left: -1.5rem;
   }
 }
 
 @media (max-width: 460px) {
   .CV {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  /*.CV {
-    font-size: 0.35rem;
+    font-size: 0.4rem;
   }
   .experienceTitle {
     font-size: 0.45rem;
   }
   .experienceSubtitle {
-    font-size: 0.425rem;
+    font-size: 0.45rem;
   }
   .liItem {
     font-size: 0.4rem;
-  }*/
+  }
 }

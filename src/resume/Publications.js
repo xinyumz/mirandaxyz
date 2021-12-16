@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Publications() {
+export function Publications() {
   return (
     <ol>
       <li style={{ marginBottom: "1%" }} id="pub-1">
@@ -111,5 +111,14 @@ export default function Publications() {
         </a>
       </li>
     </ol>
+  );
+}
+
+export function Patent() {
+  return (
+    <div>
+      R. M. Laine, E. Temeche, X. Zhang, Polymer precursors for solid state
+      electrolytes, filed Aug. 30, 2019. PCT/US2019/049155.
+    </div>
   );
 }

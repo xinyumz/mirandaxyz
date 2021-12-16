@@ -6,29 +6,30 @@ import {
   SubMenu,
   SidebarHeader,
   SidebarContent,
+  SidebarFooter,
 } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
+import styles from "./Sidebar.module.css";
 
 export default function Sidebar({ collapsed }) {
   return (
-    <ProSidebar collapsed={collapsed} breakPoint="md">
+    <ProSidebar collapsed={collapsed} breakPoint="md" width={230}>
       <SidebarHeader>
         <div
           style={{
             paddingTop: 24,
             paddingBottom: 24,
-            textAlign: "center",
+            paddingLeft: 18,
             textTransform: "uppercase",
             fontWeight: "bold",
             fontSize: 18,
-            letterSpacing: 0.5,
             overflow: "hidden",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
           }}
         >
-          My Research Projects
+          Research Projects
         </div>
       </SidebarHeader>
       <SidebarContent
@@ -57,17 +58,25 @@ export default function Sidebar({ collapsed }) {
             Polymer Syntheses
             <Link to="/research/polymer_syntheses" />
           </MenuItem>
-          <MenuItem style={{ lineHeight: 2 }}>1. Oxysilylation</MenuItem>
-          <SubMenu style={{ lineHeight: 2 }} title="2. Novel SSEs">
+          <MenuItem style={{ lineHeight: 2 }}>
+            1. Oxysilylation{" "}
+            <Link to="/research/polymer_syntheses/oxysilylation"></Link>
+          </MenuItem>
+          <SubMenu
+            style={{ lineHeight: 2, fontStyle: "italic" }}
+            title="2. Novel SSEs *"
+          >
+            <MenuItem>
+              Polymer Precursors{" "}
+              <Link to="/research/polymer_syntheses/novel_sses"></Link>
+            </MenuItem>
             <MenuItem>
               Li<sub>x</sub>PON and Li<sub>x</sub>SiPON
             </MenuItem>
             <MenuItem>
               Li<sub>x</sub>SiON
             </MenuItem>
-            <MenuItem>
-              Li<sub>x</sub>SiO
-            </MenuItem>
+            <MenuItem>Next Steps</MenuItem>
           </SubMenu>
           <MenuItem style={{ lineHeight: 2 }}>3. M-HMDS</MenuItem>
           <MenuItem style={{ fontSize: 16, fontWeight: "bold" }}>
@@ -79,6 +88,20 @@ export default function Sidebar({ collapsed }) {
           </MenuItem>
         </Menu>
       </SidebarContent>
+      <SidebarFooter
+        style={{
+          paddingTop: 10,
+          paddingBottom: 12,
+          paddingLeft: 8,
+          fontSize: 13,
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          whiteSpace: "nowrap",
+          fontStyle: "italic",
+        }}
+      >
+        *Most important projects.
+      </SidebarFooter>
     </ProSidebar>
   );
 }

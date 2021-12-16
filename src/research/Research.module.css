@@ -1,15 +1,11 @@
 /*Main styles*/
 .researchPG {
-  background-color: #d5dbdb;
+  background-image: url(../images/topography.png);
+  background-repeat: repeat;
   color: #1c2833;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   height: calc(100vh - 3.1rem);
-}
-
-/*Sidebar styles
-.sidebarContainer {
-  overflow-y: auto;
 }
 
 /*Contents styles*/
@@ -21,26 +17,82 @@
   overflow: auto;
 }
 .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 2%;
+  letter-spacing: 0.5px;
+  margin-bottom: 1%;
 }
+
+.subtitle {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1%;
+  padding-top: 1.5%;
+}
+.subtitle a:link,
+.subtitle a:visited {
+  color: inherit;
+}
+.subtitle a:hover {
+  color: #6082b6;
+}
+
+.projTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5%;
+  margin-top: 1.2%;
+}
+.projTitle a:link,
+.projTitle a:visited {
+  color: inherit;
+}
+.projTitle a:hover {
+  color: #6082b6;
+}
+
+.topicTitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 0.5%;
+}
+
 .mainText {
   font-size: 1.2rem;
   line-height: 1.75rem;
   text-align: justify;
+  margin-bottom: 1.5%;
 }
+
+.textImageContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .image {
-  max-width: 80%;
+  max-width: 50%;
   height: auto;
+  width: auto;
+  margin-left: 2rem;
+}
+.list {
+  margin-top: -0.9rem;
+  margin-bottom: -0.4rem;
+}
+.note {
+  font-style: italic;
+  font-size: 1rem;
+  color: #6082b6;
+  text-align: right;
 }
 
 /*Publication styles*/
 .publication {
-  margin-left: -1.2rem;
-  font-size: 1.2rem;
+  margin-left: -1rem;
+  font-size: 1.1rem;
   text-align: justify;
 }
 .publication a:link,
@@ -48,5 +100,5 @@
   color: #1c2833;
 }
 .publication a:hover {
-  color: #21618c;
+  color: #6082b6;
 }

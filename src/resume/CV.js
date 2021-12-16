@@ -1,6 +1,6 @@
 import React from "react";
 import CVStyles from "./CV.module.css";
-import Publications from "./Publications";
+import { Publications, Patent } from "./Publications";
 import { Helmet } from "react-helmet";
 import { Header } from "../App";
 import { experienceItems } from "./CVObjects";
@@ -274,6 +274,10 @@ export default class CV extends React.Component {
               <h2 className={CVStyles.secTitle}>Publications</h2>
               <div className={CVStyles.pub}>
                 <Publications />
+              </div>
+              <h3 className={CVStyles.liTitle}>Patent Application</h3>
+              <div style={{ marginTop: 6 }}>
+                <Patent />
               </div>
             </div>
           </div>
