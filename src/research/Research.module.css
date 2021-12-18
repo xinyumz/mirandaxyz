@@ -9,78 +9,90 @@
 }
 
 /*Contents styles*/
+a:link,
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: #6082b6;
+}
+
 .contentPG {
-  padding-top: 3%;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 3%;
+  padding-top: 6%;
+  padding-left: 5%;
+  padding-right: 7%;
+  padding-bottom: 6%;
   overflow: auto;
 }
 .title {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
 }
 
 .subtitle {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1%;
   padding-top: 1.5%;
 }
-.subtitle a:link,
-.subtitle a:visited {
-  color: inherit;
-}
-.subtitle a:hover {
-  color: #6082b6;
-}
 
 .projTitle {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5%;
   margin-top: 1.2%;
 }
-.projTitle a:link,
-.projTitle a:visited {
-  color: inherit;
-}
-.projTitle a:hover {
-  color: #6082b6;
-}
 
 .topicTitle {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-style: italic;
   text-decoration: underline;
   margin-bottom: 0.5%;
 }
 
 .mainText {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.75rem;
   text-align: justify;
   margin-bottom: 1.5%;
 }
 
+/*
 .textImageContainer {
   display: flex;
   justify-content: space-between;
 }
 
-.image {
-  max-width: 50%;
+.imageRight {
+  object-fit: contain;
+  margin-left: 2rem;
+  margin-top: -2%;
+}
+
+.imageCenter {
+  display: block;
+  margin: auto;
+  padding-bottom: 2%;
   height: auto;
   width: auto;
-  margin-left: 2rem;
 }
+*/
+
+.image {
+  display: block;
+  margin: auto;
+  padding-bottom: 2%;
+  height: auto;
+  width: auto;
+}
+
 .list {
   margin-top: -0.9rem;
-  margin-bottom: -0.4rem;
+  margin-bottom: -0.2rem;
 }
 .note {
   font-style: italic;
@@ -88,17 +100,19 @@
   color: #6082b6;
   text-align: right;
 }
+.note a:link {
+  text-decoration: underline;
+}
+.note a:visited {
+  color: inherit;
+}
+.note a:hover {
+  color: #1c2833;
+}
 
 /*Publication styles*/
 .publication {
   margin-left: -1rem;
   font-size: 1.1rem;
   text-align: justify;
-}
-.publication a:link,
-.publication a:visited {
-  color: #1c2833;
-}
-.publication a:hover {
-  color: #6082b6;
 }

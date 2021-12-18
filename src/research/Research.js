@@ -4,7 +4,6 @@ import Sidebar from "./Sidebar";
 import sidebarStyles from "./Sidebar.module.css";
 import { Helmet } from "react-helmet";
 import { Header } from "../App";
-//import "./sidebar.scss";
 
 export default function Research({ ...props }) {
   return (

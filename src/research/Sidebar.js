@@ -10,7 +10,8 @@ import {
 } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
-import styles from "./Sidebar.module.css";
+//import styles from "./Sidebar.module.css";
+//import "./sidebar.scss";
 
 export default function Sidebar({ collapsed }) {
   return (
@@ -60,15 +61,16 @@ export default function Sidebar({ collapsed }) {
           </MenuItem>
           <MenuItem style={{ lineHeight: 2 }}>
             1. Oxysilylation{" "}
-            <Link to="/research/polymer_syntheses/oxysilylation"></Link>
+            <Link to="/research/polymer_syntheses/oxysilylation" />
           </MenuItem>
+
           <SubMenu
             style={{ lineHeight: 2, fontStyle: "italic" }}
             title="2. Novel SSEs *"
           >
             <MenuItem>
               Polymer Precursors{" "}
-              <Link to="/research/polymer_syntheses/novel_sses"></Link>
+              <Link to="/research/polymer_syntheses/novel_sses" />
             </MenuItem>
             <MenuItem>
               Li<sub>x</sub>PON and Li<sub>x</sub>SiPON
@@ -78,10 +80,20 @@ export default function Sidebar({ collapsed }) {
             </MenuItem>
             <MenuItem>Next Steps</MenuItem>
           </SubMenu>
-          <MenuItem style={{ lineHeight: 2 }}>3. M-HMDS</MenuItem>
-          <MenuItem style={{ fontSize: 16, fontWeight: "bold" }}>
-            ZTA Ceramics
+          <MenuItem style={{ lineHeight: 2 }}>
+            3. M-HMDS <Link to="/research/polymer_syntheses/m_hmds" />
           </MenuItem>
+
+          <SubMenu
+            style={{ fontSize: 16, fontWeight: "bold" }}
+            title="Ceramic Processing"
+          >
+            <MenuItem style={{ lineHeight: 1, fontWeight: "normal" }}>
+              ZTA Ceramics
+              <Link to="/research/ceramics" />
+            </MenuItem>
+          </SubMenu>
+
           <MenuItem style={{ fontSize: 16, fontWeight: "bold" }}>
             List of Publications
             <Link to="/research/publications" />
