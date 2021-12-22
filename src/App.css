@@ -13,11 +13,11 @@ sup,
 sub {
   vertical-align: baseline;
   position: relative;
-  top: -0.4rem;
+  top: -0.3rem;
   font-size: 70%;
 }
 sub {
-  top: 0.2rem;
+  top: 0.1rem;
 }
 
 .page {

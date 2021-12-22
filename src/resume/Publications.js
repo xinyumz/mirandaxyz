@@ -30,7 +30,7 @@ export function Publications() {
           Temeche, E.; Zhang, X.; Laine, R. M. Electrochemical Performance of Li
           <sub>x</sub>SiON Polymer Electrolytes Derived from an Agriculture
           Waste Product, Rice Hull Ash. <em>ACS Appl. Polym. Mater.</em>{" "}
-          <strong>2021</strong>, <em>3</em>(4), 2144–2152.
+          <strong>2021</strong>, <em>3</em>(4), 2144-2152.
         </a>
       </li>
       <li style={{ marginBottom: "1%" }} id="pub-4">
@@ -42,9 +42,9 @@ export function Publications() {
           R. M. Improved Electrochemical Properties of Li
           <sub>4</sub>Ti<sub>5</sub>O<sub>12</sub> Nanopowders (NPs) via
           Addition of LiAlO<sub>2</sub> and Li<sub>6</sub>SiON Polymer
-          Electrolytes, Derived from Ag-ricultural Waste.{" "}
+          Electrolytes, Derived from Agricultural Waste.{" "}
           <em>ACS Appl. Energy Mater.</em> <strong>2021</strong>, <em>4</em>
-          (2), 1894–1905.
+          (2), 1894-1905.
         </a>
       </li>
       <li style={{ marginBottom: "1%" }} id="pub-5">
@@ -58,7 +58,7 @@ export function Publications() {
           and as Oxidation Mitigating Thin Films on Silicon Nitride via
           Colloidal Processing of Flame Made Nanopowders (NPs).{" "}
           <em>J. Am. Ceram. Soc.</em> <strong>2021</strong>, <em>104</em>(3),
-          1281–1296.
+          1281-1296.
         </a>
       </li>
       <li style={{ marginBottom: "1%" }} id="pub-6">
@@ -67,9 +67,9 @@ export function Publications() {
           target="_blank"
         >
           Zhang, X.; Temeche, E.; Laine, R. M. Li<sub>x</sub>SiON (x = 2, 4, 6):
-          A Novel Solid Electrolyte System Derived from Ag-ricultural Waste.{" "}
+          A Novel Solid Electrolyte System Derived from Agricultural Waste.{" "}
           <em>Green Chem.</em> <strong>2020</strong>, <em>22</em>(21),
-          7491–7505.
+          7491-7505.
         </a>
       </li>
       <li style={{ marginBottom: "1%" }} id="pub-7">
@@ -77,13 +77,13 @@ export function Publications() {
           href="https://pubs.acs.org/doi/abs/10.1021/acsami.0c06196"
           target="_blank"
         >
-          Temeche, E.; Zhang, X.; Laine, R. M. Solid Electrolytes for Li–S
+          Temeche, E.; Zhang, X.; Laine, R. M. Solid Electrolytes for Li-S
           Batteries: Solid Solutions of Poly(Ethylene Oxide) with Li
           <sub>x</sub>
           PON- and Li<sub>x</sub>SiPON-Based Polymers.{" "}
           <em>ACS Appl. Mater. Interfaces</em> <strong>2020</strong>,{" "}
-          <em>12</em>(27), 30353–30364.
-        </a>{" "}
+          <em>12</em>(27), 30353-30364.
+        </a>
       </li>
 
       <li style={{ marginBottom: "1%" }} id="pub-8">
@@ -92,7 +92,7 @@ export function Publications() {
           <sub>x</sub>PON Electrolytes: Toward Li-S Batteries.{" "}
           <em>ACS Appl. Mater. Interfaces</em> <strong>2020</strong>,{" "}
           <em>12</em>(18), 20548-20562.
-        </a>{" "}
+        </a>
       </li>
       <li style={{ marginBottom: "1%" }} id="pub-9">
         <a href="https://doi.org/10.1021/acs.macromol.0c00254" target="_blank">

@@ -10,33 +10,23 @@ function Overview() {
       <div className={researchStyles.mainText}>
         Throughout my time at University of Michigan as a graduate student, I
         worked in the Laine lab focusing primarily on{" "}
-        <em>
-          <Link to="/research/polymer_syntheses/novel_sses">
-            novel solid-state electrolytes (SSEs)
-          </Link>
-        </em>{" "}
+        <Link to="/research/polymer-syntheses/novel-sses">
+          novel solid-state electrolytes (SSEs)
+        </Link>{" "}
         for lithium-ion batteries (LIBs) derived from{" "}
-        <em>
-          <Link to="/research/polymer_syntheses">polymer syntheses</Link>
-        </em>{" "}
-        along with other projects, including{" "}
-        <em>
-          <Link to="/research/polymer_syntheses/oxysilylation">
-            oxysilylation
-          </Link>
-        </em>
+        <Link to="/research/polymer-syntheses">polymer syntheses</Link> along
+        with other projects, including{" "}
+        <Link to="/research/polymer-syntheses/oxysilylation">
+          oxysilylation
+        </Link>
         , reactions between{" "}
-        <em>
-          <Link to="/research/polymer_syntheses/m_hmds">
-            metal chlorides with hexamethyldisilazane (M-HMDS)
-          </Link>
-        </em>{" "}
+        <Link to="/research/polymer-syntheses/m-hmds">
+          metal chlorides with hexamethyldisilazane (M-HMDS)
+        </Link>{" "}
         towards metal nitride precursors, and{" "}
-        <em>
-          <Link to="/research/ceramics">
-            zirconia toughened alumina ( ZTA ) ceramics
-          </Link>
-        </em>
+        <Link to="/research/ceramics">
+          zirconia toughened alumina ( ZTA ) ceramics
+        </Link>
         .
       </div>
       <div className={researchStyles.subtitle}>Motivation and Objectives</div>
@@ -64,10 +54,10 @@ function Overview() {
         <div>*Most important projects.</div>
       </div>
       <div className={researchStyles.subtitle}>
-        <Link to="/research/polymer_syntheses">Polymer Syntheses</Link>
+        <Link to="/research/polymer-syntheses">Polymer Syntheses</Link>
       </div>
-      <div className={researchStyles.projTitle}>
-        <Link to="/research/polymer_syntheses/oxysilylation">
+      <div className={researchStyles.projTitle} style={{ marginTop: "1.5%" }}>
+        <Link to="/research/polymer-syntheses/oxysilylation">
           1. Oxysilylation
         </Link>
       </div>
@@ -88,12 +78,14 @@ function Overview() {
         resin nanocomposites was established.
       </div>
       <div className={researchStyles.projTitle}>
-        <Link to="/research/polymer_syntheses/novel_sses">
+        <Link to="/research/polymer-syntheses/novel-sses">
           2. Novel SSEs<sup>*</sup>
         </Link>
       </div>
       <div className={researchStyles.topicTitle}>
-        Li<sub>x</sub>PON and Li<sub>x</sub>SiPON
+        <Link to="/research/polymer-syntheses/novel-sses/lipon">
+          Li<sub>x</sub>PON and Li<sub>x</sub>SiPON
+        </Link>
       </div>
       <div className={researchStyles.mainText}>
         I continued to investigate polymer precursor electrolytes based on
@@ -121,7 +113,9 @@ function Overview() {
         retaining coulombic efficiency of ~100 % over 100 cycles.
       </div>
       <div className={researchStyles.topicTitle}>
-        Li<sub>x</sub>SiON
+        <Link to="/research/polymer-syntheses/novel-sses/lision">
+          Li<sub>x</sub>SiON
+        </Link>
       </div>
       <div className={researchStyles.mainText}>
         Another set of Li<sub>x</sub>SiON (Li/Si = x = 2, 4, 6) oligomer/polymer
@@ -138,7 +132,11 @@ function Overview() {
         impregnated Celgard separator, which delivered a reversible capacity of
         ~725 mAh/g at 0.5 C over 50 cycles.
       </div>
-      <div className={researchStyles.topicTitle}>Next Steps</div>
+      <div className={researchStyles.topicTitle}>
+        <Link to="/research/polymer-syntheses/novel-sses/next-steps">
+          Next Steps
+        </Link>
+      </div>
       <div className={researchStyles.mainText}>
         Based on the work on polymer precursor electrolytes, next steps going
         forward include but not limited to the following.
@@ -164,7 +162,7 @@ function Overview() {
         </div>
       </div>
       <div className={researchStyles.projTitle}>
-        <Link to="/research/polymer_syntheses/m_hmds">3. M-HMDS</Link>
+        <Link to="/research/polymer-syntheses/m-hmds">3. M-HMDS</Link>
       </div>
       <div className={researchStyles.mainText}>
         Inspired by the work on Li<sub>x</sub>SiPON precursors that started with
@@ -181,7 +179,9 @@ function Overview() {
       <div className={researchStyles.subtitle}>
         <Link to="/research/ceramics">Ceramic Processing</Link>
       </div>
-      <div className={researchStyles.projTitle}>ZTA Ceramics</div>
+      <div className={researchStyles.projTitle} style={{ marginTop: "1.5%" }}>
+        ZTA Ceramics
+      </div>
       <div className={researchStyles.mainText}>
         As a separate project, I also worked on zirconia toughen alumina (ZTA),
         which are one of the most important engineering ceramics with high

@@ -8,8 +8,9 @@
   height: calc(100vh - 3.1rem);
 }
 
-/*Contents styles*/
-a:link,
+a:link {
+  color: inherit;
+}
 a:visited {
   color: inherit;
 }
@@ -17,6 +18,7 @@ a:hover {
   color: #6082b6;
 }
 
+/*Contents styles*/
 .contentPG {
   padding-top: 6%;
   padding-left: 5%;
@@ -37,21 +39,34 @@ a:hover {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1%;
-  padding-top: 1.5%;
+  padding-top: 3%;
 }
 
 .projTitle {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 0.5%;
-  margin-top: 1.2%;
+  margin-bottom: 1%;
+  margin-top: 2.5%;
 }
 
 .topicTitle {
   font-size: 1.2rem;
   font-style: italic;
   text-decoration: underline;
+  margin-top: 0.5%;
   margin-bottom: 0.5%;
+}
+.topicTitle a:link {
+  background-color: #eaf2f8;
+  color: inherit;
+}
+.topicTitle a:visited {
+  color: inherit;
+  background-color: #eaf2f8;
+}
+.topicTitle a:hover {
+  color: inherit;
+  background-color: #d6eaf8;
 }
 
 .mainText {
@@ -60,40 +75,29 @@ a:hover {
   text-align: justify;
   margin-bottom: 1.5%;
 }
-
-/*
-.textImageContainer {
-  display: flex;
-  justify-content: space-between;
+.mainText a:link {
+  background-color: #eaf2f8;
+  font-style: italic;
+  color: inherit;
 }
-
-.imageRight {
-  object-fit: contain;
-  margin-left: 2rem;
-  margin-top: -2%;
+.mainText a:visited {
+  color: inherit;
+  background-color: #eaf2f8;
 }
-
-.imageCenter {
-  display: block;
-  margin: auto;
-  padding-bottom: 2%;
-  height: auto;
-  width: auto;
+.mainText a:hover {
+  color: inherit;
+  background-color: #d6eaf8;
 }
-*/
 
 .image {
   display: block;
   margin: auto;
-  padding-bottom: 2%;
+  padding-bottom: 2.5%;
+  padding-top: 0.5%;
   height: auto;
   width: auto;
 }
 
-.list {
-  margin-top: -0.9rem;
-  margin-bottom: -0.2rem;
-}
 .note {
   font-style: italic;
   font-size: 1rem;
@@ -102,6 +106,7 @@ a:hover {
 }
 .note a:link {
   text-decoration: underline;
+  color: inherit;
 }
 .note a:visited {
   color: inherit;
@@ -110,7 +115,27 @@ a:hover {
   color: #1c2833;
 }
 
-/*Publication styles*/
+.list {
+  margin-top: -0.9rem;
+  margin-left: -1rem;
+}
+
+/*Publication and reference styles*/
+.reference {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  margin-bottom: 1%;
+  color: #1a5276;
+}
+.reference a:link,
+.reference a:visited {
+  color: inherit;
+}
+.reference a:hover {
+  color: #6082b6;
+}
+
 .publication {
   margin-left: -1rem;
   font-size: 1.1rem;

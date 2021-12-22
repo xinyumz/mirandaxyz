@@ -68,14 +68,14 @@ function PolymerSyntheses() {
         room temperature (RT), the amorphous phase with limited interchain
         mobility aids ion transportation. Consequently, PEO based electrolytes
         typically show poor ionic conductivities of 10<sup>-8</sup>-10
-        <sup>-4</sup> S/cm at ambient, and only show good conductivity (up to
-        10-3 S/cm) above the melting point (~65 °C), in which case the PEO
-        electrolyte becomes a gel electrolyte rather than a SSE. The PEO gel can
-        gradually diffuse across the porous solid electrolyte interphase (SEI)
-        layer and can lead to a continuous loss of lithium from the cathode.
-        Therefore, suppression of PEO crystallinity is essential for PEO-based
-        electrolytes. In addition, PEO electrolytes generally show low ionic
-        transference numbers (<em>t</em>
+        <sup>-4</sup> S/cm at ambient, and only show good conductivity (up to 10
+        <sup>-3</sup> S/cm) above the melting point (~65 °C), in which case the
+        PEO electrolyte becomes a gel electrolyte rather than a SSE. The PEO gel
+        can gradually diffuse across the porous solid electrolyte interphase
+        (SEI) layer and can lead to a continuous loss of lithium from the
+        cathode. Therefore, suppression of PEO crystallinity is essential for
+        PEO-based electrolytes. In addition, PEO electrolytes generally show low
+        ionic transference numbers (<em>t</em>
         <sub>Li</sub>
         <sup>+</sup>) of 0.2-0.5, which can result in concentration
         overpotential, promoting uneven Li plating and dendrite formation.{" "}
@@ -88,7 +88,7 @@ function PolymerSyntheses() {
         decreasing crystallinity.{" "}
       </div>
       <div className={researchStyles.topicTitle}>
-        <Link to="/research/polymer_syntheses/oxysilylation">
+        <Link to="/research/polymer-syntheses/oxysilylation">
           Oxysilylation
         </Link>
       </div>
@@ -116,11 +116,12 @@ function PolymerSyntheses() {
         requirement for lithium salts is good solubility in the polymer matrix.
         Generally, the bulkier the anion, the higher the ionic conductivity, as
         larger anions more easily dissociate in the polymer matrix leaving free
-        Li+ ions to interact with polar groups along the polymer backbone,
-        facilitating ionic transport. Therefore, Li salts with delocalized anion
-        and low basicity are preferred. Commonly used lithium salts include
-        LiClO<sub>4</sub>, LiPF<sub>6</sub>, LiAsF<sub>6</sub>, LiBF<sub>4</sub>
-        , LiCF<sub>3</sub>SO<sub>3</sub> (LiTf), LiN(SO<sub>2</sub>F)
+        Li<sup>+</sup> ions to interact with polar groups along the polymer
+        backbone, facilitating ionic transport. Therefore, Li salts with
+        delocalized anion and low basicity are preferred. Commonly used lithium
+        salts include LiClO<sub>4</sub>, LiPF<sub>6</sub>, LiAsF<sub>6</sub>,
+        LiBF<sub>4</sub>, LiCF<sub>3</sub>SO<sub>3</sub> (LiTf), LiN(SO
+        <sub>2</sub>F)
         <sub>2</sub> (LiFSI), LiN(CF<sub>3</sub>SO<sub>2</sub>)<sub>2</sub>{" "}
         (LiTFSI), LiN(SO<sub>2</sub>C<sub>2</sub>F<sub>5</sub>)<sub>2</sub>{" "}
         (LiBETI), etc.{" "}
@@ -139,7 +140,7 @@ function PolymerSyntheses() {
         conducting PEs by anchoring anions to the polymer backbone.{" "}
       </div>
       <div className={researchStyles.topicTitle}>
-        <Link to="/research/polymer_syntheses/novel_sses">
+        <Link to="/research/polymer-syntheses/novel-sses">
           Polymer Precursors – novel SSEs/polymeric lithium salts
         </Link>
       </div>
@@ -167,7 +168,7 @@ function PolymerSyntheses() {
         src={LiXPONs}
       />
       <div className={researchStyles.projTitle}>
-        <Link to="/research/polymer_syntheses/m_hmds">M-HMDS</Link>
+        <Link to="/research/polymer-syntheses/m-hmds">M-HMDS</Link>
       </div>
       <div className={researchStyles.mainText}>
         Inspired by the work on Li<sub>x</sub>SiPON polymeric electrolytes, as a

@@ -88,9 +88,10 @@ function Oxysilylation() {
         water up to 5 h suggesting good water stability.{" "}
       </div>
       <div className={researchStyles.mainText}>
-        For diepoxides with D4H/D5H, the D5H products show much higher molecular
-        weights compared to D4H products, and can form gels/solids more easily
-        with good water stability.
+        For diepoxides with D<sub>4</sub>H/D<sub>5</sub>H, the D<sub>5</sub>H
+        products show much higher molecular weights compared to D<sub>4</sub>H
+        products, and can form gels/solids more easily with good water
+        stability.
       </div>
       <div className={researchStyles.mainText}>
         Highly ordered networks can be made through oxysilylation of diepoxides
@@ -102,12 +103,17 @@ function Oxysilylation() {
       </div>
       <div
         className={researchStyles.mainText}
-        style={{ paddingTop: "3%", fontWeight: "bold" }}
+        style={{
+          paddingTop: "2.5%",
+          fontStyle: "italic",
+          fontWeight: "bold",
+          marginBottom: "0.5%",
+        }}
       >
         For comprehensive analyses and discussions, please see the published
-        paper:{" "}
+        paper:
       </div>
-      <div className={researchStyles.mainText}>
+      <div className={researchStyles.reference}>
         <a href="https://doi.org/10.1021/acs.macromol.9b02676" target="_blank">
           Zhang, X.; Yu, M.; Laine, R. M. An Approach to Epoxy Resins:
           Oxysilylation of Epoxides. <em>Macromolecules</em>{" "}

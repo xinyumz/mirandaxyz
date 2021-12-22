@@ -57,11 +57,11 @@ export default function Sidebar({ collapsed }) {
           </MenuItem>
           <MenuItem style={{ fontSize: 16, fontWeight: "bold" }}>
             Polymer Syntheses
-            <Link to="/research/polymer_syntheses" />
+            <Link to="/research/polymer-syntheses" />
           </MenuItem>
           <MenuItem style={{ lineHeight: 2 }}>
             1. Oxysilylation{" "}
-            <Link to="/research/polymer_syntheses/oxysilylation" />
+            <Link to="/research/polymer-syntheses/oxysilylation" />
           </MenuItem>
 
           <SubMenu
@@ -69,19 +69,23 @@ export default function Sidebar({ collapsed }) {
             title="2. Novel SSEs *"
           >
             <MenuItem>
-              Polymer Precursors{" "}
-              <Link to="/research/polymer_syntheses/novel_sses" />
+              Intro <Link to="/research/polymer-syntheses/novel-sses" />
             </MenuItem>
             <MenuItem>
               Li<sub>x</sub>PON and Li<sub>x</sub>SiPON
+              <Link to="/research/polymer-syntheses/novel-sses/lipon" />
             </MenuItem>
             <MenuItem>
               Li<sub>x</sub>SiON
+              <Link to="/research/polymer-syntheses/novel-sses/lision" />
             </MenuItem>
-            <MenuItem>Next Steps</MenuItem>
+            <MenuItem>
+              Next Steps
+              <Link to="/research/polymer-syntheses/novel-sses/next-steps" />
+            </MenuItem>
           </SubMenu>
           <MenuItem style={{ lineHeight: 2 }}>
-            3. M-HMDS <Link to="/research/polymer_syntheses/m_hmds" />
+            3. M-HMDS <Link to="/research/polymer-syntheses/m-hmds" />
           </MenuItem>
 
           <SubMenu

@@ -6,6 +6,9 @@ import Overview from "./research/Overview";
 import PolymerSyntheses from "./research/PolymerSyntheses";
 import Oxysilylation from "./research/Oxysilylation";
 import NovelSSEs from "./research/NovelSSEs";
+import LiXPON from "./research/LiXPON";
+import LiSiON from "./research/LiSiON";
+import NextSteps from "./research/NextSteps";
 import MHMDS from "./research/MHMDS";
 import Ceramics from "./research/Ceramics";
 import PublicationLS from "./research/PublicationLS";
@@ -20,22 +23,37 @@ function App() {
         <Route exact path="/research" component={Overview} />
         <Route
           exact
-          path="/research/polymer_syntheses"
+          path="/research/polymer-syntheses"
           component={PolymerSyntheses}
         />
         <Route
           exact
-          path="/research/polymer_syntheses/oxysilylation"
+          path="/research/polymer-syntheses/oxysilylation"
           component={Oxysilylation}
         />
         <Route
           exact
-          path="/research/polymer_syntheses/novel_sses"
+          path="/research/polymer-syntheses/novel-sses"
           component={NovelSSEs}
         />
         <Route
           exact
-          path="/research/polymer_syntheses/m_hmds"
+          path="/research/polymer-syntheses/novel-sses/lipon"
+          component={LiXPON}
+        />
+        <Route
+          exact
+          path="/research/polymer-syntheses/novel-sses/lision"
+          component={LiSiON}
+        />
+        <Route
+          exact
+          path="/research/polymer-syntheses/novel-sses/next-steps"
+          component={NextSteps}
+        />
+        <Route
+          exact
+          path="/research/polymer-syntheses/m-hmds"
           component={MHMDS}
         />
         <Route exact path="/research/ceramics" component={Ceramics} />
