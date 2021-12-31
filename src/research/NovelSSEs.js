@@ -150,7 +150,7 @@ function SSEs() {
         large, homogeneous composition targets at commodity scales.{" "}
       </div>
       <div className={researchStyles.projTitle}>
-        Polymer Precursors derived Novel SSEs
+        Polymer Syntheses derived Novel SSEs
       </div>
       <div className={researchStyles.mainText}>
         Different from traditional gas phase deposition methods, we explored
@@ -158,8 +158,8 @@ function SSEs() {
         (based on N-doped LISICON-type SSEs) polymer precursors that exhibit
         ambient conductivities of ~10<sup>-5</sup> S/cm, providing a novel, low
         cost, low temperature and scalable approach towards SSEs. Especially for
-        Li<sub>x</sub>SiON precursors which are derived from agricultural waste,
-        rice hull ash, a green synthesis method has established.{" "}
+        Li<sub>x</sub>SiON precursors, which are derived from agricultural
+        waste, rice hull ash, a green synthesis method has established.{" "}
       </div>
       <img
         className={researchStyles.image}
@@ -172,12 +172,12 @@ function SSEs() {
           <ul>
             <li>
               <Link to="/research/polymer-syntheses/novel-sses/lipon">
-                Li<sub>x</sub>PON and Li<sub>x</sub>SiPON
+                Li<sub>x</sub>PON and Li<sub>x</sub>SiPON Polymer Precursors
               </Link>
             </li>
             <li>
               <Link to="/research/polymer-syntheses/novel-sses/lision">
-                Li<sub>x</sub>SiON
+                Li<sub>x</sub>SiON Polymer Precursors
               </Link>
             </li>
             <li>

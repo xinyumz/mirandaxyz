@@ -143,6 +143,11 @@ function Overview() {
         <div className={researchStyles.list}>
           <ul>
             <li>
+              Use polymer precursor electrolytes as coatings on inorganic SSEs
+              to serve as buffer layers while improving their mechanical
+              properties and interfacial contact with electrodes.{" "}
+            </li>
+            <li>
               Li<sub>x</sub>SiON precursor solid solutions with PEO.{" "}
             </li>
             <li>
@@ -150,12 +155,7 @@ function Overview() {
               precursors.
             </li>
             <li>
-              Use polymer precursor electrolytes as coatings on inorganic SSEs
-              to serve as buffer layers while improving their mechanical
-              properties and interfacial contact with electrodes.{" "}
-            </li>
-            <li>
-              Sodium-based systems such as Na<sub>x</sub>PON, Na<sub>x</sub>
+              Sodium-based systems such as Na<sub>x</sub>
               SiPON and Na<sub>x</sub>SiON for sodium ion batteries.
             </li>
           </ul>
@@ -183,13 +183,13 @@ function Overview() {
         ZTA Ceramics
       </div>
       <div className={researchStyles.mainText}>
-        As a separate project, I also worked on zirconia toughen alumina (ZTA),
-        which are one of the most important engineering ceramics with high
-        melting points, excellent mechanical strength and chemical stability,
-        and are commonly used as wear resistant and high-temperature components,
-        as prosthetic implants and electric circuit substrates. Methods of
-        processing fine-grained, dense, thin, free-standing (ZrO<sub>2</sub>)
-        <sub>x</sub>(Al<sub>2</sub>O<sub>3</sub>)<sub>1-x</sub>
+        As a separate project, I also worked on zirconia toughened alumina
+        (ZTA), which are one of the most important engineering ceramics with
+        high melting points, excellent mechanical strength and chemical
+        stability, and are commonly used as wear resistant and high-temperature
+        components, as prosthetic implants and electric circuit substrates.
+        Methods of processing fine-grained, dense, thin, free-standing (ZrO
+        <sub>2</sub>)<sub>x</sub>(Al<sub>2</sub>O<sub>3</sub>)<sub>1-x</sub>
         films (x = 0-50 mol.%, ~40 μm thick) by sintering flame made
         nano-powders (NPs) to optimize the <em>t</em>-ZrO<sub>2</sub> content,
         sinterability and microstructures under select conditions (1120-1500
@@ -200,11 +200,11 @@ function Overview() {
         on Si<sub>3</sub>N<sub>4</sub> substrates (thickness ≈ 300 μm) to
         provide physical protection against oxidation under extreme conditions
         (1500 °C/1 h/O<sub>2</sub>), offering additional practical utility for
-        high-temperature ceramics and power electronic substrates.{" "}
+        high-temperature ceramics and power electronic substrates.
       </div>
       <div className={researchStyles.note} style={{ paddingTop: "2.5%" }}>
         <Link to="/research/publications">
-          Click to see my list of publications.
+          Click to see the list of my publications.
         </Link>
       </div>
     </div>

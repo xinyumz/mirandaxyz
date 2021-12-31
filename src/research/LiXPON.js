@@ -66,7 +66,7 @@ function LiXPON() {
           Composition Dependence of Ionic Conductivity in LiSiPO(N) Thin-Film
           Electrolytes for Solid-State Batteries.{" "}
           <em>ACS Appl. Energy Mater.</em> <strong>2019</strong>, <em>2</em>(7),
-          4782-4791.{" "}
+          4782-4791.
         </a>
       </div>
       <div className={researchStyles.mainText} style={{ paddingTop: "2%" }}>
@@ -78,7 +78,7 @@ function LiXPON() {
         mandates driving the search for easier processing routes to the same
         materials especially for the practical processing of ASSBs. The use of
         chemical precursor routes to the same materials seems to offer
-        considerable potential to solve these issues.{" "}
+        considerable potential to solve these issues.
       </div>
       <div className={researchStyles.mainText}>
         Our designed approach uses easily available starting materials, either
@@ -97,11 +97,11 @@ function LiXPON() {
         content. Overall, the Li<sub>x</sub>PON and Li<sub>x</sub>SiPON
         precursors mimic LiPON and LiSiPON glasses respectively, while Li
         <sub>x</sub>SiPHN precursors explore new possibilities of fully
-        replacing O with N.{" "}
+        replacing O with N.
       </div>
       <img
         className={researchStyles.image}
-        style={{ maxWidth: "90%" }}
+        style={{ maxWidth: "100%" }}
         src={LiXPONsyntheses}
       />
       <div className={researchStyles.mainText}>
@@ -279,6 +279,16 @@ function LiXPON() {
           </a>
         </li>
       </ol>
+      <div className={researchStyles.mainText} style={{ paddingTop: "1.5%" }}>
+        <span style={{ fontStyle: "italic", fontWeight: "bold" }}>
+          Continue reading:{" "}
+        </span>
+        <span className={researchStyles.mainText}>
+          <Link to="/research/polymer-syntheses/novel-sses/lision">
+            Li<sub>x</sub>SiON Polymer Precursors
+          </Link>
+        </span>
+      </div>
     </div>
   );
 }

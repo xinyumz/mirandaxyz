@@ -107,7 +107,7 @@ function PolymerSyntheses() {
       </div>
       <img
         className={researchStyles.image}
-        style={{ maxWidth: "80%" }}
+        style={{ maxWidth: "90%" }}
         src={Oxysilylation}
       />
       <div className={researchStyles.projTitle}>Lithium Salts</div>
@@ -164,7 +164,7 @@ function PolymerSyntheses() {
       </div>
       <img
         className={researchStyles.image}
-        style={{ maxWidth: "35%" }}
+        style={{ maxWidth: "40%" }}
         src={LiXPONs}
       />
       <div className={researchStyles.projTitle}>

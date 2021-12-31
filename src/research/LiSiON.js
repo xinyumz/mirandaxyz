@@ -296,6 +296,16 @@ function LiSiON() {
           </a>
         </li>
       </ol>
+      <div className={researchStyles.mainText} style={{ paddingTop: "1.5%" }}>
+        <span style={{ fontStyle: "italic", fontWeight: "bold" }}>
+          Continue reading:{" "}
+        </span>
+        <span className={researchStyles.mainText}>
+          <Link to="/research/polymer-syntheses/novel-sses/next-steps">
+            Next Steps
+          </Link>
+        </span>
+      </div>
     </div>
   );
 }
