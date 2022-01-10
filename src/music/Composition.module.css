@@ -1,0 +1,49 @@
+/*main styles*/
+.compPG {
+  background-image: linear-gradient(rgb(6, 2, 15), rgb(23, 29, 32));
+  color: #e8f8f5;
+  font-family: sans-serif;
+  margin: auto;
+  margin-top: 3rem;
+  height: calc(100vh - 3rem);
+  overflow: overlay;
+}
+
+/*Top Block styles*/
+.topBlock {
+  /*background-color: #1d1f22;*/
+  background-image: url("../images/Sound Wave 3.svg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 30rem;
+  word-spacing: 0.1rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  word-spacing: 6px;
+}
+
+.coverImg {
+  display: block;
+  max-height: 55%;
+  border-radius: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10%;
+  margin-right: 7%;
+  box-shadow: 0 0 20px black;
+}
+
+.introTitle {
+  font-size: 5.25rem;
+  font-weight: 800;
+  margin-top: 25%;
+  text-shadow: 1px 1px 4px lightgrey;
+}
+
+.introText {
+  margin-top: 1.5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

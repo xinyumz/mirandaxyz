@@ -10,7 +10,6 @@ import {
 } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
-//import styles from "./Sidebar.module.css";
 //import "./sidebar.scss";
 
 export default function Sidebar({ collapsed }) {
@@ -38,7 +37,7 @@ export default function Sidebar({ collapsed }) {
           paddingTop: 10,
           lineHeight: 2.5,
           fontSize: 14,
-          overflow: "hidden",
+          overflow: "auto",
           textOverflow: "ellipsis",
           whiteSpace: "nowrap",
         }}

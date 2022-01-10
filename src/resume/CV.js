@@ -97,8 +97,8 @@ export default class CV extends React.Component {
           <title>CV | Xinyu (Miranda) Zhang</title>
         </Helmet>
         <Header />
-        <div className="page">
-          <div className={CVStyles.CV}>
+        <div className={CVStyles.CVpage}>
+          <div className={CVStyles.CVcontent}>
             <div>
               <h1 className={CVStyles.CVTitle}>Xinyu (Miranda) Zhang</h1>
             </div>

@@ -1,12 +1,29 @@
 body {
-  background-color: rgb(234, 238, 241);
   /*background-image: url(images/Concrete.png);
   background-repeat:repeat;*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
+  overflow: hidden;
 }
 a {
   text-decoration-line: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  z-index: 1000;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(160, 160, 160, 0.7);
 }
 
 sup,
@@ -20,19 +37,10 @@ sub {
   top: 0.1rem;
 }
 
-.page {
-  margin-top: 3.1rem;
-}
-@media (max-width: 500px) {
-  .page {
-    margin-top: 3rem;
-  }
-}
-
 /*header styles*/
 .header {
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -42,7 +50,7 @@ sub {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1500;
+  z-index: 2000;
 }
 .header a:link,
 .header a:visited {
@@ -54,7 +62,7 @@ sub {
 .header-name {
   flex-direction: row;
   display: flex;
-  padding-left: 1rem;
+  padding-left: 2rem;
   font-size: 1.1rem;
 }
 .header-nav {
@@ -115,6 +123,12 @@ sub {
 }
 
 /*Styles for front block*/
+.frontpage {
+  margin-top: 3rem;
+  height: calc(100vh - 3rem);
+  overflow: overlay;
+}
+
 .frontblock {
   background-image: url("images/UnderTheTree.png");
   background-size: cover;

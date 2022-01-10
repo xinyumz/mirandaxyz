@@ -5,7 +5,8 @@
   color: #1c2833;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  height: calc(100vh - 3.1rem);
+  height: calc(100vh - 3rem);
+  margin-top: 3rem;
 }
 
 a:link {
@@ -24,7 +25,7 @@ a:hover {
   padding-left: 5%;
   padding-right: 7%;
   padding-bottom: 6%;
-  overflow: auto;
+  overflow: overlay;
 }
 .title {
   font-size: 3.5rem;

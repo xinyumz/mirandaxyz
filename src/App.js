@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
-import Paintings from "./Paintings";
+import Paintings from "./painting/Paintings";
 import CV from "./resume/CV";
+import Composition from "./music/Composition";
 import Overview from "./research/Overview";
 import PolymerSyntheses from "./research/PolymerSyntheses";
 import Oxysilylation from "./research/Oxysilylation";
@@ -95,9 +96,6 @@ export function Header() {
             <strong> RESUME </strong>
           </Link>
         </span>
-        <span>
-          <strong> CONTACT </strong>
-        </span>
       </span>
     </div>
   );
@@ -110,7 +108,7 @@ function FrontPage() {
         <title>Welcome | Xinyu (Miranda) Zhang</title>
       </Helmet>
       <Header />
-      <div className="page">
+      <div className="frontpage">
         <div className="frontblock">
           <div className="welcome">
             <strong>WELCOME!</strong>
@@ -173,20 +171,6 @@ function Projectblock() {
             </Link>
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
-
-function Composition() {
-  return (
-    <div>
-      <Helmet>
-        <title>Compositions | Xinyu (Miranda) Zhang</title>
-      </Helmet>
-      <Header />
-      <div className="page">
-        <div className="comp-page"></div>
       </div>
     </div>
   );

@@ -145,10 +145,10 @@ function Overview() {
             <li>
               Use polymer precursor electrolytes as coatings on inorganic SSEs
               to serve as buffer layers while improving their mechanical
-              properties and interfacial contact with electrodes.{" "}
+              properties and interfacial contact with electrodes.
             </li>
             <li>
-              Li<sub>x</sub>SiON precursor solid solutions with PEO.{" "}
+              Li<sub>x</sub>SiON precursor solid solutions with PEO.
             </li>
             <li>
               Li<sub>x</sub>SiO system derived from the Li<sub>x</sub>SiON

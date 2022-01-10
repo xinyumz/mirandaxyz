@@ -1,20 +1,20 @@
 import React from "react";
 import paintingStyles from "./Paintings.module.css";
 import { Helmet } from "react-helmet";
-import { Header } from "./App";
-import Earth from "./images/TheEarth.jpg";
-import Aco from "./images/Aco.png";
-import UnderTree from "./images/UnderTheTree.png";
-import SnowMountain from "./images/SnowyMountains.png";
-import CanolaField from "./images/CanolaFlowerField.png";
-import Starlight from "./images/StarlightNight.png";
-import Lake from "./images/TheLake.png";
-import Sea from "./images/TheSea.png";
-import Valley from "./images/TheValley.png";
-import Village from "./images/TheVillage.png";
-import Kiwi from "./images/Kiwi.jpg";
-import CarTower from "./images/CameroonTower.jpg";
-import Meow from "./images/Meow.jpg";
+import { Header } from "../App";
+import Earth from "../images/TheEarth.jpg";
+import Aco from "../images/Aco.png";
+import UnderTree from "../images/UnderTheTree.png";
+import SnowMountain from "../images/SnowyMountains.png";
+import CanolaField from "../images/CanolaFlowerField.png";
+import Starlight from "../images/StarlightNight.png";
+import Lake from "../images/TheLake.png";
+import Sea from "../images/TheSea.png";
+import Valley from "../images/TheValley.png";
+import Village from "../images/TheVillage.png";
+import Kiwi from "../images/Kiwi.jpg";
+import CarTower from "../images/CameroonTower.jpg";
+import Meow from "../images/Meow.jpg";
 
 export default function Paintings() {
   return (
@@ -23,8 +23,9 @@ export default function Paintings() {
         <title>Paintings | Xinyu (Miranda) Zhang</title>
       </Helmet>
       <Header />
-      <div className="page">
-        <div className={paintingStyles.paintPage}>
+
+      <div className={paintingStyles.paintPage}>
+        <div className={paintingStyles.paintContent}>
           <div className={paintingStyles.paintRow}>
             <img className={paintingStyles.paintLong} src={Village} />
             <img className={paintingStyles.paintLong} src={Valley} />

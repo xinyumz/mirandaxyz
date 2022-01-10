@@ -1,10 +1,15 @@
 .paintPage {
-  background-image: url(images/LightWool.png);
+  background-image: url(../images/LightWool.png);
   background-repeat: repeat;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  height: calc(100vh - 3rem);
+  overflow: overlay;
 }
+.paintContent {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
 .paintRow {
   justify-content: space-evenly;
   flex-direction: row;
@@ -26,14 +31,14 @@
   box-shadow: 5px 5px 10px dimgray;
 }
 @media (max-width: 1200px) {
-  .paintPage {
+  .paintContent {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (max-width: 900px) {
-  .paintPage {
+  .paintContent {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
@@ -49,7 +54,7 @@
 }
 
 @media (max-width: 650px) {
-  .painPage {
+  .paintContent {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
