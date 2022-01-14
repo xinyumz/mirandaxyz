@@ -1,5 +1,5 @@
 import React from "react";
-import { BiTime } from "react-icons/bi";
+import { WiTime3 } from "react-icons/wi";
 import playlistStyles from "./Playlist.module.css";
 
 export default function SonglistHeader() {
@@ -8,7 +8,7 @@ export default function SonglistHeader() {
       <div className={playlistStyles.index}>#</div>
       <div className={playlistStyles.songTitle}>TITLE</div>
       <div className={playlistStyles.duration}>
-        <BiTime />
+        <WiTime3 />
       </div>
     </div>
   );

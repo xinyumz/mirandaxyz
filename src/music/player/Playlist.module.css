@@ -11,26 +11,14 @@
 .playerBlock {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .playingInfo {
   line-height: 2rem;
-}
-
-.progressBar {
-  width: 80%; /* Full-width */
-  height: 0.5rem; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none;
-  border-radius: 100rem;
-  margin-bottom: 5%;
-  margin-left: 10%;
-}
-/* Mouse-over effects */
-.progressBar:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+  width: 30%;
 }
 
 /*controls styles*/
@@ -49,9 +37,15 @@
   width: 5rem;
   align-items: center;
   background-color: transparent;
-  color: lightgrey;
+  color: darkgrey;
   font-size: 50px;
   border: none;
+  cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+  color: white;
 }
 
 .pause {
@@ -66,6 +60,7 @@
   box-shadow: none;
   color: rgb(20, 20, 20);
   font-size: 50px;
+  cursor: pointer;
 }
 
 .play {
@@ -81,6 +76,58 @@
   box-shadow: none;
   color: rgb(20, 20, 20);
   font-size: 50px;
+  cursor: pointer;
+}
+
+.play:hover,
+.pause:hover {
+  background-color: white;
+}
+
+.volumeControl {
+  display: flex;
+  width: 15%;
+  margin-left: 15%;
+  align-items: center;
+}
+
+.volumeBar {
+  width: 80%;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+/*slider bar styles - general*/
+::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 0.375rem;
+  background: #5f6a6a;
+  outline: none;
+  border-radius: 0.25rem;
+}
+
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #fdfefe;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  margin-top: -0.3rem;
+  box-shadow: 1px 1px 5px 2px rgb(20, 20, 20);
+  cursor: pointer;
+}
+
+::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 0.35rem rgba(200, 200, 200, 0.4);
+}
+
+/*Progress Bar style*/
+.progressBar {
+  width: 40%;
+  margin-bottom: 5%;
+  margin-left: 30%;
+  -webkit-appearance: none;
+  background-color: transparent;
 }
 
 /*songlist styles*/
@@ -93,16 +140,19 @@
 .songlistHeader {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid lightgrey;
-  color: white;
+  border-bottom: solid darkgrey;
+  color: darkgrey;
   font-size: 1rem;
-  letter-spacing: 0.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
   border-width: 1px;
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 1.5%;
   padding-top: 2%;
   padding-bottom: 1%;
+  padding-right: 0.5%;
+  padding-left: 0.25%;
 }
 
 .songlist {
@@ -113,6 +163,18 @@
   margin-right: 1%;
   display: flex;
   align-items: center;
+}
+
+.songlist:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(165, 165, 165, 0.1),
+    rgba(165, 165, 165, 0.2),
+    rgba(165, 165, 165, 0.15),
+    rgba(165, 165, 165, 0.1)
+  );
+  border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 .index {
@@ -127,4 +189,5 @@
 .duration {
   width: 20%;
   text-align: center;
+  font-size: 20px;
 }

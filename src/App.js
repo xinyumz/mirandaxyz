@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import FrontPage from "./FrontPage";
 import Paintings from "./painting/Paintings";
 import CV from "./resume/CV";
 import Composition from "./music/Composition";
@@ -13,8 +14,7 @@ import NextSteps from "./research/NextSteps";
 import MHMDS from "./research/MHMDS";
 import Ceramics from "./research/Ceramics";
 import PublicationLS from "./research/PublicationLS";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Route, Switch, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -97,81 +97,6 @@ export function Header() {
           </Link>
         </span>
       </span>
-    </div>
-  );
-}
-
-function FrontPage() {
-  return (
-    <div>
-      <Helmet>
-        <title>Welcome | Xinyu (Miranda) Zhang</title>
-      </Helmet>
-      <Header />
-      <div className="frontpage">
-        <div className="frontblock">
-          <div className="welcome">
-            <strong>WELCOME!</strong>
-          </div>
-          <div>I am</div>
-          <div className="name-back">
-            <div className="name">
-              <strong>Xinyu Zhang</strong>
-              <span className="name-cn">
-                <strong> | 张馨予</strong>
-              </span>
-            </div>
-          </div>
-          <div>or you can call me</div>
-          <div className="name2">
-            <em>
-              <strong> Miranda</strong>
-            </em>
-          </div>
-          <div className="selfintro">
-            PhD in Materials Sci & Eng, University of Michigan | Amateur
-            musician, composer, and painter
-          </div>
-        </div>
-        <Projectblock />
-      </div>
-    </div>
-  );
-}
-
-function Projectblock() {
-  return (
-    <div className="pro-block">
-      <div className="pro-title">
-        <strong>PROJECTS</strong>
-      </div>
-      <div className="pro-box">
-        <div className="pro-res">
-          <div className="pro-item">
-            <Link to="/research">
-              <strong>
-                Research
-                <br />
-                Projects
-              </strong>
-            </Link>
-          </div>
-        </div>
-        <div className="pro-comp">
-          <div className="pro-item">
-            <Link to="/compositions">
-              <strong>Compositions</strong>
-            </Link>
-          </div>
-        </div>
-        <div className="pro-paint">
-          <div className="pro-item">
-            <Link to="/paintings">
-              <strong>Paintings</strong>
-            </Link>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

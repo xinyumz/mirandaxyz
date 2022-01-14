@@ -4,6 +4,7 @@ import playlistStyles from "./Playlist.module.css";
 import { tracks } from "../PianoCompositions/tracks";
 import SonglistHeader from "./SonglistHeader";
 import Songlist from "./Songlist";
+import { IoVolumeMedium } from "react-icons/io5";
 
 export default function TrackPlayer() {
   //states
@@ -127,15 +128,25 @@ export default function TrackPlayer() {
           onNextClick={toNextTrack}
           onPlayPauseClick={setIsPlaying}
         />
-        <input
-          type="range"
-          value={volume}
-          min="0"
-          max="1"
-          step="0.01"
-          onChange={(e) => onVolumeChange(e.target.value)}
-          onClick={(e) => onVolumeChange(e.target.value)}
-        />
+        <div className={playlistStyles.volumeControl}>
+          <IoVolumeMedium
+            style={{
+              fontSize: "22.5",
+              marginRight: "3%",
+              color: "darkgrey",
+            }}
+          />
+          <input
+            type="range"
+            className={playlistStyles.volumeBar}
+            value={volume}
+            min="0"
+            max="1"
+            step="0.01"
+            onChange={(e) => onVolumeChange(e.target.value)}
+            onClick={(e) => onVolumeChange(e.target.value)}
+          />
+        </div>
       </div>
       <input
         type="range"

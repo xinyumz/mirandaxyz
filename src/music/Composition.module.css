@@ -1,21 +1,21 @@
 /*main styles*/
 .compPG {
   background-image: linear-gradient(rgb(6, 2, 15), rgb(23, 29, 32));
-  color: #e8f8f5;
+  color: white;
   font-family: sans-serif;
   margin: auto;
   margin-top: 3rem;
   height: calc(100vh - 3rem);
   overflow: overlay;
+  cursor: default;
 }
 
 /*Top Block styles*/
 .topBlock {
   /*background-color: #1d1f22;*/
-  background-image: url("../images/Sound Wave 3.svg");
+  background-image: url("../images/Sound Wave.svg");
   background-size: cover;
   background-position: center;
-  color: white;
   height: 30rem;
   word-spacing: 0.1rem;
   font-size: 1.2rem;

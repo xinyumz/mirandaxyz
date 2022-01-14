@@ -2,19 +2,19 @@ import React from "react";
 import paintingStyles from "./Paintings.module.css";
 import { Helmet } from "react-helmet";
 import { Header } from "../App";
-import Earth from "../images/TheEarth.jpg";
-import Aco from "../images/Aco.png";
-import UnderTree from "../images/UnderTheTree.png";
-import SnowMountain from "../images/SnowyMountains.png";
-import CanolaField from "../images/CanolaFlowerField.png";
-import Starlight from "../images/StarlightNight.png";
-import Lake from "../images/TheLake.png";
-import Sea from "../images/TheSea.png";
-import Valley from "../images/TheValley.png";
-import Village from "../images/TheVillage.png";
-import Kiwi from "../images/Kiwi.jpg";
-import CarTower from "../images/CameroonTower.jpg";
-import Meow from "../images/Meow.jpg";
+import Earth from "./paintings/TheEarth.jpg";
+import Aco from "./paintings/Aco.png";
+import UnderTree from "./paintings/UnderTheTree.png";
+import SnowMountain from "./paintings/SnowyMountains.png";
+import CanolaField from "./paintings/CanolaFlowerField.png";
+import Starlight from "./paintings/StarlightNight.png";
+import Lake from "./paintings/TheLake.png";
+import Sea from "./paintings/TheSea.png";
+import Valley from "./paintings/TheValley.png";
+import Village from "./paintings/TheVillage.png";
+import Kiwi from "./paintings/Kiwi.jpg";
+import CarTower from "./paintings/CameroonTower.jpg";
+import Meow from "./paintings/Meow.jpg";
 
 export default function Paintings() {
   return (

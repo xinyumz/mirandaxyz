@@ -1,0 +1,313 @@
+/*Styles for front block*/
+.frontpage {
+  cursor: default;
+  margin-top: 3rem;
+  height: calc(100vh - 3rem);
+  overflow: overlay;
+}
+
+.frontblock {
+  background: linear-gradient(
+      to top right,
+      rgba(14, 14, 14, 0.8),
+      rgba(63, 50, 114, 0.8)
+    ),
+    url("images/MyPictures.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 51rem;
+  color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 0.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.welcome {
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+  text-shadow: 2px 2px #36454f;
+}
+.name-back {
+  margin: 1.5rem 16rem 1.5rem 16rem;
+  background-color: rgba(161, 160, 160, 0.3);
+}
+.name {
+  padding: 2.5rem 0rem 2.5rem 0rem;
+  font-size: 5rem;
+  color: white;
+  border: solid 0.7rem rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.name-cn {
+  font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei,
+    "华文细黑", sans-serif;
+}
+.name2 {
+  padding-top: 1rem;
+  text-shadow: 2px 2px #36454f;
+}
+.selfintro {
+  margin-top: 8.5rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.down-button {
+  margin-top: 5%;
+  cursor: pointer;
+  font-size: 80px;
+  opacity: 0.4;
+}
+
+.down-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1420px) {
+  .name {
+    font-size: 4rem;
+  }
+  .name-back {
+    margin: 1.5rem 15rem 1.5rem 15rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .frontblock {
+    font-size: 1.5rem;
+  }
+  .welcome {
+    padding-bottom: 1.5rem;
+  }
+  .name-back {
+    margin: 1.5rem 12rem 1.5rem 12rem;
+  }
+  .name {
+    font-size: 3rem;
+    padding: 2rem 0rem 2rem 0rem;
+  }
+  .selfintro {
+    font-size: 1.1rem;
+    margin-top: 12rem;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+  }
+  .down-button {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .name-back {
+    margin: 1.5rem 10rem 1.5rem 10rem;
+  }
+  .name {
+    font-size: 2.5rem;
+    padding: 1.7rem 0rem 1.7rem 0rem;
+  }
+  .name-cn {
+    display: block;
+  }
+  .selfintro {
+    letter-spacing: 0;
+    text-transform: none;
+    margin-top: 12rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .frontblock {
+    font-size: 1.2rem;
+  }
+  .welcome {
+    padding-top: 10rem;
+  }
+  .name-back {
+    margin: 1.3rem 6rem 1.3rem 6rem;
+  }
+  .name {
+    font-size: 1.8rem;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .selfintro {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .down-button {
+    font-size: 40px;
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 460px) {
+  .frontblock {
+    font-size: 0.9rem;
+  }
+
+  .name-back {
+    margin: 1.3rem 4.5rem 1.3rem 4.5rem;
+  }
+  .selfintro {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 300px) {
+  .name {
+    font-size: 1.5rem;
+  }
+  .selfintro {
+    margin-top: 12rem;
+    font-size: 0.6rem;
+  }
+}
+
+/*Styles for Project block*/
+.pro-block {
+  background-image: url(images/Moon.svg);
+  background-size: cover;
+  height: 51rem;
+  text-align: center;
+  color: rgb(188, 215, 226);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pro-title {
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+  font-size: 4.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 2px #496962;
+  color: white;
+}
+.pro-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.pro-res {
+  background: url(images/ResProCover.png);
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+.pro-comp {
+  background: url(images/CompCover.png);
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+.pro-paint {
+  background: url(images/PaintCover.png);
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+.pro-item {
+  font-size: 3rem;
+  line-height: 4rem;
+  color: white;
+  text-shadow: 2.5px 2.5px rgb(74, 114, 128);
+  border-style: solid solid solid solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 0.3rem;
+  width: 23.5rem;
+  height: 21rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pro-item a:link,
+a:visited {
+  color: rgb(255, 255, 255);
+}
+.pro-item:hover {
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all 0.1s;
+}
+.pro-res:hover,
+.pro-comp:hover,
+.pro-paint:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
+}
+.pro-item:hover a {
+  color: #d1f2eb;
+  text-shadow: 2.5px 2.5px 5px #1b2631;
+}
+.pro-item a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1300px) {
+  .pro-item {
+    width: 18rem;
+    height: 16rem;
+    font-size: 2.25rem;
+    line-height: 3.75rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pro-block {
+    height: 60rem;
+  }
+  .pro-title {
+    padding-top: 8rem;
+    padding-bottom: 4.5rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .pro-block {
+    height: 75rem;
+  }
+  .pro-title {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    font-size: 3.25rem;
+  }
+  .pro-item {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+}
+@media (max-width: 460px) {
+  .pro-block {
+    height: 65rem;
+  }
+  .pro-title {
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  .pro-item {
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 15rem;
+    height: 13rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .pro-block {
+    height: 55rem;
+  }
+  .pro-title {
+    font-size: 2rem;
+  }
+  .pro-item {
+    font-size: 1.5rem;
+    width: 12rem;
+    height: 11rem;
+  }
+}

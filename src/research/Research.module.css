@@ -1,7 +1,8 @@
 /*Main styles*/
 .researchPG {
-  background-image: url(../images/topography.png);
-  background-repeat: repeat;
+  background-image: url(./research_images/Hexagon.svg);
+  background-size: cover;
+  background-position: center;
   color: #1c2833;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -78,16 +79,19 @@ a:hover {
 }
 .mainText a:link {
   background-color: #eaf2f8;
+  border-bottom: 1.7px solid lightgrey;
   font-style: italic;
   color: inherit;
 }
 .mainText a:visited {
   color: inherit;
   background-color: #eaf2f8;
+  border-bottom: 1.7px solid lightgrey;
 }
 .mainText a:hover {
   color: inherit;
   background-color: #d6eaf8;
+  border-bottom: 1.7px solid darkgrey;
 }
 
 .image {
@@ -119,6 +123,12 @@ a:hover {
 .list {
   margin-top: -0.9rem;
   margin-left: -1rem;
+}
+
+@media (max-width: 750px) {
+  .contentPG {
+    padding-left: 0;
+  }
 }
 
 /*Publication and reference styles*/
