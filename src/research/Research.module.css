@@ -6,8 +6,14 @@
   color: #1c2833;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  height: calc(100vh - 3rem);
-  margin-top: 3rem;
+  height: calc(100vh - 3.5rem);
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 850px) {
+  .researchPG {
+    margin-top: 0;
+  }
 }
 
 a:link {
@@ -125,12 +131,6 @@ a:hover {
   margin-left: -1rem;
 }
 
-@media (max-width: 750px) {
-  .contentPG {
-    padding-left: 0;
-  }
-}
-
 /*Publication and reference styles*/
 .reference {
   font-size: 1.1rem;
@@ -151,4 +151,10 @@ a:hover {
   margin-left: -1rem;
   font-size: 1.1rem;
   text-align: justify;
+}
+
+@media (max-width: 750px) {
+  .contentPG {
+    padding-left: 0;
+  }
 }

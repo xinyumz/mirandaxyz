@@ -10,11 +10,27 @@ import {
 } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import { IoReorderThreeOutline } from "react-icons/io5";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import "react-pro-sidebar/dist/css/styles.css";
 
+function Overlay({ toggled }) {
+  return toggled ? (
+    <div
+      style={{
+        backgroundColor: "#0000004d",
+        width: "100%",
+        height: "3.5rem",
+        position: "absolute",
+        bottom: 0,
+      }}
+    ></div>
+  ) : null;
+}
+
 export default function Sidebar({ toggled, handleToggleSidebar }) {
+  const smallScreen = useMediaQuery("(max-width:768px)");
   return (
-    <div>
+    <div style={{ height: "100%" }}>
       <ProSidebar
         breakPoint="md"
         width={230}
@@ -124,6 +140,7 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
           *Most important projects.
         </SidebarFooter>
       </ProSidebar>
+      {smallScreen ? <Overlay toggled={toggled} /> : null}
       <div
         className={`app ${toggled ? "toggled" : ""}`}
         onClick={() => handleToggleSidebar(true)}

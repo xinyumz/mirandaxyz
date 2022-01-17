@@ -2,7 +2,7 @@ import React from "react";
 import CVStyles from "./CV.module.css";
 import { Publications, Patent } from "./Publications";
 import { Helmet } from "react-helmet";
-import { Header } from "../App";
+import Header from "../Header";
 import { experienceItems } from "./CVObjects";
 
 function ResumeItem({ ...props }) {

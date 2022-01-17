@@ -1,7 +1,7 @@
 import React from "react";
 import compositionStyles from "./Composition.module.css";
 import { Helmet } from "react-helmet";
-import { Header } from "../App";
+import Header from "../Header";
 import TopBlock from "./TopBlock";
 import TrackPlayer from "./player/TrackPlayer";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import paintingStyles from "./Paintings.module.css";
 import { Helmet } from "react-helmet";
-import { Header } from "../App";
+import Header from "../Header";
 import Earth from "./paintings/TheEarth.jpg";
 import Aco from "./paintings/Aco.png";
 import UnderTree from "./paintings/UnderTheTree.png";
@@ -23,7 +23,6 @@ export default function Paintings() {
         <title>Paintings | Xinyu (Miranda) Zhang</title>
       </Helmet>
       <Header />
-
       <div className={paintingStyles.paintPage}>
         <div className={paintingStyles.paintContent}>
           <div className={paintingStyles.paintRow}>

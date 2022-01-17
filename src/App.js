@@ -14,7 +14,7 @@ import NextSteps from "./research/NextSteps";
 import MHMDS from "./research/MHMDS";
 import Ceramics from "./research/Ceramics";
 import PublicationLS from "./research/PublicationLS";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -63,40 +63,6 @@ function App() {
         <Route path="/paintings" component={Paintings} />
         <Route path="/resume" component={CV} />
       </Switch>
-    </div>
-  );
-}
-
-export function Header() {
-  return (
-    <div className="header">
-      <span className="header-name">
-        <Link to="/">
-          <strong>Xinyu (Miranda) Zhang</strong>
-        </Link>
-      </span>
-      <span className="header-nav">
-        <span>
-          <Link to="/research">
-            <strong> RESEARCH PROJECTS </strong>
-          </Link>
-        </span>
-        <span>
-          <Link to="/compositions">
-            <strong> COMPOSITIONS </strong>
-          </Link>
-        </span>
-        <span>
-          <Link to="/paintings">
-            <strong> PAINTINGS </strong>
-          </Link>
-        </span>
-        <span>
-          <Link to="/resume">
-            <strong> RESUME </strong>
-          </Link>
-        </span>
-      </span>
     </div>
   );
 }

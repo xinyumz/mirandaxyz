@@ -1,8 +1,8 @@
 .CVpage {
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 3.5rem);
   overflow: overlay;
   background-color: rgb(234, 238, 241);
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 .CVcontent {
   width: 65%;
@@ -109,6 +109,9 @@
 }
 
 @media (max-width: 850px) {
+  .CVpage {
+    margin-top: 0;
+  }
   .CVcontent {
     margin-bottom: 1%;
     font-size: 0.65rem;
@@ -151,6 +154,28 @@
   }
   .experienceTitle {
     font-size: 0.45rem;
+  }
+  .experienceSubtitle {
+    font-size: 0.5rem;
+  }
+  .liItem {
+    font-size: 0.45rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .CVcontent {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media (max-width: 300px) {
+  .CVcontent {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.35rem;
+  }
+  .experienceTitle {
+    font-size: 0.4rem;
   }
   .experienceSubtitle {
     font-size: 0.45rem;

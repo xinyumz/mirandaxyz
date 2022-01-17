@@ -1,11 +1,17 @@
-/*Styles for front block*/
 .frontpage {
   cursor: default;
-  margin-top: 3rem;
-  height: calc(100vh - 3rem);
+  margin-top: 3.5rem;
+  height: calc(100vh - 3.5rem);
   overflow: overlay;
 }
 
+@media (max-width: 850px) {
+  .frontpage {
+    margin-top: 0;
+  }
+}
+
+/*Styles for front block*/
 .frontblock {
   background: linear-gradient(
       to top right,
@@ -60,11 +66,11 @@
   margin-top: 5%;
   cursor: pointer;
   font-size: 80px;
-  opacity: 0.4;
+  opacity: 0.9;
 }
 
 .down-button:hover {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 @media (max-width: 1420px) {

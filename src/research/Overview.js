@@ -6,7 +6,7 @@ import researchStyles from "./Research.module.css";
 function Overview() {
   return (
     <div className={researchStyles.contentPG}>
-      <div className={researchStyles.title}>Overview</div>
+      <div className={researchStyles.title}>Research Overview</div>
       <div className={researchStyles.mainText}>
         Throughout my time at University of Michigan as a graduate student, I
         worked in the Laine lab focusing primarily on{" "}

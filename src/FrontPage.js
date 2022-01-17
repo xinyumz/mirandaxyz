@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Header } from "./App";
+import Header from "./Header";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { GoChevronDown } from "react-icons/go";
@@ -45,7 +45,7 @@ export default function FrontPage() {
           </div>
           <div className="selfintro">
             PhD in Materials Sci {"&"} Eng, Umich | Web Developer | Amateur
-            musician, composer, and painter
+            Musician, Composer, and Painter
           </div>
           <div className="down-button" onClick={handleClick}>
             <GoChevronDown />
