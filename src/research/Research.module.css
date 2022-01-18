@@ -34,6 +34,51 @@ a:hover {
   padding-bottom: 6%;
   overflow: overlay;
 }
+
+@media (max-width: 1200px) {
+  .contentPG {
+    padding-left: 4%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contentPG {
+    padding-left: 3.5%;
+    padding-right: 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentPG {
+    padding-left: 0;
+    padding-right: 6%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+}
+@media (max-width: 600px) {
+  .contentPG {
+    padding-right: 5%;
+    margin-left: -1.5%;
+  }
+}
+
+@media (max-width: 460px) {
+  .contentPG {
+    padding-top: 12%;
+    padding-bottom: 10%;
+    margin-left: -3%;
+  }
+}
+@media (max-width: 350px) {
+  .contentPG {
+    padding-top: 18%;
+    padding-bottom: 15%;
+    margin-left: -7%;
+  }
+}
+
 .title {
   font-size: 3.5rem;
   font-weight: bold;
@@ -131,6 +176,125 @@ a:hover {
   margin-left: -1rem;
 }
 
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2.75rem;
+  }
+
+  .subtitle {
+    font-size: 1.75rem;
+  }
+
+  .projTitle {
+    font-size: 1.25rem;
+  }
+
+  .topicTitle {
+    font-size: 1rem;
+  }
+  .mainText {
+    font-size: 1rem;
+  }
+  .note {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .mainText {
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .title {
+    font-size: 2.25rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .projTitle {
+    font-size: 1.1rem;
+  }
+
+  .topicTitle {
+    font-size: 0.95rem;
+  }
+  .mainText {
+    font-size: 0.9rem;
+  }
+  .note {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  .mainText {
+    line-height: 1.25rem;
+  }
+  .list {
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 460px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .projTitle {
+    font-size: 1rem;
+  }
+
+  .topicTitle {
+    font-size: 0.9rem;
+  }
+  .mainText {
+    font-size: 0.85rem;
+  }
+  .note {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 350px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .projTitle {
+    font-size: 0.9rem;
+  }
+
+  .topicTitle {
+    font-size: 0.85rem;
+  }
+  .mainText {
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+  }
+  .note {
+    font-size: 0.6rem;
+  }
+}
+
 /*Publication and reference styles*/
 .reference {
   font-size: 1.1rem;
@@ -153,8 +317,48 @@ a:hover {
   text-align: justify;
 }
 
-@media (max-width: 750px) {
-  .contentPG {
-    padding-left: 0;
+@media (max-width: 1200px) {
+  .reference {
+    font-size: 1rem;
+  }
+  .publication {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reference {
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .reference {
+    font-size: 0.9rem;
+  }
+  .publication {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .reference {
+    font-size: 0.85rem;
+    line-height: 1.15rem;
+  }
+  .publication {
+    font-size: 0.85rem;
+    margin-left: -1.25rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .reference {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .publication {
+    font-size: 0.75rem;
+    margin-left: -1.4rem;
   }
 }

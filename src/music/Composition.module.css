@@ -22,8 +22,6 @@
   background-size: cover;
   background-position: center;
   height: 30rem;
-  word-spacing: 0.1rem;
-  font-size: 1.2rem;
   display: flex;
   flex-direction: row;
   word-spacing: 6px;
@@ -35,13 +33,13 @@
   border-radius: 30%;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 10%;
+  margin-left: 8%;
   margin-right: 7%;
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px rgb(15, 15, 15);
 }
 
 .introTitle {
-  font-size: 5.25rem;
+  font-size: 5rem;
   font-weight: 800;
   margin-top: 25%;
   text-shadow: 1px 1px 4px lightgrey;
@@ -51,4 +49,140 @@
   margin-top: 1.5%;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .coverImg {
+    max-height: 45%;
+    margin-left: 7%;
+    margin-right: 5%;
+  }
+  .introTitle {
+    margin-top: 29%;
+    font-size: 4.4rem;
+  }
+  .introText {
+    font-size: 1.35rem;
+  }
+}
+@media (max-width: 1100px) {
+  .coverImg {
+    max-height: 40%;
+    margin-left: 6%;
+    margin-right: 4.5%;
+  }
+  .introTitle {
+    margin-top: 33%;
+    font-size: 4rem;
+  }
+  .introText {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .coverImg {
+    margin-right: 4%;
+  }
+  .introTitle {
+    margin-top: 43%;
+    font-size: 3.25rem;
+  }
+  .introText {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .topBlock {
+    background-image: url("../images/Sound\ Wave\ center.svg");
+    flex-direction: column;
+    padding-left: 5rem;
+  }
+  .coverImg {
+    max-width: 13rem;
+    max-height: 14rem;
+    margin-top: 5rem;
+    margin-bottom: 0.7rem;
+    margin-left: 0;
+  }
+  .introTitle {
+    margin-top: 0;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .topBlock {
+    padding-left: 4rem;
+  }
+  .coverImg {
+    max-width: 12rem;
+    max-height: 12.5rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+  }
+  .introTitle {
+    font-size: 3rem;
+  }
+  .introText {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .topBlock {
+    padding-left: 3.5rem;
+  }
+  .introTitle {
+    font-size: 2.5rem;
+  }
+  .introText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .topBlock {
+    height: 25rem;
+    padding-left: 0;
+    word-spacing: 3px;
+  }
+  .coverImg {
+    max-width: 11rem;
+    max-height: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  .introTitle {
+    font-size: 1.9rem;
+    padding-left: 10%;
+  }
+  .introText {
+    font-size: 0.9rem;
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 350px) {
+  .topBlock {
+    height: 20rem;
+  }
+  .coverImg {
+    max-width: 8.5rem;
+    max-height: 9rem;
+    margin-bottom: 2rem;
+    margin-top: 3.5rem;
+  }
+  .introTitle {
+    font-size: 1.5rem;
+    padding-left: 8.5%;
+  }
+  .introText {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    padding-left: 8.5%;
+  }
 }

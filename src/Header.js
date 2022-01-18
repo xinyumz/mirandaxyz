@@ -103,6 +103,8 @@ function HeaderNarrow() {
         sx={{
           width: drawerWidth,
           flexShrink: 0,
+          position: "relative",
+          zIndex: "1400",
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             backgroundColor: "#fffffff2",

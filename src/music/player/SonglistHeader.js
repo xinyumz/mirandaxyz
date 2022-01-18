@@ -7,7 +7,7 @@ export default function SonglistHeader() {
     <div className={playlistStyles.songlistHeader}>
       <div className={playlistStyles.index}>#</div>
       <div className={playlistStyles.songTitle}>TITLE</div>
-      <div className={playlistStyles.duration}>
+      <div className={playlistStyles.durationLogo}>
         <WiTime3 />
       </div>
     </div>

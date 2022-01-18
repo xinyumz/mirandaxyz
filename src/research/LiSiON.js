@@ -204,7 +204,7 @@ function LiSiON() {
       </div>
       <img
         className={researchStyles.image}
-        style={{ maxWidth: "110%", marginLeft: "-4.25%" }}
+        style={{ maxWidth: "100%" }}
         src={LiSiONCelgard}
       />
       <div className={researchStyles.mainText}>
@@ -230,7 +230,7 @@ function LiSiON() {
       </div>
       <img
         className={researchStyles.image}
-        style={{ maxWidth: "110%", marginLeft: "-4%" }}
+        style={{ maxWidth: "100%" }}
         src={LTOcomposites}
       />
       <div className={researchStyles.mainText}>

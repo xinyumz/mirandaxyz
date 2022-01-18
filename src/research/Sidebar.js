@@ -9,7 +9,7 @@ import {
   SidebarFooter,
 } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
-import { IoReorderThreeOutline } from "react-icons/io5";
+import MenuIcon from "@mui/icons-material/Menu";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import "react-pro-sidebar/dist/css/styles.css";
 
@@ -29,13 +29,15 @@ function Overlay({ toggled }) {
 
 export default function Sidebar({ toggled, handleToggleSidebar }) {
   const smallScreen = useMediaQuery("(max-width:768px)");
+
   return (
-    <div style={{ height: "100%" }}>
+    <div>
       <ProSidebar
         breakPoint="md"
         width={230}
         toggled={toggled}
         onToggle={handleToggleSidebar}
+        style={{ height: "calc(100vh - 3.5rem)" }}
       >
         <SidebarHeader>
           <div
@@ -140,24 +142,35 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
           *Most important projects.
         </SidebarFooter>
       </ProSidebar>
+
       {smallScreen ? <Overlay toggled={toggled} /> : null}
+
       <div
         className={`app ${toggled ? "toggled" : ""}`}
         onClick={() => handleToggleSidebar(true)}
-        style={{ paddingLeft: 5, paddingRight: 10, paddingTop: 5 }}
+        style={{
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 10,
+        }}
       >
-        <IoReorderThreeOutline
-          style={{
+        <MenuIcon
+          sx={{
             cursor: "pointer",
             backgroundColor: "#353535",
             color: "#fff",
             textAlign: "center",
             borderRadius: "50%",
-            height: "2rem",
-            width: "1.7rem",
-            paddingLeft: "0.15rem",
-            paddingRight: "0.15rem",
+            height: "1.5rem",
+            width: "1.5rem",
+            padding: "20%",
             boxShadow: "3px 3px 5px lightgrey",
+            position: "relative",
+            zIndex: "1000",
+            "&:hover": {
+              backgroundColor: "#505050",
+              boxShadow: "3px 3px 5px darkgrey",
+            },
           }}
         />
       </div>

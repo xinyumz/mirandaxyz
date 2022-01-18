@@ -163,7 +163,7 @@ function LiXPON() {
       </div>
       <img
         className={researchStyles.image}
-        style={{ maxWidth: "105%", marginLeft: "-2%" }}
+        style={{ maxWidth: "100%" }}
         src={LiXPONdata}
       />
       <div className={researchStyles.mainText}>

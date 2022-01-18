@@ -21,14 +21,14 @@
   height: auto;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  box-shadow: 5px 5px 10px dimgray;
+  box-shadow: 3px 3px 6px dimgray;
 }
 .paintWide {
   max-width: 39%;
   height: auto;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  box-shadow: 5px 5px 10px dimgray;
+  box-shadow: 3px 3px 6px dimgray;
 }
 
 @media (max-width: 1200px) {

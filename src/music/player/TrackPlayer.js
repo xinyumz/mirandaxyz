@@ -116,7 +116,12 @@ export default function TrackPlayer() {
       <div className={playlistStyles.playerBlock}>
         <div className={playlistStyles.playingInfo}>
           <div
-            style={{ fontSize: "1rem", fontWeight: "800", color: "#5DADE2" }}
+            style={{
+              fontSize: "85%",
+              marginBottom: "2%",
+              fontWeight: "800",
+              color: "#5DADE2",
+            }}
           >
             Now Playing{" "}
           </div>
@@ -131,7 +136,7 @@ export default function TrackPlayer() {
         <div className={playlistStyles.volumeControl}>
           <IoVolumeMedium
             style={{
-              fontSize: "22.5",
+              fontSize: "20",
               marginRight: "3%",
               color: "darkgrey",
             }}
