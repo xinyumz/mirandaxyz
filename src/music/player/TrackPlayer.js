@@ -125,7 +125,7 @@ export default function TrackPlayer() {
           >
             Now Playing{" "}
           </div>
-          <div>{title}</div>
+          <div style={{ lineHeight: "1rem" }}>{title}</div>
         </div>
         <Controls
           isPlaying={isPlaying}

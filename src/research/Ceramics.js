@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Research from "./Research";
 import researchStyles from "./Research.module.css";
 import LFFSP from "./research_images/LFFSP.png";
@@ -8,8 +8,31 @@ import ZTASEMN2H2 from "./research_images/ZTA-SEM-N2H2.png";
 import ThickZTAdata from "./research_images/ThickZTAdata.png";
 import Si3N4coating from "./research_images/Si3N4coating.png";
 import CoatedSi3N4films from "./research_images/CoatedSi3N4films.png";
+import ImgLightbox from "./ImgLightbox";
+
+const images = [
+  LFFSP,
+  NPprocessing,
+  ZTAcompositions,
+  ZTASEMN2H2,
+  ThickZTAdata,
+  Si3N4coating,
+  CoatedSi3N4films,
+];
 
 function Ceramics() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const src = images[index];
+  const nextSrc = images[(index + 1) % images.length];
+  const prevSrc = images[(index + images.length - 1) % images.length];
+
+  const handleClose = () => setIsOpen(false);
+  const handleMovePrev = () =>
+    setIndex((index + images.length - 1) % images.length);
+  const handleMoveNext = () => setIndex((index + 1) % images.length);
+
   return (
     <div className={researchStyles.contentPG}>
       <div className={researchStyles.title}>
@@ -73,7 +96,11 @@ function Ceramics() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "70%" }}
-        src={LFFSP}
+        src={images[0]}
+        onClick={() => {
+          setIndex(0);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         As-produced NPs were then dispersed in ethanol by ultrasonication, and
@@ -85,7 +112,11 @@ function Ceramics() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "95%" }}
-        src={NPprocessing}
+        src={images[1]}
+        onClick={() => {
+          setIndex(1);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.topicTitle}>Green Film Processing</div>
       <div className={researchStyles.mainText}>
@@ -135,7 +166,11 @@ function Ceramics() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "65%" }}
-        src={ZTAcompositions}
+        src={images[2]}
+        onClick={() => {
+          setIndex(2);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         The figure below compares SEM fracture surfaces of films{" "}
@@ -154,7 +189,11 @@ function Ceramics() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "95%" }}
-        src={ZTASEMN2H2}
+        src={images[3]}
+        onClick={() => {
+          setIndex(3);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.projTitle}>ZTA ~200 μm Thick Films</div>
       <div className={researchStyles.mainText}>
@@ -183,7 +222,11 @@ function Ceramics() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "80%" }}
-        src={ThickZTAdata}
+        src={images[4]}
+        onClick={() => {
+          setIndex(4);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.projTitle}>
         Coating Si<sub>3</sub>N<sub>4</sub> Substrates with ZTA Thin Films
@@ -218,7 +261,11 @@ function Ceramics() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "45%" }}
-        src={Si3N4coating}
+        src={images[5]}
+        onClick={() => {
+          setIndex(5);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         In conclusion, we found that sintered ZTA coatings ({"<"}5 μm) adhere
@@ -231,7 +278,11 @@ function Ceramics() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "95%" }}
-        src={CoatedSi3N4films}
+        src={images[6]}
+        onClick={() => {
+          setIndex(6);
+          setIsOpen(true);
+        }}
       />
       <div
         className={researchStyles.mainText}
@@ -259,6 +310,15 @@ function Ceramics() {
           1281-1296.
         </a>
       </div>
+      <ImgLightbox
+        open={isOpen}
+        src={src}
+        nextSrc={nextSrc}
+        prevSrc={prevSrc}
+        handleClose={handleClose}
+        handleMovePrev={handleMovePrev}
+        handleMoveNext={handleMoveNext}
+      />
     </div>
   );
 }

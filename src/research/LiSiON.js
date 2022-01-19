@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Research from "./Research";
 import { Link } from "react-router-dom";
 import researchStyles from "./Research.module.css";
@@ -7,8 +7,29 @@ import LiSiONrxnGraph from "./research_images/LiSiONrxnGraph.png";
 import LiSiONdata from "./research_images/LiSiONdata.png";
 import LiSiONCelgard from "./research_images/LiSiONCelgard.png";
 import LTOcomposites from "./research_images/LTOcomposites.png";
+import ImgLightbox from "./ImgLightbox";
+
+const images = [
+  LISICONmixture,
+  LiSiONrxnGraph,
+  LiSiONdata,
+  LiSiONCelgard,
+  LTOcomposites,
+];
 
 function LiSiON() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const src = images[index];
+  const nextSrc = images[(index + 1) % images.length];
+  const prevSrc = images[(index + images.length - 1) % images.length];
+
+  const handleClose = () => setIsOpen(false);
+  const handleMovePrev = () =>
+    setIndex((index + images.length - 1) % images.length);
+  const handleMoveNext = () => setIndex((index + 1) % images.length);
+
   return (
     <div className={researchStyles.contentPG}>
       <div className={researchStyles.title} style={{ textTransform: "none" }}>
@@ -59,7 +80,11 @@ function LiSiON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "80%" }}
-        src={LISICONmixture}
+        src={images[0]}
+        onClick={() => {
+          setIndex(0);
+          setIsOpen(true);
+        }}
       />
       <div
         className={researchStyles.mainText}
@@ -122,7 +147,11 @@ function LiSiON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "85%" }}
-        src={LiSiONrxnGraph}
+        src={images[1]}
+        onClick={() => {
+          setIndex(1);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         It is noteworthy that the other product for the dissolution of SiO
@@ -181,7 +210,11 @@ function LiSiON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "80%" }}
-        src={LiSiONdata}
+        src={images[2]}
+        onClick={() => {
+          setIndex(2);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         To further study electrochemical properties, Celgard separators were
@@ -205,7 +238,11 @@ function LiSiON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "100%" }}
-        src={LiSiONCelgard}
+        src={images[3]}
+        onClick={() => {
+          setIndex(3);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         In a separate set of studies, we show that a facile liquid-feed flame
@@ -231,7 +268,11 @@ function LiSiON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "100%" }}
-        src={LTOcomposites}
+        src={images[4]}
+        onClick={() => {
+          setIndex(4);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Compared to{" "}
@@ -306,6 +347,15 @@ function LiSiON() {
           </Link>
         </span>
       </div>
+      <ImgLightbox
+        open={isOpen}
+        src={src}
+        nextSrc={nextSrc}
+        prevSrc={prevSrc}
+        handleClose={handleClose}
+        handleMovePrev={handleMovePrev}
+        handleMoveNext={handleMoveNext}
+      />
     </div>
   );
 }

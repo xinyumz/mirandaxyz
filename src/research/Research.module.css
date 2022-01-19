@@ -1,3 +1,6 @@
+img {
+  background-color: white;
+}
 /*Main styles*/
 .researchPG {
   background-image: url(./research_images/Hexagon.svg);
@@ -14,16 +17,6 @@
   .researchPG {
     margin-top: 0;
   }
-}
-
-a:link {
-  color: inherit;
-}
-a:visited {
-  color: inherit;
-}
-a:hover {
-  color: #6082b6;
 }
 
 /*Contents styles*/
@@ -94,12 +87,26 @@ a:hover {
   margin-bottom: 1%;
   padding-top: 3%;
 }
+.subtitle a:link,
+.subtitle a:visited {
+  color: inherit;
+}
+.subtitle a:hover {
+  color: #6082b6;
+}
 
 .projTitle {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1%;
   margin-top: 2.5%;
+}
+.projTitle a:link,
+.projTitle a:visited {
+  color: inherit;
+}
+.projTitle a:hover {
+  color: #6082b6;
 }
 
 .topicTitle {
@@ -109,10 +116,7 @@ a:hover {
   margin-top: 0.5%;
   margin-bottom: 0.5%;
 }
-.topicTitle a:link {
-  background-color: #eaf2f8;
-  color: inherit;
-}
+.topicTitle a:link,
 .topicTitle a:visited {
   color: inherit;
   background-color: #eaf2f8;
@@ -152,6 +156,13 @@ a:hover {
   padding-top: 0.5%;
   height: auto;
   width: auto;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .image {
+    cursor: pointer;
+  }
 }
 
 .note {
@@ -315,6 +326,14 @@ a:hover {
   margin-left: -1rem;
   font-size: 1.1rem;
   text-align: justify;
+}
+
+.publication a:link,
+.publication a:visited {
+  color: inherit;
+}
+.publication a:hover {
+  color: #6082b6;
 }
 
 @media (max-width: 1200px) {

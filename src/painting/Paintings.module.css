@@ -17,18 +17,20 @@
   align-items: center;
 }
 .paintLong {
-  max-width: 28%;
+  max-width: 27%;
   height: auto;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   box-shadow: 3px 3px 6px dimgray;
+  cursor: pointer;
 }
 .paintWide {
-  max-width: 39%;
+  max-width: 38%;
   height: auto;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   box-shadow: 3px 3px 6px dimgray;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {

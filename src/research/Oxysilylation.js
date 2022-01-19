@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Research from "./Research";
 import { Link } from "react-router-dom";
 import researchStyles from "./Research.module.css";
@@ -8,8 +8,30 @@ import PRrxn from "./research_images/PRrxn.png";
 import OxysilylationSum from "./research_images/OxysilylationSum.png";
 import OxysilylationRxns from "./research_images/OxysilylationRxns.png";
 import DEOOHS from "./research_images/DEO-OHS.png";
+import ImgLightbox from "./ImgLightbox";
+
+const images = [
+  TraditionalEpoxyResin,
+  OxysilylationMech,
+  PRrxn,
+  OxysilylationSum,
+  OxysilylationRxns,
+  DEOOHS,
+];
 
 function Oxysilylation() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const src = images[index];
+  const nextSrc = images[(index + 1) % images.length];
+  const prevSrc = images[(index + images.length - 1) % images.length];
+
+  const handleClose = () => setIsOpen(false);
+  const handleMovePrev = () =>
+    setIndex((index + images.length - 1) % images.length);
+  const handleMoveNext = () => setIndex((index + 1) % images.length);
+
   return (
     <div className={researchStyles.contentPG}>
       <div className={researchStyles.title}>Oxysilylation</div>
@@ -28,7 +50,11 @@ function Oxysilylation() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "60%" }}
-        src={TraditionalEpoxyResin}
+        src={images[0]}
+        onClick={() => {
+          setIndex(0);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Many properties rely on the chemical structure of the epoxy, the
@@ -52,7 +78,11 @@ function Oxysilylation() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "65%" }}
-        src={OxysilylationMech}
+        src={images[1]}
+        onClick={() => {
+          setIndex(1);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Oxysilylation is also known as Piers-Rubinsztajn reaction:
@@ -60,7 +90,11 @@ function Oxysilylation() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "77.5%" }}
-        src={PRrxn}
+        src={images[2]}
+        onClick={() => {
+          setIndex(2);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         In this work, linear, 2D to 3D structured epoxy resins are synthesized
@@ -69,7 +103,11 @@ function Oxysilylation() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "85%" }}
-        src={OxysilylationSum}
+        src={images[3]}
+        onClick={() => {
+          setIndex(3);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Relationships between properties of these epoxy resins, starting
@@ -80,7 +118,11 @@ function Oxysilylation() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "90%" }}
-        src={OxysilylationRxns}
+        src={images[4]}
+        onClick={() => {
+          setIndex(4);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         In summary, reactions of diepoxides with TMDS give linear polymers.
@@ -106,7 +148,11 @@ function Oxysilylation() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "50%" }}
-        src={DEOOHS}
+        src={images[5]}
+        onClick={() => {
+          setIndex(5);
+          setIsOpen(true);
+        }}
       />
 
       <div
@@ -138,6 +184,15 @@ function Oxysilylation() {
           </Link>
         </span>
       </div>
+      <ImgLightbox
+        open={isOpen}
+        src={src}
+        nextSrc={nextSrc}
+        prevSrc={prevSrc}
+        handleClose={handleClose}
+        handleMovePrev={handleMovePrev}
+        handleMoveNext={handleMoveNext}
+      />
     </div>
   );
 }

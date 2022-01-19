@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Research from "./Research";
 import { Link } from "react-router-dom";
 import researchStyles from "./Research.module.css";
@@ -11,8 +11,33 @@ import LiSiOsynthesis from "./research_images/LiSiOsynthesis.png";
 import LiSiOconductivity from "./research_images/LiSiOconductivity.png";
 import NaSystemsSynthesis from "./research_images/NaSystemsSynthesis.png";
 import NaSystemsData from "./research_images/NaSystemsData.png";
+import ImgLightbox from "./ImgLightbox";
+
+const images = [
+  PrecursorCoating,
+  PrecursorCeramicData,
+  PrecursorBufferLayer,
+  LiSiONPEO,
+  LiSiONPEOdata,
+  LiSiOsynthesis,
+  LiSiOconductivity,
+  NaSystemsSynthesis,
+  NaSystemsData,
+];
 
 function NextSteps() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const src = images[index];
+  const nextSrc = images[(index + 1) % images.length];
+  const prevSrc = images[(index + images.length - 1) % images.length];
+
+  const handleClose = () => setIsOpen(false);
+  const handleMovePrev = () =>
+    setIndex((index + images.length - 1) % images.length);
+  const handleMoveNext = () => setIndex((index + 1) % images.length);
+
   return (
     <div className={researchStyles.contentPG}>
       <div className={researchStyles.title}>Next Steps on SSE Studies</div>
@@ -94,7 +119,11 @@ function NextSteps() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "80%" }}
-        src={PrecursorCoating}
+        src={images[0]}
+        onClick={() => {
+          setIndex(0);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Coated LiAlO<sub>2</sub> and LATSP films generally show dense and
@@ -128,7 +157,11 @@ function NextSteps() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "90%" }}
-        src={PrecursorCeramicData}
+        src={images[1]}
+        onClick={() => {
+          setIndex(1);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         The more important application of polymer precursor coatings is that
@@ -146,7 +179,11 @@ function NextSteps() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "80%" }}
-        src={PrecursorBufferLayer}
+        src={images[2]}
+        onClick={() => {
+          setIndex(2);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.projTitle}>
         Li<sub>x</sub>SiON Precursor Solid Solutions with PEO
@@ -165,7 +202,11 @@ function NextSteps() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "60%" }}
-        src={LiSiONPEO}
+        src={images[3]}
+        onClick={() => {
+          setIndex(3);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Preliminary studies show that melting temperature (T<sub>m</sub>) and
@@ -184,7 +225,11 @@ function NextSteps() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "65%" }}
-        src={LiSiONPEOdata}
+        src={images[4]}
+        onClick={() => {
+          setIndex(4);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.projTitle}>
         Li<sub>x</sub>SiO System - Silica Dissolution with Ethylene Glycol
@@ -203,7 +248,11 @@ function NextSteps() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "80%" }}
-        src={LiSiOsynthesis}
+        src={images[5]}
+        onClick={() => {
+          setIndex(5);
+          setIsOpen(true);
+        }}
       />
       <div
         className={researchStyles.mainText}
@@ -261,7 +310,11 @@ function NextSteps() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "40%" }}
-        src={LiSiOconductivity}
+        src={images[6]}
+        onClick={() => {
+          setIndex(6);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Overall, the Li<sub>x</sub>SiO system shows limited ionic conductivities
@@ -308,7 +361,11 @@ function NextSteps() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "100%" }}
-        src={NaSystemsSynthesis}
+        src={images[7]}
+        onClick={() => {
+          setIndex(7);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         For Na<sub>x</sub>SiPON precursors, the Na<sub>3</sub>SiPON precursor
@@ -332,7 +389,11 @@ function NextSteps() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "90%" }}
-        src={NaSystemsData}
+        src={images[8]}
+        onClick={() => {
+          setIndex(8);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Overall, promising results are obtained. Future work should continue the
@@ -366,6 +427,15 @@ function NextSteps() {
           <Link to="/research/polymer-syntheses/m-hmds">M-HMDS</Link>
         </span>
       </div>
+      <ImgLightbox
+        open={isOpen}
+        src={src}
+        nextSrc={nextSrc}
+        prevSrc={prevSrc}
+        handleClose={handleClose}
+        handleMovePrev={handleMovePrev}
+        handleMoveNext={handleMoveNext}
+      />
     </div>
   );
 }

@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Research from "./Research";
 import { Link } from "react-router-dom";
 import researchStyles from "./Research.module.css";
 import ISEstructures from "./research_images/ISEstructures.png";
 import LiPONsimu from "./research_images/LiPONsimu.png";
 import PrecursorOverview from "./research_images/PrecursorOverview.png";
+import ImgLightbox from "./ImgLightbox";
+
+const images = [ISEstructures, LiPONsimu, PrecursorOverview];
 
 function SSEs() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const src = images[index];
+  const nextSrc = images[(index + 1) % images.length];
+  const prevSrc = images[(index + images.length - 1) % images.length];
+
+  const handleClose = () => setIsOpen(false);
+  const handleMovePrev = () =>
+    setIndex((index + images.length - 1) % images.length);
+  const handleMoveNext = () => setIndex((index + 1) % images.length);
+
   return (
     <div className={researchStyles.contentPG}>
       <div className={researchStyles.title}>Novel Solid-State Electrolytes</div>
@@ -54,7 +69,11 @@ function SSEs() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "80%" }}
-        src={ISEstructures}
+        src={images[0]}
+        onClick={() => {
+          setIndex(0);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.projTitle}>LISICON and LiPON SSEs</div>
       <div className={researchStyles.topicTitle}>
@@ -93,7 +112,11 @@ function SSEs() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "90%" }}
-        src={LiPONsimu}
+        src={images[1]}
+        onClick={() => {
+          setIndex(1);
+          setIsOpen(true);
+        }}
       />
       <div
         className={researchStyles.mainText}
@@ -164,7 +187,11 @@ function SSEs() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "75%" }}
-        src={PrecursorOverview}
+        src={images[2]}
+        onClick={() => {
+          setIndex(2);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Click to see more details for each project:
@@ -188,6 +215,15 @@ function SSEs() {
           </ul>
         </div>
       </div>
+      <ImgLightbox
+        open={isOpen}
+        src={src}
+        nextSrc={nextSrc}
+        prevSrc={prevSrc}
+        handleClose={handleClose}
+        handleMovePrev={handleMovePrev}
+        handleMoveNext={handleMoveNext}
+      />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Research from "./Research";
 import { Link } from "react-router-dom";
 import researchStyles from "./Research.module.css";
@@ -9,8 +9,31 @@ import LiXPONdata from "./research_images/LiXPONdata.png";
 import LiXPONcelgard from "./research_images/LiXPONcelgard.png";
 import LiXPONPEO from "./research_images/LiXPONPEO.png";
 import LiXPONsummary from "./research_images/LiXPONsummary.png";
+import ImgLightbox from "./ImgLightbox";
+
+const images = [
+  LiSiPONliterature,
+  LiXPONsyntheses,
+  LiXPONstructure,
+  LiXPONdata,
+  LiXPONcelgard,
+  LiXPONPEO,
+  LiXPONsummary,
+];
 
 function LiXPON() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const src = images[index];
+  const nextSrc = images[(index + 1) % images.length];
+  const prevSrc = images[(index + images.length - 1) % images.length];
+
+  const handleClose = () => setIsOpen(false);
+  const handleMovePrev = () =>
+    setIndex((index + images.length - 1) % images.length);
+  const handleMoveNext = () => setIndex((index + 1) % images.length);
+
   return (
     <div className={researchStyles.contentPG}>
       <div className={researchStyles.title} style={{ textTransform: "none" }}>
@@ -46,7 +69,11 @@ function LiXPON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "50%" }}
-        src={LiSiPONliterature}
+        src={images[0]}
+        onClick={() => {
+          setIndex(0);
+          setIsOpen(true);
+        }}
       />
       <div
         className={researchStyles.mainText}
@@ -102,7 +129,11 @@ function LiXPON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "100%" }}
-        src={LiXPONsyntheses}
+        src={images[1]}
+        onClick={() => {
+          setIndex(1);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         In-depth characterization of these precursors provides detailed analyses
@@ -127,7 +158,11 @@ function LiXPON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "65%" }}
-        src={LiXPONstructure}
+        src={images[2]}
+        onClick={() => {
+          setIndex(2);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         TGA-DTA studies show the precursors are thermally stable to 150-200 °C.
@@ -164,7 +199,11 @@ function LiXPON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "100%" }}
-        src={LiXPONdata}
+        src={images[3]}
+        onClick={() => {
+          setIndex(3);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         To further study electrochemical properties, these LiPON emulating
@@ -186,7 +225,11 @@ function LiXPON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "70%" }}
-        src={LiXPONcelgard}
+        src={images[4]}
+        onClick={() => {
+          setIndex(4);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         The possibility of using the polymer precursors (60 wt.%) as active
@@ -216,7 +259,11 @@ function LiXPON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "75%" }}
-        src={LiXPONPEO}
+        src={images[5]}
+        onClick={() => {
+          setIndex(5);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         In summary, compared to traditional gas phase deposition methods,
@@ -230,7 +277,11 @@ function LiXPON() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "75%" }}
-        src={LiXPONsummary}
+        src={images[6]}
+        onClick={() => {
+          setIndex(6);
+          setIsOpen(true);
+        }}
       />
       <div
         className={researchStyles.mainText}
@@ -289,6 +340,15 @@ function LiXPON() {
           </Link>
         </span>
       </div>
+      <ImgLightbox
+        open={isOpen}
+        src={src}
+        nextSrc={nextSrc}
+        prevSrc={prevSrc}
+        handleClose={handleClose}
+        handleMovePrev={handleMovePrev}
+        handleMoveNext={handleMoveNext}
+      />
     </div>
   );
 }

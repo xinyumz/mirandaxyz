@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Research from "./Research";
 import { Link } from "react-router-dom";
 import researchStyles from "./Research.module.css";
@@ -9,8 +9,31 @@ import AlHMDSdata from "./research_images/Al-HMDSdata.png";
 import AlHMDSpolymer from "./research_images/AlHMDS+polymer.png";
 import MHMDSstructures from "./research_images/M-HMDSstructures.png";
 import MHMDSdecompositions from "./research_images/MHMDSdecompositions.png";
+import ImgLightbox from "./ImgLightbox";
+
+const images = [
+  AlHMDSsynthesis,
+  AlHMDSstructures,
+  AlHMDStable,
+  AlHMDSdata,
+  AlHMDSpolymer,
+  MHMDSstructures,
+  MHMDSdecompositions,
+];
 
 function MHMDS() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const src = images[index];
+  const nextSrc = images[(index + 1) % images.length];
+  const prevSrc = images[(index + images.length - 1) % images.length];
+
+  const handleClose = () => setIsOpen(false);
+  const handleMovePrev = () =>
+    setIndex((index + images.length - 1) % images.length);
+  const handleMoveNext = () => setIndex((index + 1) % images.length);
+
   return (
     <div className={researchStyles.contentPG}>
       <div className={researchStyles.title}>M-HMDS</div>
@@ -53,7 +76,11 @@ function MHMDS() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "55%" }}
-        src={AlHMDSsynthesis}
+        src={images[0]}
+        onClick={() => {
+          setIndex(0);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         The byproduct Me<sub>3</sub>SiCl (boiling point = 57 °C) can be removed
@@ -88,7 +115,11 @@ function MHMDS() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "70%" }}
-        src={AlHMDSstructures}
+        src={images[1]}
+        onClick={() => {
+          setIndex(1);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         The synthesized Al-HMDS precursor was heated to different temperatures
@@ -102,7 +133,11 @@ function MHMDS() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "65%" }}
-        src={AlHMDStable}
+        src={images[2]}
+        onClick={() => {
+          setIndex(2);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         XRD data for lower temperatures show primarily amorphous materials and
@@ -130,7 +165,11 @@ function MHMDS() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "65%" }}
-        src={AlHMDSdata}
+        src={images[3]}
+        onClick={() => {
+          setIndex(3);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Overall, process optimization needs further attention to eliminate Al
@@ -172,7 +211,11 @@ function MHMDS() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "75%" }}
-        src={AlHMDSpolymer}
+        src={images[4]}
+        onClick={() => {
+          setIndex(4);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         In conclusion, flexible solid films with Al-HMDS (800 °C/4 h/N
@@ -196,7 +239,11 @@ function MHMDS() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "75%" }}
-        src={MHMDSstructures}
+        src={images[5]}
+        onClick={() => {
+          setIndex(5);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.mainText}>
         Example thermal decomposition pathways for M-HMDS precursors:
@@ -204,7 +251,11 @@ function MHMDS() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "85%" }}
-        src={MHMDSdecompositions}
+        src={images[6]}
+        onClick={() => {
+          setIndex(6);
+          setIsOpen(true);
+        }}
       />
       <div
         className={researchStyles.mainText}
@@ -237,6 +288,15 @@ function MHMDS() {
           <Link to="/research/ceramics">Ceramic Processing - ZTA Ceramics</Link>
         </span>
       </div>
+      <ImgLightbox
+        open={isOpen}
+        src={src}
+        nextSrc={nextSrc}
+        prevSrc={prevSrc}
+        handleClose={handleClose}
+        handleMovePrev={handleMovePrev}
+        handleMoveNext={handleMoveNext}
+      />
     </div>
   );
 }

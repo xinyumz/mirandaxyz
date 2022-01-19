@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Research from "./Research";
 import { Link } from "react-router-dom";
 import researchStyles from "./Research.module.css";
 import SPE from "./research_images/SPE.png";
 import Oxysilylation from "./research_images/Oxysilylation.png";
 import LiXPONs from "./research_images/LiXPONs.png";
+import ImgLightbox from "./ImgLightbox";
+
+const images = [SPE, Oxysilylation, LiXPONs];
 
 function PolymerSyntheses() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const src = images[index];
+  const nextSrc = images[(index + 1) % images.length];
+  const prevSrc = images[(index + images.length - 1) % images.length];
+
+  const handleClose = () => setIsOpen(false);
+  const handleMovePrev = () =>
+    setIndex((index + images.length - 1) % images.length);
+  const handleMoveNext = () => setIndex((index + 1) % images.length);
+
   return (
     <div className={researchStyles.contentPG}>
       <div className={researchStyles.title}>Polymer Syntheses</div>
@@ -53,7 +68,11 @@ function PolymerSyntheses() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "50%" }}
-        src={SPE}
+        src={images[0]}
+        onClick={() => {
+          setIndex(0);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.projTitle}>Polymer Matrices</div>
       <div className={researchStyles.mainText}>
@@ -108,7 +127,11 @@ function PolymerSyntheses() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "90%" }}
-        src={Oxysilylation}
+        src={images[1]}
+        onClick={() => {
+          setIndex(1);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.projTitle}>Lithium Salts</div>
       <div className={researchStyles.mainText}>
@@ -165,7 +188,11 @@ function PolymerSyntheses() {
       <img
         className={researchStyles.image}
         style={{ maxWidth: "40%" }}
-        src={LiXPONs}
+        src={images[2]}
+        onClick={() => {
+          setIndex(2);
+          setIsOpen(true);
+        }}
       />
       <div className={researchStyles.projTitle}>
         <Link to="/research/polymer-syntheses/m-hmds">M-HMDS</Link>
@@ -188,6 +215,15 @@ function PolymerSyntheses() {
         formed precursors are volatile, offering the potential utility as
         gas-phase deposition precursors for their corresponding metal nitrides.{" "}
       </div>
+      <ImgLightbox
+        open={isOpen}
+        src={src}
+        nextSrc={nextSrc}
+        prevSrc={prevSrc}
+        handleClose={handleClose}
+        handleMovePrev={handleMovePrev}
+        handleMoveNext={handleMoveNext}
+      />
     </div>
   );
 }

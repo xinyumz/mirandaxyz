@@ -39,22 +39,20 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
         onToggle={handleToggleSidebar}
         style={{ height: "calc(100vh - 3.5rem)" }}
       >
-        <SidebarHeader>
-          <div
-            style={{
-              paddingTop: 24,
-              paddingBottom: 24,
-              paddingLeft: 18,
-              textTransform: "uppercase",
-              fontWeight: "bold",
-              fontSize: 18,
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              whiteSpace: "nowrap",
-            }}
-          >
-            Research Projects
-          </div>
+        <SidebarHeader
+          style={{
+            paddingTop: 24,
+            paddingBottom: 24,
+            paddingLeft: 18,
+            textTransform: "uppercase",
+            fontWeight: "bold",
+            fontSize: 18,
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+          }}
+        >
+          Research Projects
         </SidebarHeader>
         <SidebarContent
           style={{
@@ -157,19 +155,19 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
         <MenuIcon
           sx={{
             cursor: "pointer",
-            backgroundColor: "#353535",
+            backgroundColor: "#252525cc",
             color: "#fff",
             textAlign: "center",
             borderRadius: "50%",
-            height: "1.5rem",
-            width: "1.5rem",
+            height: "1.4rem",
+            width: "1.4rem",
             padding: "20%",
-            boxShadow: "3px 3px 5px lightgrey",
+            boxShadow: "2px 2px 4px 3px #d3d3d3cc",
             position: "relative",
             zIndex: "1000",
             "&:hover": {
-              backgroundColor: "#505050",
-              boxShadow: "3px 3px 5px darkgrey",
+              backgroundColor: "#505050cc",
+              boxShadow: "3px 3px 5px #a9a9a9cc",
             },
           }}
         />

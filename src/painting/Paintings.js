@@ -1,22 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import paintingStyles from "./Paintings.module.css";
 import { Helmet } from "react-helmet";
 import Header from "../Header";
-import Earth from "./paintings/TheEarth.jpg";
-import Aco from "./paintings/Aco.png";
-import UnderTree from "./paintings/UnderTheTree.png";
-import SnowMountain from "./paintings/SnowyMountains.png";
-import CanolaField from "./paintings/CanolaFlowerField.png";
-import Starlight from "./paintings/StarlightNight.png";
-import Lake from "./paintings/TheLake.png";
-import Sea from "./paintings/TheSea.png";
-import Valley from "./paintings/TheValley.png";
-import Village from "./paintings/TheVillage.png";
-import Kiwi from "./paintings/Kiwi.jpg";
-import CarTower from "./paintings/CameroonTower.jpg";
-import Meow from "./paintings/Meow.jpg";
+import { paintings } from "./paintings/patiningList";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+
+const customStyles = {
+  content: {
+    marginTop: "3.5rem",
+    fontSize: "0.85rem",
+  },
+};
 
 export default function Paintings() {
+  const [index, setIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
       <Helmet>
@@ -26,30 +26,138 @@ export default function Paintings() {
       <div className={paintingStyles.paintPage}>
         <div className={paintingStyles.paintContent}>
           <div className={paintingStyles.paintRow}>
-            <img className={paintingStyles.paintLong} src={Village} />
-            <img className={paintingStyles.paintLong} src={Valley} />
-            <img className={paintingStyles.paintLong} src={Sea} />
+            <img
+              className={paintingStyles.paintLong}
+              src={paintings[0][0]}
+              onClick={() => {
+                setIndex(0);
+                setIsOpen(true);
+              }}
+            />
+            <img
+              className={paintingStyles.paintLong}
+              src={paintings[1][0]}
+              onClick={() => {
+                setIndex(1);
+                setIsOpen(true);
+              }}
+            />
+            <img
+              className={paintingStyles.paintLong}
+              src={paintings[2][0]}
+              onClick={() => {
+                setIndex(2);
+                setIsOpen(true);
+              }}
+            />
           </div>
           <div className={paintingStyles.paintRow}>
-            <img className={paintingStyles.paintWide} src={Lake} />
-            <img className={paintingStyles.paintWide} src={Earth} />
+            <img
+              className={paintingStyles.paintWide}
+              src={paintings[3][0]}
+              onClick={() => {
+                setIndex(3);
+                setIsOpen(true);
+              }}
+            />
+            <img
+              className={paintingStyles.paintWide}
+              src={paintings[4][0]}
+              onClick={() => {
+                setIndex(4);
+                setIsOpen(true);
+              }}
+            />
           </div>
           <div className={paintingStyles.paintRow}>
-            <img className={paintingStyles.paintWide} src={Aco} />
-            <img className={paintingStyles.paintWide} src={SnowMountain} />
+            <img
+              className={paintingStyles.paintWide}
+              src={paintings[5][0]}
+              onClick={() => {
+                setIndex(5);
+                setIsOpen(true);
+              }}
+            />
+            <img
+              className={paintingStyles.paintWide}
+              src={paintings[6][0]}
+              onClick={() => {
+                setIndex(6);
+                setIsOpen(true);
+              }}
+            />
           </div>
           <div className={paintingStyles.paintRow}>
-            <img className={paintingStyles.paintLong} src={Starlight} />
-            <img className={paintingStyles.paintLong} src={CanolaField} />
-            <img className={paintingStyles.paintWide} src={UnderTree} />
+            <img
+              className={paintingStyles.paintLong}
+              src={paintings[7][0]}
+              onClick={() => {
+                setIndex(7);
+                setIsOpen(true);
+              }}
+            />
+            <img
+              className={paintingStyles.paintLong}
+              src={paintings[8][0]}
+              onClick={() => {
+                setIndex(8);
+                setIsOpen(true);
+              }}
+            />
+            <img
+              className={paintingStyles.paintWide}
+              src={paintings[9][0]}
+              onClick={() => {
+                setIndex(9);
+                setIsOpen(true);
+              }}
+            />
           </div>
           <div className={paintingStyles.paintRow}>
-            <img className={paintingStyles.paintLong} src={Kiwi} />
-            <img className={paintingStyles.paintLong} src={CarTower} />
-            <img className={paintingStyles.paintLong} src={Meow} />
+            <img
+              className={paintingStyles.paintLong}
+              src={paintings[10][0]}
+              onClick={() => {
+                setIndex(10);
+                setIsOpen(true);
+              }}
+            />
+            <img
+              className={paintingStyles.paintLong}
+              src={paintings[11][0]}
+              onClick={() => {
+                setIndex(11);
+                setIsOpen(true);
+              }}
+            />
+            <img
+              className={paintingStyles.paintLong}
+              src={paintings[12][0]}
+              onClick={() => {
+                setIndex(12);
+                setIsOpen(true);
+              }}
+            />
           </div>
         </div>
       </div>
+
+      {isOpen ? (
+        <Lightbox
+          reactModalStyle={customStyles}
+          mainSrc={paintings[index][0]}
+          imageTitle={paintings[index][1]}
+          nextSrc={paintings[(index + 1) % paintings.length][0]}
+          prevSrc={
+            paintings[(index + paintings.length - 1) % paintings.length][0]
+          }
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() =>
+            setIndex((index + paintings.length - 1) % paintings.length)
+          }
+          onMoveNextRequest={() => setIndex((index + 1) % paintings.length)}
+        />
+      ) : null}
     </div>
   );
 }
