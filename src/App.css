@@ -5,6 +5,17 @@ body {
 }
 a {
   text-decoration-line: none;
+  color: inherit;
+}
+a:link,
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: #5f9ea0;
+}
+img {
+  background-color: white;
 }
 
 ::-webkit-scrollbar {

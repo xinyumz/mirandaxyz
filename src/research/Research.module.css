@@ -1,6 +1,12 @@
-img {
-  background-color: white;
+a,
+a:link,
+a:visited {
+  color: inherit;
 }
+a:hover {
+  color: #5f9ea0;
+}
+
 /*Main styles*/
 .researchPG {
   background-image: url(./research_images/Hexagon.svg);
