@@ -18,7 +18,7 @@ export default function Paintings() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div style={{ height: window.innerHeight }}>
       <Helmet>
         <title>Paintings | Xinyu (Miranda) Zhang</title>
       </Helmet>

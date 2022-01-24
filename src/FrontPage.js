@@ -13,7 +13,7 @@ export default function FrontPage() {
   }
 
   return (
-    <div>
+    <div style={{ height: window.innerHeight }}>
       <Helmet>
         <title>Welcome | Xinyu (Miranda) Zhang</title>
       </Helmet>

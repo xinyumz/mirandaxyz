@@ -11,7 +11,7 @@ export default function Research({ ...props }) {
   };
 
   return (
-    <div>
+    <div style={{ height: window.innerHeight }}>
       <Helmet>
         <title>Research Projects | Xinyu (Miranda) Zhang</title>
       </Helmet>

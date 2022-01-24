@@ -70,7 +70,7 @@ function Experience({ ...props }) {
 
 export default function CV() {
   return (
-    <div>
+    <div style={{ height: window.innerHeight }}>
       <Helmet>
         <title>CV | Xinyu (Miranda) Zhang</title>
       </Helmet>

@@ -7,7 +7,7 @@ import TrackPlayer from "./player/TrackPlayer";
 
 export default function Composition() {
   return (
-    <div>
+    <div style={{ height: window.innerHeight }}>
       <Helmet>
         <title>Compositions | Xinyu (Miranda) Zhang</title>
       </Helmet>
