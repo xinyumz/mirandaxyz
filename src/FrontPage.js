@@ -6,7 +6,7 @@ import { GoChevronDown } from "react-icons/go";
 import "./FrontPage.css";
 
 export default function FrontPage() {
-  const projectRef = useRef();
+  const projectRef = useRef(null);
 
   function handleClick() {
     projectRef.current.scrollIntoView({ behavior: "smooth" });

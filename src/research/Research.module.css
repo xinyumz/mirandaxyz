@@ -15,7 +15,7 @@ a:hover {
   color: #1c2833;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  height: calc(100vh - 3.5rem);
+  height: calc(100% - 3.5rem);
   margin-top: 3.5rem;
 }
 

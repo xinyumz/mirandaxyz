@@ -1,14 +1,7 @@
 .frontpage {
   cursor: default;
-  margin-top: 3.5rem;
-  height: calc(100vh - 3.5rem);
+  height: 100%;
   overflow: overlay;
-}
-
-@media (max-width: 850px) {
-  .frontpage {
-    margin-top: 0;
-  }
 }
 
 /*Styles for front block*/
@@ -27,6 +20,7 @@
   word-spacing: 0.2rem;
   text-align: center;
   font-size: 1.8rem;
+  margin-top: 3.5rem;
 }
 
 .welcome {
@@ -123,6 +117,12 @@
     letter-spacing: 0;
     text-transform: none;
     margin-top: 12rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .frontblock {
+    margin-top: 0;
   }
 }
 
@@ -238,7 +238,7 @@
 .pro-block {
   background-image: url(images/Moon.svg);
   background-size: cover;
-  height: 51rem;
+  height: 52rem;
   text-align: center;
   color: rgb(188, 215, 226);
   font-family: Arial, Helvetica, sans-serif;
