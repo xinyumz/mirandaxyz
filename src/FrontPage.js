@@ -18,7 +18,10 @@ export default function FrontPage() {
         <title>Welcome | Xinyu (Miranda) Zhang</title>
       </Helmet>
       <Header />
-      <div className="frontpage">
+      <div
+        className="frontpage"
+        style={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+      >
         <div className="frontblock">
           <div className="welcome">
             <strong>WELCOME, I am</strong>

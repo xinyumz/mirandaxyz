@@ -162,7 +162,6 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
             height: "1.4rem",
             width: "1.4rem",
             padding: "20%",
-            boxShadow: "2px 2px 4px 3px #d3d3d3cc",
             position: "relative",
             zIndex: "1000",
             "&:hover": {

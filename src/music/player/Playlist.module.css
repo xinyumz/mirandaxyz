@@ -97,23 +97,8 @@
   color: white;
 }
 
-.pause {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 5rem;
-  width: 5rem;
-  background-color: lightgrey;
-  border-radius: 50%;
-  border: none;
-  box-shadow: none;
-  color: rgb(20, 20, 20);
-  font-size: 50px;
-  cursor: pointer;
-}
-
+.pause,
 .play {
-  padding-right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,9 +188,6 @@
     width: 3rem;
     font-size: 25px;
   }
-  .play {
-    padding-right: 2%;
-  }
 
   .volumeControl {
     width: 25%;
@@ -238,9 +220,6 @@
     height: 1.9rem;
     width: 1.9rem;
     font-size: 15px;
-  }
-  .play {
-    padding-right: 4%;
   }
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
-import { MdSkipPrevious } from "react-icons/md";
-import { MdSkipNext } from "react-icons/md";
-import { IoPlaySharp } from "react-icons/io5";
-import { IoPauseSharp } from "react-icons/io5";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import PauseIcon from "@mui/icons-material/Pause";
+import SkipNextIcon from "@mui/icons-material/SkipNext";
+import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import playlistStyles from "./Playlist.module.css";
 
 export default function PlayerControls({
@@ -19,7 +19,7 @@ export default function PlayerControls({
         aria-label="Previous"
         onClick={onPrevClick}
       >
-        <MdSkipPrevious />
+        <SkipPreviousIcon fontSize="inherit" />
       </button>
       {isPlaying ? (
         <button
@@ -28,7 +28,7 @@ export default function PlayerControls({
           onClick={() => onPlayPauseClick(false)}
           aria-label="Pause"
         >
-          <IoPauseSharp />
+          <PauseIcon fontSize="inherit" />
         </button>
       ) : (
         <button
@@ -37,7 +37,7 @@ export default function PlayerControls({
           onClick={() => onPlayPauseClick(true)}
           aria-label="Play"
         >
-          <IoPlaySharp />
+          <PlayArrowIcon fontSize="inherit" />
         </button>
       )}
       <button
@@ -46,7 +46,7 @@ export default function PlayerControls({
         aria-label="Next"
         onClick={onNextClick}
       >
-        <MdSkipNext />
+        <SkipNextIcon fontSize="inherit" />
       </button>
     </div>
   );

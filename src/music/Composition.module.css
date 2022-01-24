@@ -98,6 +98,7 @@
     background-image: url("../images/Sound\ Wave\ center.svg");
     flex-direction: column;
     padding-left: 5rem;
+    padding-bottom: 5rem;
   }
   .coverImg {
     max-width: 13rem;
@@ -147,6 +148,7 @@
     height: 25rem;
     padding-left: 0;
     word-spacing: 3px;
+    padding-bottom: 4rem;
   }
   .coverImg {
     max-width: 11rem;
@@ -169,6 +171,7 @@
 @media (max-width: 350px) {
   .topBlock {
     height: 20rem;
+    padding-bottom: 3rem;
   }
   .coverImg {
     max-width: 8.5rem;

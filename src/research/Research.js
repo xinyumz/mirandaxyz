@@ -16,7 +16,10 @@ export default function Research({ ...props }) {
         <title>Research Projects | Xinyu (Miranda) Zhang</title>
       </Helmet>
       <Header />
-      <div className={researchStyles.researchPG}>
+      <div
+        className={researchStyles.researchPG}
+        style={{ display: "flex", flexGrow: 1 }}
+      >
         <Sidebar toggled={toggled} handleToggleSidebar={handleToggleSidebar} />
         {props.children}
       </div>

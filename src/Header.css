@@ -1,3 +1,11 @@
+a,
+a:link,
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: #5f9ea0;
+}
 /*Wide header styles*/
 .header {
   display: flex;

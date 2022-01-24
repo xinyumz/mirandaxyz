@@ -76,11 +76,15 @@ export default function CV() {
       </Helmet>
       <Header />
       <div className={CVStyles.CVpage}>
-        <div className={CVStyles.CVcontent}>
+        <div
+          className={CVStyles.CVcontent}
+          style={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+        >
           <div>
             <h1 className={CVStyles.CVTitle}>Xinyu (Miranda) Zhang</h1>
+            <hr color="darkgrey" />
           </div>
-          <hr />
+
           <div className={CVStyles.emailPad}>
             xinyumz@umich.edu; mirandazxy@outlook.com
           </div>

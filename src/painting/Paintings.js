@@ -23,7 +23,10 @@ export default function Paintings() {
         <title>Paintings | Xinyu (Miranda) Zhang</title>
       </Helmet>
       <Header />
-      <div className={paintingStyles.paintPage}>
+      <div
+        className={paintingStyles.paintPage}
+        style={{ display: "flex", flexGrow: 1 }}
+      >
         <div className={paintingStyles.paintContent}>
           <div className={paintingStyles.paintRow}>
             <img

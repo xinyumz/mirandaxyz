@@ -12,7 +12,10 @@ export default function Composition() {
         <title>Compositions | Xinyu (Miranda) Zhang</title>
       </Helmet>
       <Header />
-      <div className={compositionStyles.compPG}>
+      <div
+        className={compositionStyles.compPG}
+        style={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+      >
         <TopBlock />
         <TrackPlayer />
       </div>
