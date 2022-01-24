@@ -28,7 +28,8 @@ function Overlay({ toggled }) {
 }
 
 export default function Sidebar({ toggled, handleToggleSidebar }) {
-  const smallScreen = useMediaQuery("(max-width:768px)");
+  const maxSize = useMediaQuery("(max-width:768px)");
+  const minSize = useMediaQuery("(min-width:460px)");
 
   return (
     <div>
@@ -41,12 +42,10 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
       >
         <SidebarHeader
           style={{
-            paddingTop: 24,
-            paddingBottom: 24,
-            paddingLeft: 18,
+            padding: 24,
             textTransform: "uppercase",
             fontWeight: "bold",
-            fontSize: 18,
+            fontSize: 16,
             overflow: "hidden",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
@@ -58,7 +57,7 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
           style={{
             paddingTop: 10,
             lineHeight: 2.5,
-            fontSize: 14,
+            fontSize: 12,
             overflow: "auto",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
@@ -67,7 +66,7 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
           <Menu>
             <MenuItem
               style={{
-                fontSize: 16,
+                fontSize: 14,
                 textTransform: "uppercase",
                 fontWeight: "bold",
                 letterSpacing: 0.5,
@@ -76,7 +75,7 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
               Overview
               <Link to="/research" />
             </MenuItem>
-            <MenuItem style={{ fontSize: 16, fontWeight: "bold" }}>
+            <MenuItem style={{ fontSize: 14, fontWeight: "bold" }}>
               Polymer Syntheses
               <Link to="/research/polymer-syntheses" />
             </MenuItem>
@@ -110,7 +109,7 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
             </MenuItem>
 
             <SubMenu
-              style={{ fontSize: 16, fontWeight: "bold" }}
+              style={{ fontSize: 14, fontWeight: "bold" }}
               title="Ceramic Processing"
             >
               <MenuItem style={{ lineHeight: 1, fontWeight: "normal" }}>
@@ -119,7 +118,7 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
               </MenuItem>
             </SubMenu>
 
-            <MenuItem style={{ fontSize: 16, fontWeight: "bold" }}>
+            <MenuItem style={{ fontSize: 14, fontWeight: "bold" }}>
               List of Publications
               <Link to="/research/publications" />
             </MenuItem>
@@ -130,7 +129,7 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
             paddingTop: 10,
             paddingBottom: 12,
             paddingLeft: 8,
-            fontSize: 13,
+            fontSize: 11,
             overflow: "hidden",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
@@ -141,7 +140,7 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
         </SidebarFooter>
       </ProSidebar>
 
-      {smallScreen ? <Overlay toggled={toggled} /> : null}
+      {maxSize && minSize ? <Overlay toggled={toggled} /> : null}
 
       <div
         className={`app ${toggled ? "toggled" : ""}`}
