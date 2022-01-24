@@ -31,6 +31,30 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
   const maxSize = useMediaQuery("(max-width:768px)");
   const minSize = useMediaQuery("(min-width:460px)");
 
+  const smallHeader = useMediaQuery("(max-width:460px)");
+  const headerStyleL = {
+    padding: 24,
+    textTransform: "uppercase",
+    fontWeight: "bold",
+    fontSize: 16,
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+  };
+
+  const headerStyleS = {
+    padding: 20,
+    textTransform: "uppercase",
+    fontWeight: "bold",
+    fontSize: 15,
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+  };
+
+  const sidebarHeightL = { height: "100%" };
+  const sidebarHeightS = { height: "calc(100% - 3.5rem)" };
+
   return (
     <div>
       <ProSidebar
@@ -38,19 +62,9 @@ export default function Sidebar({ toggled, handleToggleSidebar }) {
         width={230}
         toggled={toggled}
         onToggle={handleToggleSidebar}
-        style={{ height: "calc(100vh - 3.5rem)" }}
+        style={maxSize ? sidebarHeightS : sidebarHeightL}
       >
-        <SidebarHeader
-          style={{
-            padding: 24,
-            textTransform: "uppercase",
-            fontWeight: "bold",
-            fontSize: 16,
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-          }}
-        >
+        <SidebarHeader style={smallHeader ? headerStyleS : headerStyleL}>
           Research Projects
         </SidebarHeader>
         <SidebarContent
