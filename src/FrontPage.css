@@ -1,3 +1,7 @@
+:target {
+  scroll-margin-top: 3.5rem;
+}
+
 .frontpage {
   cursor: default;
   height: 100%;
@@ -14,7 +18,7 @@
     url("images/MyPictures.jpg");
   background-size: cover;
   background-position: center;
-  height: 52rem;
+  height: 53rem;
   color: lightgrey;
   font-family: Arial, Helvetica, sans-serif;
   word-spacing: 0.2rem;

@@ -87,7 +87,7 @@
   align-items: center;
   background-color: transparent;
   color: darkgrey;
-  font-size: 50px;
+  font-size: 60px;
   border: none;
   cursor: pointer;
 }
@@ -109,7 +109,7 @@
   border: none;
   box-shadow: none;
   color: rgb(20, 20, 20);
-  font-size: 50px;
+  font-size: 60px;
   cursor: pointer;
 }
 
@@ -138,7 +138,7 @@
   .play {
     height: 4.5rem;
     width: 4.5rem;
-    font-size: 40px;
+    font-size: 55px;
   }
   .volumeControl {
     width: 18%;
@@ -153,7 +153,7 @@
   .play {
     height: 4rem;
     width: 4rem;
-    font-size: 35px;
+    font-size: 45px;
   }
   .volumeControl {
     width: 20%;
@@ -168,7 +168,7 @@
   .play {
     height: 3.5rem;
     width: 3.5rem;
-    font-size: 30px;
+    font-size: 40px;
   }
   .volumeControl {
     width: 22.5%;
@@ -186,7 +186,7 @@
   .play {
     height: 3rem;
     width: 3rem;
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .volumeControl {
@@ -203,9 +203,9 @@
   .next,
   .pause,
   .play {
-    height: 2.4rem;
-    width: 2.4rem;
-    font-size: 20px;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 30px;
   }
   .volumeBar {
     width: 100%;
@@ -217,9 +217,9 @@
   .next,
   .pause,
   .play {
-    height: 1.9rem;
-    width: 1.9rem;
-    font-size: 15px;
+    height: 2rem;
+    width: 2rem;
+    font-size: 25px;
   }
 }
 

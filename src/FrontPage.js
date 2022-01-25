@@ -9,7 +9,11 @@ export default function FrontPage() {
   const projectRef = useRef(null);
 
   function handleClick() {
-    projectRef.current.scrollIntoView({ behavior: "smooth" });
+    projectRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
   }
 
   return (
