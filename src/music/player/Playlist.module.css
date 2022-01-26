@@ -81,7 +81,7 @@
 .controls {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .prev,
@@ -112,6 +112,8 @@
   color: darkgrey;
   font-size: 95px;
   cursor: pointer;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .play:hover,
@@ -170,6 +172,8 @@
   .pause,
   .play {
     font-size: 70px;
+    margin-left: 7%;
+    margin-right: 7%;
   }
   .volumeControl {
     width: 22.5%;
@@ -188,6 +192,8 @@
   .pause,
   .play {
     font-size: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .volumeControl {
     width: 25%;
@@ -205,15 +211,15 @@
   .prev,
   .next {
     font-size: 30px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin: 0;
     padding: 0;
   }
   .pause,
   .play {
     font-size: 50px;
     padding: 0;
-    margin: 0;
+    margin-left: 8%;
+    margin-right: 8%;
   }
 
   .volumeBar {
@@ -225,12 +231,12 @@
   .prev,
   .next {
     font-size: 25px;
-    margin-left: 4%;
-    margin-right: 4%;
   }
   .pause,
   .play {
     font-size: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
