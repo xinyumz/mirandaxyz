@@ -19,16 +19,14 @@
 .paintLong {
   max-width: 27%;
   height: auto;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
   box-shadow: 3px 3px 6px dimgray;
   cursor: pointer;
 }
 .paintWide {
   max-width: 38%;
   height: auto;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
   box-shadow: 3px 3px 6px dimgray;
   cursor: pointer;
 }
@@ -49,22 +47,18 @@
     margin-bottom: 2rem;
   }
   .paintLong {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .paintWide {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 650px) {
   .paintLong {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   .paintWide {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 }

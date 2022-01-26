@@ -7,19 +7,6 @@
   padding-bottom: 7%;
 }
 
-/*player styles*/
-.playerBlock {
-  display: flex;
-  align-items: center;
-  margin: 2%;
-  margin-left: 4%;
-  margin-right: 4%;
-}
-
-.playingInfo {
-  width: 30%;
-}
-
 @media (max-width: 1100px) {
   .playlist {
     font-size: 1.1rem;
@@ -68,6 +55,20 @@
     margin-left: 2.5%;
     margin-right: 2.5%;
   }
+}
+
+/*player styles*/
+.playerBlock {
+  display: flex;
+  align-items: center;
+  margin: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 6rem;
+}
+
+.playingInfo {
+  width: 30%;
 }
 
 /*controls styles*/
@@ -162,6 +163,9 @@
 }
 
 @media (max-width: 700px) {
+  .playerBlock {
+    height: 5rem;
+  }
   .prev,
   .next,
   .pause,
@@ -180,6 +184,9 @@
 }
 
 @media (max-width: 550px) {
+  .playerBlock {
+    height: 4.25rem;
+  }
   .prev,
   .next,
   .pause,
@@ -199,6 +206,9 @@
 }
 
 @media (max-width: 460px) {
+  .playerBlock {
+    height: 3.5rem;
+  }
   .prev,
   .next,
   .pause,
@@ -213,6 +223,9 @@
 }
 
 @media (max-width: 350px) {
+  .playerBlock {
+    height: 3rem;
+  }
   .prev,
   .next,
   .pause,
