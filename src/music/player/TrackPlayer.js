@@ -117,7 +117,7 @@ export default function TrackPlayer() {
         <div className={playlistStyles.playingInfo}>
           <div
             style={{
-              fontSize: "85%",
+              fontSize: "80%",
               marginBottom: "2%",
               fontWeight: "800",
               color: "#5DADE2",
@@ -127,12 +127,14 @@ export default function TrackPlayer() {
           </div>
           <div style={{ lineHeight: "1rem" }}>{title}</div>
         </div>
-        <Controls
-          isPlaying={isPlaying}
-          onPrevClick={toPrevTrack}
-          onNextClick={toNextTrack}
-          onPlayPauseClick={setIsPlaying}
-        />
+        <div className={playlistStyles.playerControls}>
+          <Controls
+            isPlaying={isPlaying}
+            onPrevClick={toPrevTrack}
+            onNextClick={toNextTrack}
+            onPlayPauseClick={setIsPlaying}
+          />
+        </div>
         <div className={playlistStyles.volumeControl}>
           <IoVolumeMedium
             style={{
