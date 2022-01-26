@@ -1,4 +1,6 @@
 import React from "react";
+import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import PauseCircleIcon from "@mui/icons-material/PauseCircle";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import PauseIcon from "@mui/icons-material/Pause";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
@@ -28,7 +30,7 @@ export default function PlayerControls({
           onClick={() => onPlayPauseClick(false)}
           aria-label="Pause"
         >
-          <PauseIcon fontSize="inherit" />
+          <PauseCircleIcon fontSize="inherit" />
         </button>
       ) : (
         <button
@@ -37,7 +39,7 @@ export default function PlayerControls({
           onClick={() => onPlayPauseClick(true)}
           aria-label="Play"
         >
-          <PlayArrowIcon fontSize="inherit" />
+          <PlayCircleIcon fontSize="inherit" />
         </button>
       )}
       <button

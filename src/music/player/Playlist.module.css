@@ -64,7 +64,6 @@
   margin: 2%;
   margin-left: 4%;
   margin-right: 4%;
-  height: 6rem;
 }
 
 .playingInfo {
@@ -74,7 +73,7 @@
 /*controls styles*/
 .controls {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   width: 40%;
   justify-content: space-around;
 }
@@ -103,20 +102,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5rem;
-  width: 5rem;
-  background-color: lightgrey;
-  border-radius: 50%;
   border: none;
+  background: transparent;
   box-shadow: none;
-  color: rgb(20, 20, 20);
-  font-size: 60px;
+  color: darkgrey;
+  font-size: 95px;
   cursor: pointer;
 }
 
 .play:hover,
 .pause:hover {
-  background-color: white;
+  color: white;
 }
 
 .volumeControl {
@@ -134,12 +130,14 @@
 
 @media (max-width: 1100px) {
   .prev,
-  .next,
-  .pause,
-  .play {
+  .next {
     height: 4.5rem;
     width: 4.5rem;
     font-size: 55px;
+  }
+  .pause,
+  .play {
+    font-size: 90px;
   }
   .volumeControl {
     width: 18%;
@@ -149,12 +147,14 @@
 
 @media (max-width: 850px) {
   .prev,
-  .next,
-  .pause,
-  .play {
+  .next {
     height: 4rem;
     width: 4rem;
     font-size: 45px;
+  }
+  .pause,
+  .play {
+    font-size: 80px;
   }
   .volumeControl {
     width: 20%;
@@ -163,16 +163,15 @@
 }
 
 @media (max-width: 700px) {
-  .playerBlock {
-    height: 5rem;
-  }
   .prev,
-  .next,
-  .pause,
-  .play {
+  .next {
     height: 3.5rem;
     width: 3.5rem;
     font-size: 40px;
+  }
+  .pause,
+  .play {
+    font-size: 70px;
   }
   .volumeControl {
     width: 22.5%;
@@ -184,18 +183,16 @@
 }
 
 @media (max-width: 550px) {
-  .playerBlock {
-    height: 4.25rem;
-  }
   .prev,
-  .next,
-  .pause,
-  .play {
+  .next {
     height: 3rem;
     width: 3rem;
     font-size: 35px;
   }
-
+  .pause,
+  .play {
+    font-size: 60px;
+  }
   .volumeControl {
     width: 25%;
     margin-left: 5%;
@@ -206,33 +203,32 @@
 }
 
 @media (max-width: 460px) {
-  .playerBlock {
-    height: 3.5rem;
-  }
   .prev,
-  .next,
-  .pause,
-  .play {
+  .next {
     height: 2.5rem;
     width: 2.5rem;
     font-size: 30px;
   }
+  .pause,
+  .play {
+    font-size: 50px;
+  }
+
   .volumeBar {
     width: 100%;
   }
 }
 
 @media (max-width: 350px) {
-  .playerBlock {
-    height: 3rem;
-  }
   .prev,
-  .next,
-  .pause,
-  .play {
+  .next {
     height: 2rem;
     width: 2rem;
     font-size: 25px;
+  }
+  .pause,
+  .play {
+    font-size: 40px;
   }
 }
 
