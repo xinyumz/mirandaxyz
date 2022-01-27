@@ -170,7 +170,7 @@ export default function TrackPlayer() {
         onClick={onScrubEnd}
         onMouseUp={onScrubEnd}
         onKeyUp={onScrubEnd}
-        onTouchEnd={onScrubEnd}
+        onTouchStart={onScrubEnd}
         onDragEnd={onScrubEnd}
       />
       <div className={playlistStyles.songlistBlock}>
@@ -179,7 +179,7 @@ export default function TrackPlayer() {
           <div
             key={i}
             onClick={() => onTrackClick(i)}
-            onTouchEnd={() => onTrackClick(i)}
+            onTouchStart={() => onTrackClick(i)}
           >
             <Songlist index={i} title={track[0]} duration={track[2]} />
           </div>

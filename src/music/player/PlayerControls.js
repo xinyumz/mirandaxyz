@@ -18,6 +18,7 @@ export default function PlayerControls({
         className={playlistStyles.prev}
         aria-label="Previous"
         onClick={onPrevClick}
+        onTouchStar={onPrevClick}
       >
         <SkipPreviousIcon fontSize="inherit" />
       </div>
@@ -26,6 +27,7 @@ export default function PlayerControls({
           type="button"
           className={playlistStyles.pause}
           onClick={() => onPlayPauseClick(false)}
+          onTouchStar={() => onPlayPauseClick(false)}
           aria-label="Pause"
         >
           <PauseCircleIcon fontSize="inherit" />
@@ -35,6 +37,7 @@ export default function PlayerControls({
           type="button"
           className={playlistStyles.play}
           onClick={() => onPlayPauseClick(true)}
+          onTouchStar={() => onPlayPauseClick(true)}
           aria-label="Play"
         >
           <PlayCircleIcon fontSize="inherit" />
@@ -45,6 +48,7 @@ export default function PlayerControls({
         className={playlistStyles.next}
         aria-label="Next"
         onClick={onNextClick}
+        onTouchStar={onNextClick}
       >
         <SkipNextIcon fontSize="inherit" />
       </div>
