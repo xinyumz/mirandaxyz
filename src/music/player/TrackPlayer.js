@@ -79,6 +79,13 @@ export default function TrackPlayer() {
   };
 
   useEffect(() => {
+    window.addEventListener("touchstart", () => {
+      audioRef.current.muted = false;
+      audioRef.current.play();
+    });
+  });
+
+  useEffect(() => {
     if (isPlaying) {
       audioRef.current.play();
       startTimer();
