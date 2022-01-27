@@ -25,11 +25,11 @@ export default function TrackPlayer() {
   const onVolumeChange = (value) => {
     setVolume(value);
     audioRef.current.volume = volume;
-    window.addEventListener("touchstart", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.volume = volume;
     });
     if (isPlaying) {
-      window.addEventListener("touchstart", () => {
+      document.addEventListener("touchstart", () => {
         audioRef.current.muted = false;
         audioRef.current.play();
       });
@@ -60,7 +60,7 @@ export default function TrackPlayer() {
   const onTrackClick = (i) => {
     setTrackIndex(i);
     setIsPlaying(true);
-    window.addEventListener("touchstart", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -72,7 +72,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(trackIndex - 1);
     }
-    window.addEventListener("touchstart", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -84,7 +84,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(0);
     }
-    window.addEventListener("touchstart", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -105,7 +105,7 @@ export default function TrackPlayer() {
 
   useEffect(() => {
     if (isPlaying) {
-      window.addEventListener("touchstart", () => {
+      document.addEventListener("touchstart", () => {
         audioRef.current.muted = false;
         audioRef.current.play();
       });
@@ -113,6 +113,9 @@ export default function TrackPlayer() {
       startTimer();
     } else {
       audioRef.current.pause();
+      document.addEventListener("touchstart", () => {
+        audioRef.current.pause();
+      });
     }
   }, [isPlaying]);
 
