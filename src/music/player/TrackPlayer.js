@@ -111,6 +111,7 @@ export default function TrackPlayer() {
       clearInterval(intervalRef.current);
     };
   }, []);
+
   return (
     <div className={playlistStyles.playlist}>
       <div className={playlistStyles.playerBlock}>
@@ -152,6 +153,7 @@ export default function TrackPlayer() {
             step="0.01"
             onChange={(e) => onVolumeChange(e.target.value)}
             onClick={(e) => onVolumeChange(e.target.value)}
+            onTouchEnd={(e) => onVolumeChange(e.target.value)}
           />
         </div>
       </div>
@@ -163,13 +165,19 @@ export default function TrackPlayer() {
         min="0"
         max={duration ? duration : `${duration}`}
         onChange={(e) => onScrub(e.target.value)}
+        onClick={onScrubEnd}
         onMouseUp={onScrubEnd}
         onKeyUp={onScrubEnd}
+        onTouchEnd={onScrubEnd}
       />
       <div className={playlistStyles.songlistBlock}>
         <SonglistHeader />
         {tracks.map((track, i) => (
-          <div key={i} onClick={() => onTrackClick(i)}>
+          <div
+            key={i}
+            onClick={() => onTrackClick(i)}
+            onTouchEnd={() => onTrackClick(i)}
+          >
             <Songlist index={i} title={track[0]} duration={track[2]} />
           </div>
         ))}
