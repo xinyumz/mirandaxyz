@@ -154,6 +154,7 @@ export default function TrackPlayer() {
             onChange={(e) => onVolumeChange(e.target.value)}
             onClick={(e) => onVolumeChange(e.target.value)}
             onTouchEnd={(e) => onVolumeChange(e.target.value)}
+            onDrag={(e) => onVolumeChange(e.target.value)}
           />
         </div>
       </div>
@@ -165,10 +166,12 @@ export default function TrackPlayer() {
         min="0"
         max={duration ? duration : `${duration}`}
         onChange={(e) => onScrub(e.target.value)}
+        onDrag={(e) => onScrub(e.target.value)}
         onClick={onScrubEnd}
         onMouseUp={onScrubEnd}
         onKeyUp={onScrubEnd}
         onTouchEnd={onScrubEnd}
+        onDragEnd={onScrubEnd}
       />
       <div className={playlistStyles.songlistBlock}>
         <SonglistHeader />

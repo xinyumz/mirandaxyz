@@ -13,7 +13,7 @@ export default function PlayerControls({
 }) {
   return (
     <div className={playlistStyles.controls}>
-      <button
+      <div
         type="button"
         className={playlistStyles.prev}
         aria-label="Previous"
@@ -21,29 +21,29 @@ export default function PlayerControls({
         onTouchEnd={onPrevClick}
       >
         <SkipPreviousIcon fontSize="inherit" />
-      </button>
+      </div>
       {isPlaying ? (
-        <button
+        <div
           type="button"
           className={playlistStyles.pause}
           onClick={() => onPlayPauseClick(false)}
-          onTouchEnd={() => onPlayPauseClick(false)}
+          onPause={() => onPlayPauseClick(false)}
           aria-label="Pause"
         >
           <PauseCircleIcon fontSize="inherit" />
-        </button>
+        </div>
       ) : (
-        <button
+        <div
           type="button"
           className={playlistStyles.play}
           onClick={() => onPlayPauseClick(true)}
-          onTouchEnd={() => onPlayPauseClick(true)}
+          onPlay={() => onPlayPauseClick(true)}
           aria-label="Play"
         >
           <PlayCircleIcon fontSize="inherit" />
-        </button>
+        </div>
       )}
-      <button
+      <div
         type="button"
         className={playlistStyles.next}
         aria-label="Next"
@@ -51,7 +51,7 @@ export default function PlayerControls({
         onTouchEnd={onNextClick}
       >
         <SkipNextIcon fontSize="inherit" />
-      </button>
+      </div>
     </div>
   );
 }
