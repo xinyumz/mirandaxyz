@@ -60,6 +60,10 @@ export default function TrackPlayer() {
   const onTrackClick = (i) => {
     setTrackIndex(i);
     setIsPlaying(true);
+    window.addEventListener("touchstart", () => {
+      audioRef.current.muted = false;
+      audioRef.current.play();
+    });
   };
 
   const toPrevTrack = () => {
@@ -68,6 +72,10 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(trackIndex - 1);
     }
+    window.addEventListener("touchstart", () => {
+      audioRef.current.muted = false;
+      audioRef.current.play();
+    });
   };
 
   const toNextTrack = () => {
@@ -76,6 +84,10 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(0);
     }
+    window.addEventListener("touchstart", () => {
+      audioRef.current.muted = false;
+      audioRef.current.play();
+    });
   };
 
   const startTimer = () => {
