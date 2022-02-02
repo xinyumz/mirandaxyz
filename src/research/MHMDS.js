@@ -276,8 +276,8 @@ function MHMDS() {
         >
           Zhang, X.; Yu, M.; Indris, S.; Laine, R. M. Reactions of Metal
           Chlorides with Hexamethyldisilazane. Novel Precursors to Aluminum
-          Nitride and Beyond. <em>J. Am. Ceram. Soc.</em> <strong>2021</strong>,{" "}
-          <em>xx</em>(x), xxxx.
+          Nitride and Beyond. <em>J. Am. Ceram. Soc.</em> <strong>2022</strong>,{" "}
+          <em>105</em>(4), 2474-2488.
         </a>
       </div>
       <div className={researchStyles.mainText} style={{ paddingTop: "1.5%" }}>

@@ -22,12 +22,19 @@ export default function TrackPlayer() {
   const intervalRef = useRef();
   const isReady = useRef(false);
 
+  //HTML Elements
+  const volumeBar = document.getElementById("volume");
+  const controls = document.getElementById("controls");
+  //const progressBar = document.getElementById("progressBar");
+  const trackList = document.getElementById("tracks");
+
   const onVolumeChange = (value) => {
     setVolume(value);
     audioRef.current.volume = volume;
-    document.addEventListener("touchstart", () => {
+    volumeBar.addEventListener("touchstart", () => {
       audioRef.current.volume = volume;
     });
+    /*
     if (isPlaying) {
       document.addEventListener("touchstart", () => {
         audioRef.current.muted = false;
@@ -37,7 +44,7 @@ export default function TrackPlayer() {
       startTimer();
     } else {
       audioRef.current.pause();
-    }
+    }*/
   };
 
   const { duration } = audioRef.current;
@@ -60,7 +67,7 @@ export default function TrackPlayer() {
   const onTrackClick = (i) => {
     setTrackIndex(i);
     setIsPlaying(true);
-    document.addEventListener("touchstart", () => {
+    trackList.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -72,7 +79,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(trackIndex - 1);
     }
-    document.addEventListener("touchstart", () => {
+    controls.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -84,7 +91,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(0);
     }
-    document.addEventListener("touchstart", () => {
+    controls.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -105,7 +112,7 @@ export default function TrackPlayer() {
 
   useEffect(() => {
     if (isPlaying) {
-      document.addEventListener("touchstart", () => {
+      controls.addEventListener("touchstart", () => {
         audioRef.current.muted = false;
         audioRef.current.play();
       });
@@ -113,7 +120,7 @@ export default function TrackPlayer() {
       startTimer();
     } else {
       audioRef.current.pause();
-      document.addEventListener("touchstart", () => {
+      controls.addEventListener("touchstart", () => {
         audioRef.current.pause();
       });
     }
@@ -160,7 +167,7 @@ export default function TrackPlayer() {
           </div>
           <div style={{ lineHeight: "1rem" }}>{title}</div>
         </div>
-        <div className={playlistStyles.playerControls}>
+        <div className={playlistStyles.playerControls} id="controls">
           <Controls
             isPlaying={isPlaying}
             onPrevClick={toPrevTrack}
@@ -178,6 +185,7 @@ export default function TrackPlayer() {
           />
           <input
             type="range"
+            id="volume"
             className={playlistStyles.volumeBar}
             value={volume}
             min="0"
@@ -192,6 +200,7 @@ export default function TrackPlayer() {
       </div>
       <input
         type="range"
+        id="progressBar"
         className={playlistStyles.progressBar}
         value={trackProgress}
         step="1"
@@ -205,7 +214,7 @@ export default function TrackPlayer() {
         onTouchStart={onScrubEnd}
         onDragEnd={onScrubEnd}
       />
-      <div className={playlistStyles.songlistBlock}>
+      <div className={playlistStyles.songlistBlock} id="tracks">
         <SonglistHeader />
         {tracks.map((track, i) => (
           <div
