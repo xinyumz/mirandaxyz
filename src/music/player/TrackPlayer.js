@@ -25,19 +25,9 @@ export default function TrackPlayer() {
   const onVolumeChange = (value) => {
     setVolume(value);
     audioRef.current.volume = volume;
-    document.addEventListener("touchstart", () => {
+    document.addEventListener("onchange", () => {
       audioRef.current.volume = volume;
     });
-    if (isPlaying) {
-      document.addEventListener("touchstart", () => {
-        audioRef.current.muted = false;
-        audioRef.current.play();
-      });
-      audioRef.current.play();
-      startTimer();
-    } else {
-      audioRef.current.pause();
-    }
   };
 
   const { duration } = audioRef.current;
