@@ -6,6 +6,12 @@ import SonglistHeader from "./SonglistHeader";
 import Songlist from "./Songlist";
 import { IoVolumeMedium } from "react-icons/io5";
 
+//HTML Elements
+const volumeBar = document.getElementById("volume");
+const controls = document.getElementById("controls");
+//const progressBar = document.getElementById("progressBar");
+const trackList = document.getElementById("tracks");
+
 export default function TrackPlayer() {
   //states
   const [trackIndex, setTrackIndex] = useState(0);
@@ -21,12 +27,6 @@ export default function TrackPlayer() {
   const audioRef = useRef(new Audio(audioSrc));
   const intervalRef = useRef();
   const isReady = useRef(false);
-
-  //HTML Elements
-  const volumeBar = document.getElementById("volume");
-  const controls = document.getElementById("controls");
-  //const progressBar = document.getElementById("progressBar");
-  const trackList = document.getElementById("tracks");
 
   const onVolumeChange = (value) => {
     setVolume(value);
