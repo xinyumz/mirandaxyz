@@ -6,12 +6,6 @@ import SonglistHeader from "./SonglistHeader";
 import Songlist from "./Songlist";
 import { IoVolumeMedium } from "react-icons/io5";
 
-//HTML Elements
-const volumeBar = document.getElementById("volume");
-const controls = document.getElementById("controls");
-//const progressBar = document.getElementById("progressBar");
-const trackList = document.getElementById("tracks");
-
 export default function TrackPlayer() {
   //states
   const [trackIndex, setTrackIndex] = useState(0);
@@ -31,10 +25,9 @@ export default function TrackPlayer() {
   const onVolumeChange = (value) => {
     setVolume(value);
     audioRef.current.volume = volume;
-    volumeBar.addEventListener("touchstart", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.volume = volume;
     });
-    /*
     if (isPlaying) {
       document.addEventListener("touchstart", () => {
         audioRef.current.muted = false;
@@ -44,7 +37,7 @@ export default function TrackPlayer() {
       startTimer();
     } else {
       audioRef.current.pause();
-    }*/
+    }
   };
 
   const { duration } = audioRef.current;
@@ -67,7 +60,7 @@ export default function TrackPlayer() {
   const onTrackClick = (i) => {
     setTrackIndex(i);
     setIsPlaying(true);
-    trackList.addEventListener("touchstart", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -79,7 +72,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(trackIndex - 1);
     }
-    controls.addEventListener("touchstart", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -91,7 +84,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(0);
     }
-    controls.addEventListener("touchstart", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -112,7 +105,7 @@ export default function TrackPlayer() {
 
   useEffect(() => {
     if (isPlaying) {
-      controls.addEventListener("touchstart", () => {
+      document.addEventListener("touchstart", () => {
         audioRef.current.muted = false;
         audioRef.current.play();
       });
@@ -120,7 +113,7 @@ export default function TrackPlayer() {
       startTimer();
     } else {
       audioRef.current.pause();
-      controls.addEventListener("touchstart", () => {
+      document.addEventListener("touchstart", () => {
         audioRef.current.pause();
       });
     }
@@ -167,7 +160,7 @@ export default function TrackPlayer() {
           </div>
           <div style={{ lineHeight: "1rem" }}>{title}</div>
         </div>
-        <div className={playlistStyles.playerControls} id="controls">
+        <div className={playlistStyles.playerControls}>
           <Controls
             isPlaying={isPlaying}
             onPrevClick={toPrevTrack}
@@ -185,7 +178,6 @@ export default function TrackPlayer() {
           />
           <input
             type="range"
-            id="volume"
             className={playlistStyles.volumeBar}
             value={volume}
             min="0"
@@ -200,7 +192,6 @@ export default function TrackPlayer() {
       </div>
       <input
         type="range"
-        id="progressBar"
         className={playlistStyles.progressBar}
         value={trackProgress}
         step="1"
@@ -214,7 +205,7 @@ export default function TrackPlayer() {
         onTouchStart={onScrubEnd}
         onDragEnd={onScrubEnd}
       />
-      <div className={playlistStyles.songlistBlock} id="tracks">
+      <div className={playlistStyles.songlistBlock}>
         <SonglistHeader />
         {tracks.map((track, i) => (
           <div
