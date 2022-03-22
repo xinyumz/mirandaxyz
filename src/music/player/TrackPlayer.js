@@ -50,7 +50,7 @@ export default function TrackPlayer() {
   const onTrackClick = (i) => {
     setTrackIndex(i);
     setIsPlaying(true);
-    document.addEventListener("onclick", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -62,7 +62,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(trackIndex - 1);
     }
-    document.addEventListener("onclick", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -74,7 +74,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(0);
     }
-    document.addEventListener("onclick", () => {
+    document.addEventListener("touchstart", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -95,7 +95,7 @@ export default function TrackPlayer() {
 
   useEffect(() => {
     if (isPlaying) {
-      document.addEventListener("onclick", () => {
+      document.addEventListener("touchstart", () => {
         audioRef.current.muted = false;
         audioRef.current.play();
       });
@@ -103,7 +103,7 @@ export default function TrackPlayer() {
       startTimer();
     } else {
       audioRef.current.pause();
-      document.addEventListener("onclick", () => {
+      document.addEventListener("touchstart", () => {
         audioRef.current.pause();
       });
     }
