@@ -50,7 +50,7 @@ export default function TrackPlayer() {
   const onTrackClick = (i) => {
     setTrackIndex(i);
     setIsPlaying(true);
-    document.addEventListener("touchstart", () => {
+    document.addEventListener("onclick", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -62,7 +62,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(trackIndex - 1);
     }
-    document.addEventListener("touchstart", () => {
+    document.addEventListener("onclick", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -74,7 +74,7 @@ export default function TrackPlayer() {
     } else {
       setTrackIndex(0);
     }
-    document.addEventListener("touchstart", () => {
+    document.addEventListener("onclick", () => {
       audioRef.current.muted = false;
       audioRef.current.play();
     });
@@ -95,7 +95,7 @@ export default function TrackPlayer() {
 
   useEffect(() => {
     if (isPlaying) {
-      document.addEventListener("touchstart", () => {
+      document.addEventListener("onclick", () => {
         audioRef.current.muted = false;
         audioRef.current.play();
       });
@@ -103,7 +103,7 @@ export default function TrackPlayer() {
       startTimer();
     } else {
       audioRef.current.pause();
-      document.addEventListener("touchstart", () => {
+      document.addEventListener("onclick", () => {
         audioRef.current.pause();
       });
     }
@@ -175,8 +175,6 @@ export default function TrackPlayer() {
             step="0.01"
             onChange={(e) => onVolumeChange(e.target.value)}
             onClick={(e) => onVolumeChange(e.target.value)}
-            onTouchEnd={(e) => onVolumeChange(e.target.value)}
-            onDrag={(e) => onVolumeChange(e.target.value)}
           />
         </div>
       </div>
@@ -192,17 +190,11 @@ export default function TrackPlayer() {
         onClick={onScrubEnd}
         onMouseUp={onScrubEnd}
         onKeyUp={onScrubEnd}
-        onTouchStart={onScrubEnd}
-        onDragEnd={onScrubEnd}
       />
       <div className={playlistStyles.songlistBlock}>
         <SonglistHeader />
         {tracks.map((track, i) => (
-          <div
-            key={i}
-            onClick={() => onTrackClick(i)}
-            onTouchStart={() => onTrackClick(i)}
-          >
+          <div key={i} onClick={() => onTrackClick(i)}>
             <Songlist index={i} title={track[0]} duration={track[2]} />
           </div>
         ))}
